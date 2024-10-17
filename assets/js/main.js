@@ -72,20 +72,25 @@ let Emulator = {
 
 let ControlPanel = {
     init: () => {
-        document.getElementById("load").onclick = function() {
+        document.getElementById("launch").onclick = function() {
             let romId = document.getElementById("rom").value;
             let element = document.getElementById("system");
             let system = element.options[element.selectedIndex].value;
             let title = document.getElementById("title").value;
             let cover = document.getElementById("cover").value;
-            Emulator.reload("?game=${romId}&system=${system}&title=${title}&cover=${cover}");
+            Emulator.reload(`?game=${romId}&system=${system}&title=${title}&img=${cover}&autostart=true`);
         }
     },
     input: (romId, system, title, cover) => {
         document.getElementById("rom").value = romId;
-        // document.getElementById("system").value = system;
         document.getElementById("title").value = title;
         document.getElementById("cover").value = cover;
+        let options = document.getElementById("system").options
+        for(i = 0; i < options.length; ++i) {
+            if (options[i].value === system) {
+                options[i].selected = true;
+            }
+        }
     }
 }
 

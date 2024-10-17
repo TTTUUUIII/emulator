@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="https://snowland.ink/favicon.ico" type="image/x-icon">
     <script src="assets/js/main.js"></script>
     <title></title>
@@ -12,18 +13,18 @@
     <div id="main-container">
         <img class="poster" />
         <div class="sliderbar">
-            <div class="control-panel">
+            <div class="control-panel padding-m radius-m">
                 <label for="rom">RomId:</label>
-                <input type="text" id="rom" />
+                <input class="radius-tiny" type="text" id="rom" />
                 <label>System:</label>
-                <select id="system">
+                <select class="radius-tiny" id="system">
                     <option>nes</option>
                 </select>
                 <label for="title">Title:</label>
-                <input id="title" placeholder="Optional" type="text" />
+                <input class="radius-tiny" id="title" placeholder="Optional" type="text" />
                 <label for="cover">Cover:</label>
-                <input id="cover" placeholder="Optional" type="text" />
-                <button id="load">Load</button>
+                <input class="radius-tiny" id="cover" placeholder="Optional" type="text" />
+                <button class="radius-sm" id="launch" title="Launch now!"><i class="bi bi-rocket-takeoff"></i></button>
             </div>
         </div>
         <div id="viewport">

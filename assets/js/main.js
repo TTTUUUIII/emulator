@@ -22,7 +22,7 @@ function launch() {
         ControlPanel.input(game);
         let autoStart = getQueryVariable("autostart", false);
         document.getElementsByTagName("title")[0].innerText =
-            "EmulatorJs | " + game["title"];
+            "Emulator🕹 | " + game["title"];
         if (game["img"]) {
             let posterElements = document.getElementsByClassName("poster");
             if (posterElements) {

@@ -21,11 +21,8 @@ function launch() {
         }
         ControlPanel.input(game);
         let autoStart = getQueryVariable("autostart", false);
-        if (!title) {
-            title = game.split(".")[0];
-        }
         document.getElementsByTagName("title")[0].innerText =
-            "EmulatorJs | " + title;
+            "EmulatorJs | " + game["title"];
         if (game["img"]) {
             let posterElements = document.getElementsByClassName("poster");
             if (posterElements) {

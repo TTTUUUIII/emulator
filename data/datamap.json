@@ -1,0 +1,41 @@
+[
+    {
+        "title": "All Nes Games",
+        "system": "nes",
+        "data": [
+            {
+                "publisher": "konami",
+                "games": [
+                ]
+            },
+            {
+                "publisher": "compile",
+                "games": [
+                    {
+                        "title": "Gun-Nac_US",
+                        "rom": "Gun-Nac_US.nes",
+                        "img": "GunNacUSCover.jpg"
+                    }
+                ]
+            },
+            {
+                "publisher": "capcom",
+                "games": [
+
+                ]
+            },
+            {
+                "publisher": "namco",
+                "games": [
+
+                ]
+            },
+            {
+                "publisher": "nintendo",
+                "games": [
+
+                ]
+            }
+        ]
+    }
+]

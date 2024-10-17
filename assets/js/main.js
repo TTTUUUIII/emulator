@@ -3,7 +3,8 @@ window.onload = function() {
     let game = getQueryVariable("game", "");
     let core = getQueryVariable("system", "");
     let img = getQueryVariable("img", "");
-    let title = decodeURI(getQueryVariable("title", ""));
+    let title = decodeURI(getQueryVariable("title", "Welcome~ 🎮"));
+    ControlPanel.input(game, core, title, img);
     let autoStart = getQueryVariable("autostart", false);
     if (!title) {
         title = game.split(".")[0];
@@ -39,6 +40,7 @@ window.onload = function() {
 
     EJS_pathtodata = 'https://cdn.emulatorjs.org/latest/data/';
     Emulator.start();
+    ControlPanel.init();
 }
 
 let Emulator = {
@@ -53,6 +55,40 @@ let Emulator = {
         window.location.replace(url);
     }
 }
+
+// let MainMenu = {
+//     init: () => {
+//         var request = new XMLHttpRequest();
+//         request.open('GET', "data/datamap.json", true);
+//         request.send();
+//         request.onreadystatechange = function() {
+//             if (request.readyState == 4 && request.status == 200) {
+//                 var datamap = JSON.parse(request.responseText);
+//                 console.log(datamap);
+//             }
+//         }
+//     }
+// }
+
+let ControlPanel = {
+    init: () => {
+        document.getElementById("load").onclick = function() {
+            let romId = document.getElementById("rom").value;
+            let element = document.getElementById("system");
+            let system = element.options[element.selectedIndex].value;
+            let title = document.getElementById("title").value;
+            let cover = document.getElementById("cover").value;
+            Emulator.reload("?game=${romId}&system=${system}&title=${title}&cover=${cover}");
+        }
+    },
+    input: (romId, system, title, cover) => {
+        document.getElementById("rom").value = romId;
+        // document.getElementById("system").value = system;
+        document.getElementById("title").value = title;
+        document.getElementById("cover").value = cover;
+    }
+}
+
 
 function getQueryVariable(key, defaultValue) {
     var query = window.location.search.substring(1);

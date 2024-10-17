@@ -1,41 +1,103 @@
-[
-    {
-        "title": "All Nes Games",
-        "system": "nes",
-        "data": [
-            {
-                "publisher": "konami",
-                "games": [
-                ]
-            },
-            {
-                "publisher": "compile",
-                "games": [
-                    {
-                        "title": "Gun-Nac_US",
-                        "rom": "Gun-Nac_US.nes",
-                        "img": "GunNacUSCover.jpg"
-                    }
-                ]
-            },
-            {
-                "publisher": "capcom",
-                "games": [
-
-                ]
-            },
-            {
-                "publisher": "namco",
-                "games": [
-
-                ]
-            },
-            {
-                "publisher": "nintendo",
-                "games": [
-
-                ]
-            }
-        ]
-    }
-]
+{
+    "description": "Emulator datamap by SNOWLAND.",
+    "version": 1.0,
+    "data": [
+        {
+            "title": "All Nes Games",
+            "system": "nes",
+            "data": [
+                {
+                    "publisher": "konami",
+                    "games": [
+                        {
+                            "title": "Circus Charlie",
+                            "rom": "Circus_Charlie_JP.nes",
+                            "img": "Circus_CharlieFlyer.jpg"
+                        },
+                        {
+                            "title": "Salamander",
+                            "rom": "Salamander_JP.nes",
+                            "img": "Salamander_NES.jpg"
+                        },
+                        {
+                            "title": "Contra",
+                            "rom": "Contra_JP.nes",
+                            "img": "Contra_Logo_01.png"
+                        },
+                        {
+                            "title": "Rush 'n Attack",
+                            "rom": "Rush_'n_Attack_US.nes",
+                            "img": "Rush_'n_Attack_(Flyer).png"
+                        }
+                    ]
+                },
+                {
+                    "publisher": "compile",
+                    "games": [
+                        {
+                            "title": "Gun-Nac_US",
+                            "rom": "Gun-Nac_US.nes",
+                            "img": "GunNacUSCover.jpg"
+                        }
+                    ]
+                },
+                {
+                    "publisher": "capcom",
+                    "games": [
+                        {
+                            "title": "1942",
+                            "rom": "1942_US.nes",
+                            "img": "1942_US_Flyer.jpg"
+                        },
+                        {
+                            "title": "1943 - The Battle of Valhalla.",
+                            "rom": "1943_JP.nes",
+                            "img": "1943_Flyer.jpg"
+                        },
+                        {
+                            "title": "Chip 'n Dale - Rescue Rangers",
+                            "rom": "Rescue_'n_Dale_-_Rescue_Rangers_US.nes",
+                            "img": "Rescue_Rangers_NES.jpg"
+                        },
+                        {
+                            "title": "Chip 'n Dale - Rescue Rangers 2",
+                            "rom": "Rescue_'n_Dale_-_Rescue_Rangers_2_US.nes",
+                            "img": "Rescue_Rangers2_NES.jpg"
+                        }
+                    ]
+                },
+                {
+                    "publisher": "namco",
+                    "games": [
+                        {
+                            "title": "Xevious",
+                            "rom": "Xevious_US.nes",
+                            "img": "Xevious.jpg"
+                        },
+                        {
+                            "title": "Battle City",
+                            "rom": "Battle_City_JP.nes",
+                            "img": "Battle_City_NES.jpg"
+                        }
+                    ]
+                },
+                {
+                    "publisher": "nintendo",
+                    "games": [
+                        {
+                            "title": "Super Mario Bros.",
+                            "rom": "Super_Mario_Bros_US.nes",
+                            "img": "Super_Mario_Bros_USA.jpg"
+                        },
+                        {
+                            "title": "F-1 Race",
+                            "rom": "F-1_Race_US.nes",
+                            "img": "F-1_Race_Cover.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "license": "GPLv3.0+"
+}

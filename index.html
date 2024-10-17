@@ -11,6 +11,21 @@
 <body>
     <div id="main-container">
         <img class="poster" />
+        <div class="sliderbar">
+            <div class="control-panel">
+                <label for="rom">RomId:</label>
+                <input type="text" id="rom" />
+                <label>System:</label>
+                <select id="system">
+                    <option>nes</option>
+                </select>
+                <label for="title">Title:</label>
+                <input id="title" placeholder="Optional" type="text" />
+                <label for="cover">Cover:</label>
+                <input id="cover" placeholder="Optional" type="text" />
+                <button id="load">Load</button>
+            </div>
+        </div>
         <div id="viewport">
             <div id='game'></div>
         </div>

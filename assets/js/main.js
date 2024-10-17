@@ -104,10 +104,7 @@ let Datamap = {
             for(let platform of datamap["data"]) {
                 for(let publisher of platform["data"]) {
                     for(let game of publisher["games"]) {
-                        console.log(game.id);
-                        if (game.id == id) {
-                            return {"system": platform["system"], ...game};
-                        }
+                        if (game.id == id) return {"system": platform["system"], ...game};
                     }
                 }
             }

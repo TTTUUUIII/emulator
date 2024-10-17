@@ -8,7 +8,7 @@ window.onload = function() {
     if (!title) {
         title = game.split(".")[0];
     }
-    document.getElementsByTagName("title")[0].innerText = "Emulator - " + title;
+    document.getElementsByTagName("title")[0].innerText = "EmulatorJs | " + title;
     if (img) {
         let posterElements = document.getElementsByClassName("poster");
         if(posterElements) {

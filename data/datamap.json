@@ -1,5 +1,5 @@
 {
-    "description": "Emulator datamap by SNOWLAND.",
+    "description": "Emulator datamap edit by SNOWLAND.",
     "version": 1.0,
     "data": [
         {
@@ -10,21 +10,25 @@
                     "publisher": "konami",
                     "games": [
                         {
+                            "id": 1294,
                             "title": "Circus Charlie",
                             "rom": "Circus_Charlie_JP.nes",
                             "img": "Circus_CharlieFlyer.jpg"
                         },
                         {
-                            "title": "Salamander",
+                            "id": 998,
+                            "title": "Salamander 🛩👾",
                             "rom": "Salamander_JP.nes",
                             "img": "Salamander_NES.jpg"
                         },
                         {
+                            "id": 1163,
                             "title": "Contra",
                             "rom": "Contra_JP.nes",
                             "img": "Contra_Logo_01.png"
                         },
                         {
+                            "id": 1170,
                             "title": "Rush 'n Attack",
                             "rom": "Rush_'n_Attack_US.nes",
                             "img": "Rush_'n_Attack_(Flyer).png"
@@ -35,7 +39,8 @@
                     "publisher": "compile",
                     "games": [
                         {
-                            "title": "Gun-Nac_US",
+                            "id": 946,
+                            "title": "Gun-Nac 🛩👾",
                             "rom": "Gun-Nac_US.nes",
                             "img": "GunNacUSCover.jpg"
                         }
@@ -45,21 +50,25 @@
                     "publisher": "capcom",
                     "games": [
                         {
-                            "title": "1942",
+                            "id": 1234,
+                            "title": "1942 🛩👾",
                             "rom": "1942_US.nes",
                             "img": "1942_US_Flyer.jpg"
                         },
                         {
-                            "title": "1943 - The Battle of Valhalla.",
+                            "id": 1238,
+                            "title": "1943 - The Battle of Valhalla. 🛩👾",
                             "rom": "1943_JP.nes",
                             "img": "1943_Flyer.jpg"
                         },
                         {
+                            "id": 1102,
                             "title": "Chip 'n Dale - Rescue Rangers",
                             "rom": "Rescue_'n_Dale_-_Rescue_Rangers_US.nes",
                             "img": "Rescue_Rangers_NES.jpg"
                         },
                         {
+                            "id": 1095,
                             "title": "Chip 'n Dale - Rescue Rangers 2",
                             "rom": "Rescue_'n_Dale_-_Rescue_Rangers_2_US.nes",
                             "img": "Rescue_Rangers2_NES.jpg"
@@ -70,11 +79,13 @@
                     "publisher": "namco",
                     "games": [
                         {
-                            "title": "Xevious",
+                            "id": 1177,
+                            "title": "Xevious 🛩👾",
                             "rom": "Xevious_US.nes",
                             "img": "Xevious.jpg"
                         },
                         {
+                            "id": 1152,
                             "title": "Battle City",
                             "rom": "Battle_City_JP.nes",
                             "img": "Battle_City_NES.jpg"
@@ -85,11 +96,13 @@
                     "publisher": "nintendo",
                     "games": [
                         {
+                            "id": 1195,
                             "title": "Super Mario Bros.",
                             "rom": "Super_Mario_Bros_US.nes",
                             "img": "Super_Mario_Bros_USA.jpg"
                         },
                         {
+                            "id": 1256,
                             "title": "F-1 Race",
                             "rom": "F-1_Race_US.nes",
                             "img": "F-1_Race_Cover.jpg"

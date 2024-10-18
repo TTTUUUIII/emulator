@@ -146,6 +146,10 @@ function getQueryVariable(key, defaultValue) {
     return defaultValue;
 }
 
+function upper(str, n) {
+    return str.substring(0, n).toUpperCase() + str.substring(n);
+}
+
 let UI = {
     init: () => {
         $("#launch").click(function () {
@@ -174,7 +178,7 @@ let UI = {
         $(".sliderbar > .card > .card-header").text(game["title"]);
         if (game["publisher"]) {
             $(".sliderbar > .card > .card-body").append(
-                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${game["publisher"]["name"].toUpperCase()}</a></div>`)
+                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${upper(game["publisher"]["name"], 1)}</a></div>`)
             );
         }
         if (game["release"]) {

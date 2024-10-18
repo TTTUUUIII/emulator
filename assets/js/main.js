@@ -1,10 +1,4 @@
-EJS_player = "#game";
-EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
-EJS_lightgun = false; // Lightgun
-
-
 let delayedLaunch = false;
-
 $(function () {
     if (getQueryVariable("id", -1) != -1 && !window.datamap) {
         delayedLaunch = true;
@@ -38,7 +32,7 @@ function launch() {
 
 function forceReload(id, auto) {
     if (Datamap.exists(id)) {
-        window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&autostart=${auto}`);
+        window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&auto=${auto}`);
     } else {
         console.warn(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
         alert(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
@@ -156,11 +150,17 @@ let UI = {
     init: () => {
         $("#launch").click(function () {
             let id = $("#gameId").val();
-            id && forceReload(id, true);
+            id && forceReload(id, 1);
         });
         $("#gameId").keypress((event) => {
-            event.keyCode == 13 && event.target.value && forceReload(event.target.value);
+            event.keyCode == 13 && event.target.value && forceReload(event.target.value, 1);
         });
+        EJS_ready = () => {
+            $("#viewport").css("opacity", "0.8");
+        }
+        EJS_onGameStart = (e) => {
+            $("#viewport").css("opacity", "1");
+        }
     },
     input: (game) => {
         $(".sliderbar .card img").attr("src", `data/images/${game["img"]}`);

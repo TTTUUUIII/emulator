@@ -61,32 +61,44 @@
 
 .launch-panel {
     margin-top: 8px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.launch-panel input {
-    margin-bottom: 8px;
-    padding: 5px;
+.launch-panel div {
+    height: 27px;
 }
 
-.launch-panel > button {
+.launch-panel div > input {
+    padding-left: 4px;
+}
+
+.launch-panel div > button {
+    width: 48px;
+    transition: 300ms;
+    background-color: #1AAFFF;
+}
+
+.launch-panel div > button:hover {
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+
+/* .launch-panel > button {
     font-size: 1.2em;
     height: 37px;
     width: 68px;
     place-content: center;
     margin-right: auto;
-}
+} */
 
-.launch-panel button, input {
+/* .launch-panel button, input {
     box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
     transition: 300ms;
-}
+} */
 
-.launch-panel button:hover, input:hover {
+/* .launch-panel button:hover, input:hover {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
-}
+} */
 
 .text-center {
     text-align: center;

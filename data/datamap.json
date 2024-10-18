@@ -107,6 +107,7 @@
 				},
 				{
 					"publisher": "capcom",
+					"url": "https://snowland.ink/?tag=capcom",
 					"games": [
 						{
 							"id": 1234,
@@ -152,6 +153,7 @@
 				},
 				{
 					"publisher": "namco",
+					"url": "https://snowland.ink/?tag=namco",
 					"games": [
 						{
 							"id": 1177,
@@ -174,6 +176,7 @@
 				},
 				{
 					"publisher": "nintendo",
+					"url": "https://snowland.ink/?tag=nintendo",
 					"games": [
 						{
 							"id": 1195,

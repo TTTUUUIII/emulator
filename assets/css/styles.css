@@ -25,7 +25,6 @@
     top: 18px;
     left: 18px;
     max-height: 100vh;
-    max-width: 250px;
     position: fixed;
     z-index: 1;
 }

@@ -1,56 +1,66 @@
+EJS_player = "#game";
+EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
+EJS_lightgun = false; // Lightgun
+
+
 let delayedLaunch = false;
-window.onload = function () {
-    if(getQueryVariable("id", -1) != -1 && !window.datamap) {
+
+$(function () {
+    if (getQueryVariable("id", -1) != -1 && !window.datamap) {
         delayedLaunch = true;
     } else {
         launch();
     }
-    ControlPanel.init();
-};
+    UI.init();
+});
 
 function launch() {
     let game = {};
-        let id = getQueryVariable("id", -1);
-        if (id != -1) {
-            game = Datamap.findGameById(id);
-        } else {
-            game.rom = getQueryVariable("game", undefined);
-            game.system = getQueryVariable("system", undefined);
-            game.img = getQueryVariable("img", "default.jpg");
-            game.title = decodeURI(getQueryVariable("title", "Welcome~ 🎮"));
-        }
-        ControlPanel.input(game);
-        let autoStart = getQueryVariable("autostart", false);
-        document.getElementsByTagName("title")[0].innerText =
-            "Emulator🕹 | " + game["title"];
-        if (game["img"]) {
-            let posterElements = document.getElementsByClassName("poster");
-            if (posterElements) {
-                for (i = 0; i < posterElements.length; ++i) {
-                    posterElements[i].setAttribute("src", "data/images/" + game["img"]);
-                }
+    let id = getQueryVariable("id", -1);
+    if (id != -1) {
+        game = Datamap.findGameById(id);
+        if (!game) {
+            game = {
+                title: "Welcome~ 🎮",
+                img: "default.jpg"
             }
         }
+    } else {
+        game.rom = getQueryVariable("game", undefined);
+        game.system = getQueryVariable("system", undefined);
+        game.img = getQueryVariable("img", "default.jpg");
+        game.title = decodeURI(getQueryVariable("title", "Welcome~ 🎮"));
+    }
+    UI.input(game);
+    let auto = getQueryVariable("auto", false);
+    Emulator.launch(game, auto);
+}
+
+function forceReload(id, auto) {
+    if (Datamap.exists(id)) {
+        window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&autostart=${auto}`);
+    } else {
+        console.warn(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
+        alert(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
+    }
+}
+
+let Emulator = {
+    launch: (game, auto) => {
+        if (!game || !game.rom || !game.system) {
+            console.warn("Invalid game, ignored.");
+            return;
+        }
         EJS_gameName = game["title"];
-        EJS_startOnLoaded = autoStart;
-        EJS_player = "#game";
+        EJS_startOnLoaded = auto;
         // Can also be fceumm or nestopia
         EJS_core = game["system"];
-
-        EJS_lightgun = false; // Lightgun
 
         // URL to BIOS file
         EJS_biosUrl = "";
 
         // URL to Game rom
         EJS_gameUrl = "data/" + game["rom"];
-
-        EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
-        Emulator.start();
-}
-
-let Emulator = {
-    start: () => {
         let element = document.createElement("script");
         element.setAttribute("type", "text/javascript");
         element.setAttribute(
@@ -58,18 +68,7 @@ let Emulator = {
             "https://cdn.emulatorjs.org/latest/data/loader.js"
         );
         document.getElementsByTagName("head")[0].appendChild(element);
-    },
-    reload: (varible) => {
-        let url =
-            window.location.protocol +
-            "//" +
-            window.location.hostname +
-            ":" +
-            window.location.port +
-            window.location.pathname +
-            varible;
-        window.location.replace(url);
-    },
+    }
 };
 
 let Datamap = {
@@ -97,44 +96,39 @@ let Datamap = {
     },
     findGameById: (id) => {
         let datamap = window.datamap;
-        if(datamap) {
-            for(let platform of datamap["data"]) {
-                for(let publisher of platform["data"]) {
-                    for(let game of publisher["games"]) {
-                        if (game.id == id) return {"system": platform["system"], ...game};
+        if (datamap) {
+            for (let platform of datamap["data"]) {
+                for (let publisher of platform["data"]) {
+                    for (let game of publisher["games"]) {
+                        if (game.id == id) {
+                            return {
+                                publisher: {
+                                    name: publisher["publisher"],
+                                    url: publisher["url"]
+                                },
+                                system: platform["system"],
+                                ...game
+                            };
+                        }
                     }
                 }
             }
         }
 
         return undefined;
-    }
-};
-
-let ControlPanel = {
-    init: () => {
-        document.getElementById("launch").onclick = function () {
-            let romId = document.getElementById("rom").value;
-            let element = document.getElementById("system");
-            let system = element.options[element.selectedIndex].value;
-            let title = document.getElementById("title").value;
-            let cover = document.getElementById("cover").value;
-            Emulator.reload(
-                `?game=${romId}&system=${system}&title=${title}&img=${cover}&autostart=true`
-            );
-        };
     },
-    input: (game) => {
-        document.getElementById("rom").value = game["rom"];
-        document.getElementById("title").value = game["title"];
-        document.getElementById("cover").value = game["img"];
-        let options = document.getElementById("system").options;
-        for (i = 0; i < options.length; ++i) {
-            if (options[i].value === game["system"]) {
-                options[i].selected = true;
+    findGenreById: (id) => {
+        let genres = window.datamap["genres"];
+        if (genres) {
+            for(let genre of genres) {
+                if(genre["id"] == id) return genre;
             }
         }
+        return undefined;
     },
+    exists: (id) => {
+        return Datamap.findGameById(id) != undefined;
+    }
 };
 
 function getQueryVariable(key, defaultValue) {
@@ -145,7 +139,7 @@ function getQueryVariable(key, defaultValue) {
         if (pair[0] == key) {
             switch (typeof defaultValue) {
                 case "boolean":
-                    return pair[1] === "true";
+                    return pair[1] === "true" || pair[1] === "1";
                     break;
                 case "number":
                     return +pair[1];
@@ -156,6 +150,54 @@ function getQueryVariable(key, defaultValue) {
         }
     }
     return defaultValue;
+}
+
+let UI = {
+    init: () => {
+        $("#launch").click(function () {
+            let id = $("#gameId").val();
+            id && forceReload(id, true);
+        });
+        $("#gameId").keypress((event) => {
+            event.keyCode == 13 && event.target.value && forceReload(event.target.value);
+        });
+    },
+    input: (game) => {
+        $(".sliderbar .card img").attr("src", `data/images/${game["img"]}`);
+        $("title").text("Emulator🕹 | " + game["title"]);
+        $("img.poster").attr("src", `data/images/${game["img"]}`)
+        if (game["id"]) {
+            $(".sliderbar > .card > .card-body").append(
+                $(`<div class="card-item"><label>ID</label><p>${game["id"]}</p></div>`)
+            );
+        }
+        $(".sliderbar > .card > .card-header").text(game["title"]);
+        if (game["publisher"]) {
+            $(".sliderbar > .card > .card-body").append(
+                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}">${game["publisher"]["name"].toUpperCase()}</a></div>`)
+            );
+        }
+        if (game["release"]) {
+            $(".sliderbar > .card > .card-body").append(
+                $(`<div class="card-item"><label>Release</label><p>${game["release"]}</p></div>`)
+            );
+        }
+        let genreIds = game["genre"];
+        if (genreIds) {
+            let temp = "";
+            for (let id of genreIds) {
+                let genre = Datamap.findGenreById(id);
+                if (genre) {
+                    temp += `<a href="${genre["url"] ?? "#"}">${genre["title"]}</a>`;
+                }
+            }
+            if (temp) {
+                $(".sliderbar > .card > .card-body").append(
+                    $(`<div class="card-item"><label>Genre</label><div class="v-stack">${temp}<div></div>`)
+                );
+            }
+        }
+    }
 }
 
 Datamap.init();

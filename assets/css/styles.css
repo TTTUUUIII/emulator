@@ -25,14 +25,72 @@
     top: 18px;
     left: 18px;
     max-height: 100vh;
+    max-width: 250px;
     position: fixed;
     z-index: 1;
 }
 
-.control-panel {
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    transition: 200ms;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card > .card-img {
+    width: 220px;
+}
+
+.card > .card-body {
+    padding: 8px;
+    flex-direction: column;
+}
+
+.card-body .card-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.card-item > label {
+    width: 78px;
+}
+
+.launch-panel {
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.launch-panel input {
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.launch-panel > button {
+    font-size: 1.2em;
+    height: 37px;
+    width: 68px;
+    place-content: center;
+    margin-right: auto;
+}
+
+.launch-panel button, input {
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    transition: 300ms;
+}
+
+.launch-panel button:hover, input:hover {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .padding-sm {
@@ -43,22 +101,12 @@
     padding: 15px;
 }
 
-.control-panel > label {
-    color: white;
+.border {
+    border: 0.5rem outset #987D9A;
 }
 
-.control-panel > input,select {
-    margin-bottom: 8px;
-    padding: 5px;
-}
-
-.control-panel > button {
-    font-size: 1.2em;
-    height: 37px;
-    width: 68px;
-    place-content: center;
-    margin-right: auto;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+.italic {
+    font-style: italic;
 }
 
 .radius-sm {
@@ -73,8 +121,14 @@
     border-radius: 8px;
 }
 
-.control-panel > button:hover, input:hover, select:hover {
-    opacity: 0.8;
+.v-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-stack {
+    display: flex;
+    flex-direction: row;
 }
 
 #viewport {

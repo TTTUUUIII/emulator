@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="https://snowland.ink/favicon.ico" type="image/x-icon">
@@ -13,17 +14,18 @@
     <div id="main-container">
         <img class="poster" />
         <div class="sliderbar">
-            <div class="control-panel padding-m radius-m">
-                <label for="rom">RomId:</label>
-                <input class="radius-tiny" type="text" id="rom" />
-                <label>System:</label>
-                <select class="radius-tiny" id="system">
-                    <option>nes</option>
-                </select>
-                <label for="title">Title:</label>
-                <input class="radius-tiny" id="title" placeholder="Optional" type="text" />
-                <label for="cover">Cover:</label>
-                <input class="radius-tiny" id="cover" placeholder="Optional" type="text" />
+            <div class="card padding-m radius-sm">
+                <h4 class="card-header text-center italic"></h4>
+                <img class="card-img border" >
+                <div class="card-body">
+                    <!-- card-item -->
+                </div>
+            </div>
+            <div class="launch-panel padding-m radius-m">
+                <div>
+                    <label for="gameId">ID:</label>
+                    <input autocomplete="off" title="Input your favorite game's id." class="radius-tiny" type="number" id="gameId" />
+                </div>
                 <button class="radius-sm" id="launch" title="Launch now!"><i class="bi bi-rocket-takeoff"></i></button>
             </div>
         </div>

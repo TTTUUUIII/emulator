@@ -1,2 +1,5 @@
-/data/**/*.jpg
-/data/*.nes
+/data/images/*.*
+!/data/images/GunNacUSCover.jpg
+!/data/images/default.jpg
+/data/*.*
+!/data/Gun-Nac_US.nes

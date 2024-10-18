@@ -174,7 +174,7 @@ let UI = {
         $(".sliderbar > .card > .card-header").text(game["title"]);
         if (game["publisher"]) {
             $(".sliderbar > .card > .card-body").append(
-                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}">${game["publisher"]["name"].toUpperCase()}</a></div>`)
+                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${game["publisher"]["name"].toUpperCase()}</a></div>`)
             );
         }
         if (game["release"]) {
@@ -188,7 +188,7 @@ let UI = {
             for (let id of genreIds) {
                 let genre = Datamap.findGenreById(id);
                 if (genre) {
-                    temp += `<a href="${genre["url"] ?? "#"}">${genre["title"]}</a>`;
+                    temp += `<a href="${genre["url"] ?? "#"}" target="_blank">${genre["title"]}</a>`;
                 }
             }
             if (temp) {

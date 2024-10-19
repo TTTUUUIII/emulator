@@ -57,6 +57,11 @@
 					"id": 5,
 					"title": "Galaxian",
 					"url": "https://snowland.ink/?tag=galaxian_series"
+				},
+				{
+					"id": "6",
+					"title": "TwinBee",
+					"url": "https://snowland.ink/?tag=twinbee_series"
 				}
 			],
 			"data": [
@@ -115,6 +120,17 @@
 							"genre": [
 								3
 							],
+							"release": 1985
+						},
+						{
+							"id": 1436,
+							"title": "TwinBee 🛩👾",
+							"rom": "TwinBee_JP.nes",
+							"img": "TwinBee_(front)_JP.png",
+							"genre": [
+								2
+							],
+							"series_id": 6,
 							"release": 1985
 						}
 					]

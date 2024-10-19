@@ -225,6 +225,17 @@
 							],
 							"series_id": 5,
 							"release": 1979
+						},
+						{
+							"id": 1413,
+							"title": "Gaplus 🛩👾",
+							"rom": "Gaplus_W.nes",
+							"img": "Gaplus_(front)_EU.jpg",
+							"genre": [
+								2
+							],
+							"series_id": 5,
+							"release": 1984
 						}
 					]
 				},

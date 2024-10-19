@@ -198,6 +198,13 @@
 							"rom": "Battle_City_JP.nes",
 							"img": "Battle_City_NES.jpg",
 							"release": 1985
+						},
+						{
+							"id": 1404,
+							"title": "Galaxian 🛩👾",
+							"rom": "Galaxian_JP.nes",
+							"img": "Galaxian_JP_Flyer.jpg",
+							"release": 1979
 						}
 					]
 				},

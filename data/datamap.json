@@ -204,6 +204,9 @@
 							"title": "Galaxian 🛩👾",
 							"rom": "Galaxian_JP.nes",
 							"img": "Galaxian_JP_Flyer.jpg",
+							"genre": [
+								2
+							],
 							"release": 1979
 						}
 					]

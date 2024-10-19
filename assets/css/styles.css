@@ -38,11 +38,12 @@
 }
 
 .launch-panel div > input {
+    width: 70%;
     padding-left: 4px;
 }
 
 .launch-panel div > button {
-    width: 48px;
+    width: 30%;
     transition: 300ms;
     background-color: #1AAFFF;
 }
@@ -224,8 +225,12 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1180px) {
     .sliderbar {
         display: none;
+    }
+    
+    .game-container {
+        width: 80%;
     }
 }

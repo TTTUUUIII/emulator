@@ -59,9 +59,14 @@
 					"url": "https://snowland.ink/?tag=galaxian_series"
 				},
 				{
-					"id": "6",
+					"id": 6,
 					"title": "TwinBee",
 					"url": "https://snowland.ink/?tag=twinbee_series"
+				},
+				{
+					"id": 7,
+					"title": "Chip 'n Dale: Rescue Rangers",
+					"url": "https://snowland.ink/?tag=rescue-rangers_series"
 				}
 			],
 			"data": [
@@ -185,6 +190,7 @@
 							"genre": [
 								1
 							],
+							"series_id": 7,
 							"release": 1990
 						},
 						{
@@ -195,6 +201,7 @@
 							"genre": [
 								1
 							],
+							"series_id": 7,
 							"release": 1993
 						}
 					]

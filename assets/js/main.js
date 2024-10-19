@@ -120,6 +120,25 @@ let Datamap = {
         }
         return undefined;
     },
+    findSeriesById: (id, system) => {
+        let data = window.datamap["data"];
+        if (!data) return undefined;
+        let platform = undefined;
+        for(let it of data) {
+            if(it["system"] === system) {
+                platform = it;
+                break;
+            }
+        }
+        if (!platform) return undefined;
+        let series = platform["series"];
+        if (series) {
+            for (let it of series) {
+                if (it["id"] == id) return it;
+            }
+        }
+        return undefined;
+    },
     exists: (id) => {
         return Datamap.findGameById(id) != undefined;
     }
@@ -185,6 +204,14 @@ let UI = {
             $(".sliderbar > .card > .card-body").append(
                 $(`<div class="card-item"><label>Release</label><p>${game["release"]}</p></div>`)
             );
+        }
+        if(game["system"] && game["series_id"]) {
+            let series = Datamap.findSeriesById(game["series_id"], game["system"]);
+            if(series) {
+                $(".sliderbar > .card > .card-body").append(
+                    $(`<div class="card-item"><label>Series</label><a href="${series["url"]}" target="_blank">${series["title"]}</a></div>`)
+                );
+            }
         }
         let genreIds = game["genre"];
         if (genreIds) {

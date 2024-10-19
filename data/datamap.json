@@ -32,6 +32,28 @@
 		{
 			"title": "All Nes Games",
 			"system": "nes",
+			"series": [
+				{
+					"id": 1,
+					"title": "Contra",
+					"url": "https://snowland.ink/?tag=contra_series"
+				},
+				{
+					"id": 2,
+					"title": "Super Mario",
+					"url": "https://snowland.ink/?tag=mario_series"
+				},
+				{
+					"id": 3,
+					"title": "Gradius",
+					"url": "https://snowland.ink/?tag=gradius_series"
+				},
+				{
+					"id": 4,
+					"title": "194x",
+					"url": "https://snowland.ink/?tag=194x_series"
+				}
+			],
 			"data": [
 				{
 					"publisher": "konami",
@@ -55,6 +77,7 @@
 							"genre": [
 								2
 							],
+							"series_id": 3,
 							"release": 1986
 						},
 						{
@@ -65,6 +88,7 @@
 							"genre": [
 								3
 							],
+							"series_id": 1,
 							"release": 1987
 						},
 						{
@@ -75,6 +99,7 @@
 							"genre": [
 								3
 							],
+							"series_id": 1,
 							"release": 1988
 						},
 						{
@@ -117,6 +142,7 @@
 							"genre": [
 								2
 							],
+							"series_id": 4,
 							"release": 1984
 						},
 						{
@@ -127,6 +153,7 @@
 							"genre": [
 								2
 							],
+							"series_id": 4,
 							"release": 1987
 						},
 						{
@@ -186,6 +213,7 @@
 							"genre": [
 								1
 							],
+							"series_id": 2,
 							"release": 1985
 						},
 						{

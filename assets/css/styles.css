@@ -51,18 +51,38 @@
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 }
 
-/* Game View port */
-#viewport {
-    margin: auto;
-    width:768px;
-    height:720px;
+/* Sliderbar */
+.sliderbar {
+    margin: 18px;
+    width: 17%;
+    max-height: 100vh;
+    z-index: 1;
+    padding: 5px;
+}
+
+/* Game container */
+.game-container {
+    width: 61%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-container .screen {
+    width: 80%;
+    height: 75%;
     max-width:100%;
+    margin: auto;
 }
 
 /* Components */
 
+.card {
+    width: 100%;
+}
+
 .card > .card-img {
-    width: 220px;
+    width: 100%;
 }
 
 .card > .card-body {
@@ -82,17 +102,12 @@
     width: 78px;
 }
 
-.sliderbar {
-    margin: 18px;
-    max-height: 100vh;
-    z-index: 1;
-}
-
 .clock {
     color: #17D4FE;
     font-family: "Orbitron", sans-serif;
     letter-spacing: 0.1rem;
     min-width: 138px;
+    text-align: right;
 }
 
 /* Common */
@@ -210,10 +225,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .left-sliderbar {
-        display: none;
-    }
-    .clock {
+    .sliderbar {
         display: none;
     }
 }

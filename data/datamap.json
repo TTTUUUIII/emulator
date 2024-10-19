@@ -52,6 +52,11 @@
 					"id": 4,
 					"title": "194x",
 					"url": "https://snowland.ink/?tag=194x_series"
+				},
+				{
+					"id": 5,
+					"title": "Galaxian",
+					"url": "https://snowland.ink/?tag=galaxian_series"
 				}
 			],
 			"data": [
@@ -207,6 +212,18 @@
 							"genre": [
 								2
 							],
+							"series_id": 5,
+							"release": 1979
+						},
+						{
+							"id": 1404,
+							"title": "Galaga 🛩👾",
+							"rom": "Galaga_JP.nes",
+							"img": "Galaga.jpg",
+							"genre": [
+								2
+							],
+							"series_id": 5,
 							"release": 1979
 						}
 					]

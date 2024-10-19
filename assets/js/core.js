@@ -6,6 +6,7 @@ $(function () {
         launch();
     }
     UI.init();
+    Clock.init($(".clock"));
 });
 
 function launch() {
@@ -15,7 +16,7 @@ function launch() {
         game = Datamap.findGameById(id);
         if (!game) {
             game = {
-                title: "Welcome~ 🎮",
+                title: DEFAULT_SEO,
                 img: "default.jpg"
             }
         }
@@ -23,7 +24,7 @@ function launch() {
         game.rom = getQueryVariable("game", undefined);
         game.system = getQueryVariable("system", undefined);
         game.img = getQueryVariable("img", "default.jpg");
-        game.title = decodeURI(getQueryVariable("title", "Welcome~ 🎮"));
+        game.title = decodeURI(getQueryVariable("title", DEFAULT_SEO));
     }
     UI.input(game);
     let auto = getQueryVariable("auto", false);
@@ -186,29 +187,35 @@ let UI = {
         }
     },
     input: (game) => {
-        $(".sliderbar .card img").attr("src", `data/images/${game["img"]}`);
-        $("title").text("Emulator🕹 | " + game["title"]);
-        $("img.poster").attr("src", `data/images/${game["img"]}`)
+        $("#game-img").attr("src", `data/images/${game["img"]}`);
+        let title = game["title"];
+        $("title").text("Emulator🕹 | " + title);
+        if(title.length > 20) {
+            $("#game-title")
+            .addClass("marquee-content")
+            .parent().addClass("marquee");
+        }
+        $("#game-title").text(title);
+        $("img.main-background").attr("src", `data/images/${game["img"]}`)
         if (game["id"]) {
-            $(".sliderbar > .card > .card-body").append(
+            $("#game-details").append(
                 $(`<div class="card-item"><label>ID</label><p>${game["id"]}</p></div>`)
             );
         }
-        $(".sliderbar > .card > .card-header").text(game["title"]);
         if (game["publisher"]) {
-            $(".sliderbar > .card > .card-body").append(
+            $("#game-details").append(
                 $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${upper(game["publisher"]["name"], 1)}</a></div>`)
             );
         }
         if (game["release"]) {
-            $(".sliderbar > .card > .card-body").append(
+            $("#game-details").append(
                 $(`<div class="card-item"><label>Release</label><p>${game["release"]}</p></div>`)
             );
         }
         if(game["system"] && game["series_id"]) {
             let series = Datamap.findSeriesById(game["series_id"], game["system"]);
             if(series) {
-                $(".sliderbar > .card > .card-body").append(
+                $("#game-details").append(
                     $(`<div class="card-item"><label>Series</label><a href="${series["url"]}" target="_blank">${series["title"]}</a></div>`)
                 );
             }
@@ -223,7 +230,7 @@ let UI = {
                 }
             }
             if (temp) {
-                $(".sliderbar > .card > .card-body").append(
+                $("#game-details").append(
                     $(`<div class="card-item"><label>Genre</label><div class="v-stack">${temp}<div></div>`)
                 );
             }

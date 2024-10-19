@@ -1,3 +1,5 @@
+var DEFAULT_SEO = "Online 🎮 Game Arcade - Play all games online! 🛸"
+
 EJS_player = "#game";
 EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
 EJS_lightgun = false; // Lightgun

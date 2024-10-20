@@ -35,37 +35,37 @@
 			"series": [
 				{
 					"id": 1,
-					"title": "Contra",
+					"title": "👾 Contra",
 					"url": "https://snowland.ink/?tag=contra_series"
 				},
 				{
 					"id": 2,
-					"title": "Super Mario",
+					"title": "🍄 Super Mario",
 					"url": "https://snowland.ink/?tag=mario_series"
 				},
 				{
 					"id": 3,
-					"title": "Gradius",
+					"title": "🛩 Gradius",
 					"url": "https://snowland.ink/?tag=gradius_series"
 				},
 				{
 					"id": 4,
-					"title": "194x",
+					"title": "🛩 194x",
 					"url": "https://snowland.ink/?tag=194x_series"
 				},
 				{
 					"id": 5,
-					"title": "Galaxian",
+					"title": "🛩 Galaxian",
 					"url": "https://snowland.ink/?tag=galaxian_series"
 				},
 				{
 					"id": 6,
-					"title": "TwinBee",
+					"title": "🛩 TwinBee",
 					"url": "https://snowland.ink/?tag=twinbee_series"
 				},
 				{
 					"id": 7,
-					"title": "Chip 'n Dale: Rescue Rangers",
+					"title": "🐿️ Chip 'n Dale: Rescue Rangers",
 					"url": "https://snowland.ink/?tag=rescue-rangers_series"
 				}
 			],
@@ -86,7 +86,7 @@
 						},
 						{
 							"id": 998,
-							"title": "Salamander 🛩👾",
+							"title": "Salamander",
 							"rom": "Salamander_JP.nes",
 							"img": "Salamander_NES.jpg",
 							"genre": [
@@ -97,7 +97,7 @@
 						},
 						{
 							"id": 1163,
-							"title": "Contra 🛸👾",
+							"title": "Contra",
 							"rom": "Contra_JP.nes",
 							"img": "Contra_Logo_01.png",
 							"genre": [
@@ -108,7 +108,7 @@
 						},
 						{
 							"id": 1203,
-							"title": "Super Contra 🛸👾",
+							"title": "Super Contra",
 							"rom": "Super_Contra_JP.nes",
 							"img": "Super_Contra_(arcade)_-_01.png",
 							"genre": [
@@ -129,7 +129,7 @@
 						},
 						{
 							"id": 1436,
-							"title": "TwinBee 🛩👾",
+							"title": "TwinBee",
 							"rom": "TwinBee_JP.nes",
 							"img": "TwinBee_(front)_JP.png",
 							"genre": [
@@ -140,7 +140,7 @@
 						},
 						{
 							"id": 1445,
-							"title": "Moero TwinBee - Cinnamon Hakase o Sukue! 🛩👾",
+							"title": "Moero TwinBee - Cinnamon Hakase o Sukue!",
 							"rom": "Moero_TwinBee_-_Cinnamon_Hakase_o_Sukue!_JP.nes",
 							"img": "Moero_TwinBee_-_Cinnamon-hakase_o_Sukue_01.jpg",
 							"genre": [
@@ -151,7 +151,7 @@
 						},
 						{
 							"id": 1455,
-							"title": "TwinBee 3: Poko Poko Daimaou 🛩👾",
+							"title": "TwinBee 3: Poko Poko Daimaou",
 							"rom": "TwinBee_3_-_Poko_Poko_Daimaou_JP.nes",
 							"img": "TwinBee_3_-_Poko_Poko_Daimaou_-_01.jpg",
 							"genre": [
@@ -168,7 +168,7 @@
 					"games": [
 						{
 							"id": 946,
-							"title": "Gun-Nac 🛩👾",
+							"title": "Gun-Nac",
 							"rom": "Gun-Nac_US.nes",
 							"img": "GunNacUSCover.jpg",
 							"genre": [
@@ -184,7 +184,7 @@
 					"games": [
 						{
 							"id": 1234,
-							"title": "1942 🛩👾",
+							"title": "1942",
 							"rom": "1942_US.nes",
 							"img": "1942_US_Flyer.jpg",
 							"genre": [
@@ -195,7 +195,7 @@
 						},
 						{
 							"id": 1238,
-							"title": "1943 - The Battle of Valhalla. 🛩👾",
+							"title": "1943 - The Battle of Valhalla.",
 							"rom": "1943_JP.nes",
 							"img": "1943_Flyer.jpg",
 							"genre": [
@@ -206,7 +206,7 @@
 						},
 						{
 							"id": 1102,
-							"title": "Chip 'n Dale - Rescue Rangers 🐿️",
+							"title": "Chip 'n Dale - Rescue Rangers",
 							"rom": "Rescue_'n_Dale_-_Rescue_Rangers_US.nes",
 							"img": "Rescue_Rangers_NES.jpg",
 							"genre": [
@@ -217,7 +217,7 @@
 						},
 						{
 							"id": 1095,
-							"title": "Chip 'n Dale - Rescue Rangers 2 🐿️",
+							"title": "Chip 'n Dale - Rescue Rangers 2",
 							"rom": "Rescue_'n_Dale_-_Rescue_Rangers_2_US.nes",
 							"img": "Rescue_Rangers2_NES.jpg",
 							"genre": [
@@ -234,7 +234,7 @@
 					"games": [
 						{
 							"id": 1177,
-							"title": "Xevious 🛩👾",
+							"title": "Xevious",
 							"rom": "Xevious_US.nes",
 							"img": "Xevious.jpg",
 							"genre": [
@@ -251,7 +251,7 @@
 						},
 						{
 							"id": 1404,
-							"title": "Galaxian 🛩👾",
+							"title": "Galaxian",
 							"rom": "Galaxian_JP.nes",
 							"img": "Galaxian_JP_Flyer.jpg",
 							"genre": [
@@ -262,7 +262,7 @@
 						},
 						{
 							"id": 1407,
-							"title": "Galaga 🛩👾",
+							"title": "Galaga",
 							"rom": "Galaga_JP.nes",
 							"img": "Galaga.jpg",
 							"genre": [
@@ -273,7 +273,7 @@
 						},
 						{
 							"id": 1413,
-							"title": "Gaplus 🛩👾",
+							"title": "Gaplus",
 							"rom": "Gaplus_W.nes",
 							"img": "Gaplus_(front)_EU.jpg",
 							"genre": [
@@ -301,9 +301,19 @@
 						},
 						{
 							"id": 1256,
-							"title": "F-1 Race 🏁",
+							"title": "F-1 Race",
 							"rom": "F-1_Race_US.nes",
 							"img": "F-1_Race_Cover.jpg",
+							"genre": [
+								5
+							],
+							"release": 1984
+						},
+						{
+							"id": 1463,
+							"title": "Excitebike",
+							"rom": "Excitebike_JU.nes",
+							"img": "Excitebike_NA_01.png",
 							"genre": [
 								5
 							],

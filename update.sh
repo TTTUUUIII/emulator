@@ -127,6 +127,12 @@ MAP_ARRAY=(
     F-1_Race_Cover_Large.jpg
     F-1_Race_Cover.jpg
     nintendo/F-1_Race/
+
+    Excitebike_JU.nes
+    Excitebike_JU.nes
+    Excitebike_NA_01.png
+    Excitebike_NA_01.png
+    nintendo/Excitebike/
 )
 
 function pr_error() {

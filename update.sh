@@ -157,7 +157,7 @@ for ((i = 0; i < ${#MAP_ARRAY[@]}; i += 5)); do
     if [ ! -L "$DATA/images/$img_to" ]; then
         ln -s $SOURCE/$base$img $DATA/images/$img_to || rm $DATA/$rom_to
     else
-        pr_warn "Link $DATA/images/$img_to" already exists, skip.
+        pr_warn "Link $DATA/images/$img_to already exists, skip."
     fi
 done
 

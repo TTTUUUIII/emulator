@@ -300,6 +300,16 @@
 							"release": 1985
 						},
 						{
+							"id": 1466,
+							"title": "Ice Climber",
+							"rom": "Ice_Climber_JP.nes",
+							"img": "NES_Ice_Climber_01.jpg",
+							"genre": [
+								1
+							],
+							"release": 1985
+						},
+						{
 							"id": 1256,
 							"title": "F-1 Race",
 							"rom": "F-1_Race_US.nes",

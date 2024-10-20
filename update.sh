@@ -133,6 +133,12 @@ MAP_ARRAY=(
     Excitebike_NA_01.png
     Excitebike_NA_01.png
     nintendo/Excitebike/
+
+    Ice_Climber_JP.nes
+    Ice_Climber_JP.nes
+    NES_Ice_Climber_01.jpg
+    NES_Ice_Climber_01.jpg
+    nintendo/Ice_Climber/
 )
 
 function pr_error() {

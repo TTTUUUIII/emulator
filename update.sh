@@ -149,7 +149,7 @@ for ((i = 0; i < ${#MAP_ARRAY[@]}; i += 5)); do
 	img=${MAP_ARRAY[((i + 2))]}
 	img_to=${MAP_ARRAY[((i + 3))]}
 	base=${MAP_ARRAY[((i + 4))]}
-	if [ ! -L "$DATA/$rom" ]; then
+	if [ ! -L "$DATA/$rom_to" ]; then
         ln -s $SOURCE/$base$rom $DATA/$rom_to
 	else
         pr_warn "Link $DATA/$rom already exists, skip."

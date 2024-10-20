@@ -43,9 +43,16 @@
 }
 
 .launch-panel div > button {
-    width: 30%;
     transition: 300ms;
     background-color: #1AAFFF;
+}
+
+.launch-panel div > button:first-child {
+    width: 15%;
+}
+
+.launch-panel div > button:last-child {
+    width: 30%;
 }
 
 .launch-panel div > button:hover {
@@ -56,6 +63,7 @@
 .sliderbar {
     margin: 18px;
     width: 17%;
+    max-width: 300px;
     max-height: 100vh;
     z-index: 1;
     padding: 5px;

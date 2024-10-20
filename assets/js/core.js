@@ -1,6 +1,6 @@
 let delayedLaunch = false;
 $(function () {
-    if (getQueryVariable("id", -1) != -1 && !window.datamap) {
+    if (getQueryVariable("id", -1) != -1 && !Datamap.loaded()) {
         delayedLaunch = true;
     } else {
         launch();
@@ -67,18 +67,24 @@ let Emulator = {
 };
 
 let Datamap = {
-    init: () => {
+    _loaded: false,
+    _all_games: new Map(),
+    _all_genres: new Map(),
+    _all_series: new Map(),
+    init: function() {
         var request = new XMLHttpRequest();
         request.open("GET", "data/datamap.json", true);
         request.send();
         request.onreadystatechange = function () {
             if (request.readyState == 4 && request.status == 200) {
                 if (request.status == 200) {
-                    window.datamap = JSON.parse(request.responseText);
+                    Datamap.data = JSON.parse(request.responseText);
                     console.log("Datamap loaded.")
-                    console.log("Version:" + window.datamap["version"]);
-                    console.log("License:" + window.datamap["license"]);
-                    console.log("Description:" + window.datamap["description"]);
+                    console.log("Version:" + Datamap.data["version"]);
+                    console.log("License:" + Datamap.data["license"]);
+                    console.log("Description:" + Datamap.data["description"]);
+                    Datamap.__index();
+                    Datamap.loaded = true;
                     if (delayedLaunch) {
                         launch();
                         delayedLaunch = false;
@@ -89,59 +95,58 @@ let Datamap = {
             }
         };
     },
-    findGameById: (id) => {
-        let datamap = window.datamap;
-        if (datamap) {
-            for (let platform of datamap["data"]) {
+    __index: function() {
+        if (this.data) {
+
+            // Index games and series
+            for (let platform of this.data["data"]) {
+                let series = new Map();
+                for(let it of platform["series"]) {
+                    series.set(it["id"], it);
+                }
+                this._all_series.set(platform["system"], series);
+
                 for (let publisher of platform["data"]) {
                     for (let game of publisher["games"]) {
-                        if (game.id == id) {
-                            return {
-                                publisher: {
-                                    name: publisher["publisher"],
-                                    url: publisher["url"]
-                                },
-                                system: platform["system"],
-                                ...game
-                            };
-                        }
+                        this._all_games.set(game["id"], {
+                            publisher: {
+                                name: publisher["publisher"],
+                                url: publisher["url"]
+                            },
+                            system: platform["system"],
+                            ...game
+                        });
                     }
                 }
             }
-        }
 
-        return undefined;
-    },
-    findGenreById: (id) => {
-        let genres = window.datamap["genres"];
-        if (genres) {
-            for(let genre of genres) {
-                if(genre["id"] == id) return genre;
+            // Index Genres
+            for(let genre of this.data["genres"]) {
+                this._all_genres.set(genre["id"], genre);
             }
         }
-        return undefined;
     },
-    findSeriesById: (id, system) => {
-        let data = window.datamap["data"];
-        if (!data) return undefined;
-        let platform = undefined;
-        for(let it of data) {
-            if(it["system"] === system) {
-                platform = it;
-                break;
-            }
-        }
-        if (!platform) return undefined;
-        let series = platform["series"];
+    findGameById: function(id) {
+        return this._all_games.get(parseInt(id));
+    },
+    findGenreById: function(id) {
+        return this._all_genres.get(parseInt(id));
+    },
+    findSeriesById: function(id, system) {
+        let series = this._all_series.get(system);
         if (series) {
-            for (let it of series) {
-                if (it["id"] == id) return it;
-            }
+            return series.get(parseInt(id));
         }
         return undefined;
     },
-    exists: (id) => {
-        return Datamap.findGameById(id) != undefined;
+    random: function() {
+        return Array.from(this._all_games.keys())[Math.floor(Math.random() * this._all_games.size)];
+    },
+    exists: function(id) {
+        return this._all_games.has(parseInt(id));
+    },
+    loaded: function() {
+        return this._loaded;
     }
 };
 
@@ -171,12 +176,15 @@ function upper(str, n) {
 }
 
 let UI = {
-    init: () => {
+    init: function() {
+        $("#random").click(function() {
+            $("#game-id").val(Datamap.random());
+        });
         $("#launch").click(function () {
-            let id = $("#gameId").val();
+            let id = $("#game-id").val();
             id && forceReload(id, 1);
         });
-        $("#gameId").keypress((event) => {
+        $("#game-id").keypress((event) => {
             event.keyCode == 13 && event.target.value && forceReload(event.target.value, 1);
         });
         EJS_ready = () => {
@@ -186,7 +194,7 @@ let UI = {
             $("#viewport").css("opacity", "1");
         }
     },
-    input: (game) => {
+    input: function(game) {
         $("#game-img").attr("src", `data/images/${game["img"]}`);
         let title = game["title"];
         $("title").text("Emulator🕹 | " + title);

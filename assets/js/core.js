@@ -56,17 +56,16 @@ let Emulator = {
 
         // URL to Game rom
         EJS_gameUrl = "data/" + game["rom"];
-        let element = document.createElement("script");
-        element.setAttribute("type", "text/javascript");
-        element.setAttribute(
-            "src",
-            "https://cdn.emulatorjs.org/latest/data/loader.js"
-        );
-        document.getElementsByTagName("head")[0].appendChild(element);
+        $("head")
+            .append(
+                $("<script></script>")
+                    .attr("type", "text/javascript")
+                    .attr("src", "https://cdn.emulatorjs.org/latest/data/loader.js")
+            )
     }
 };
 
-let Datamap = {
+var Datamap = {
     _loaded: false,
     _all_games: new Map(),
     _all_genres: new Map(),
@@ -84,7 +83,7 @@ let Datamap = {
                     console.log("License:" + Datamap.data["license"]);
                     console.log("Description:" + Datamap.data["description"]);
                     Datamap.__index();
-                    Datamap.loaded = true;
+                    Datamap._loaded = true;
                     if (delayedLaunch) {
                         launch();
                         delayedLaunch = false;
@@ -239,7 +238,7 @@ let UI = {
             }
             if (temp) {
                 $("#game-details").append(
-                    // $(`<div class="card-item"><label>Genre(s)</label><div class="v-stack">${temp}<div></div>`)
+                    $(`<div class="card-item"><label>Genre(s)</label><div class="v-stack">${temp}<div></div>`)
                 );
             }
         }

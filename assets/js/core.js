@@ -239,7 +239,7 @@ let UI = {
             }
             if (temp) {
                 $("#game-details").append(
-                    $(`<div class="card-item"><label>Genre</label><div class="v-stack">${temp}<div></div>`)
+                    // $(`<div class="card-item"><label>Genre(s)</label><div class="v-stack">${temp}<div></div>`)
                 );
             }
         }

@@ -208,6 +208,14 @@ function update_link() {
 	done
 }
 
+function update_datamap() {
+    if [ ! -x "tools/jq" ]; then
+        chmod +x tools/jq
+    fi
+    tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json
+    return $?
+}
+
 function update_web() {
 	if [ ! -x "tools/jq" ]; then
 		chmod +x tools/jq
@@ -215,7 +223,7 @@ function update_web() {
 	cp index.html $WEB_ROOT/ &&
 		cp assets/css/* $WEB_ROOT/assets/css/ &&
 		cp data/images/* $WEB_ROOT/data/images/ &&
-		tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json &&
+		update_datamap &&
 		java -jar tools/closure-compiler.jar \
 			--js assets/js/settings.js \
 			--js assets/js/clock.js \
@@ -237,9 +245,10 @@ function help() {
 update.sh by wn123o.
 Usage: update.sh [option]
 Options:
-    --all
-    --update-link
-    --update-web
+    --all               Update link 、datamap and web files.
+    --update-link       Update link.
+    --update-web        Update datamap and web files.
+    --update-datamap    Update datamap.
     --debug
 """
 }
@@ -250,6 +259,9 @@ cd $HOME/.emulator && git pull &&
 		update_link
 		update_web
 		;;
+    --update-datamap)
+        update_datamap
+        ;;
 	--update-web)
 		update_web
 		;;

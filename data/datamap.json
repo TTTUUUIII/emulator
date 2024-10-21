@@ -219,18 +219,7 @@
 							"id": 1447,
 							"title": "Double Dragon",
 							"rom": "Double_Dragon_US.nes",
-							"img": "Double_Dragon_arcade_-_01.jpg",
-							"genre": [
-								3
-							],
-							"series_id": 9,
-							"release": 1987
-						},
-						{
-							"id": 1480,
-							"title": "Double Dragon II",
-							"rom": "Double_Dragon_II_-_The_Revenge_EU.nes",
-							"img": "Double_Dragon_II_The_Revenge_-_01.jpg",
+							"img": "Double_Dragon_NES_-_01.jpg",
 							"genre": [
 								3
 							],
@@ -238,10 +227,21 @@
 							"release": 1988
 						},
 						{
+							"id": 1480,
+							"title": "Double Dragon II",
+							"rom": "Double_Dragon_II_-_The_Revenge_EU.nes",
+							"img": "Double_Dragon_II_The_Revenge_NES_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 9,
+							"release": 1989
+						},
+						{
 							"id": 1482,
 							"title": "Double Dragon III",
 							"rom": "Double_Dragon_III_-_The_Sacred_Stones_US_.nes",
-							"img": "Double_Dragon_III_-_The_Rosetta_Stone_01.jpg",
+							"img": "Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg",
 							"genre": [
 								3
 							],

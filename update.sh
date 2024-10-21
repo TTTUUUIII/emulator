@@ -215,7 +215,7 @@ function update_web() {
 	cp index.html $WEB_ROOT/ &&
 		cp assets/css/* $WEB_ROOT/assets/css/ &&
 		cp data/images/* $WEB_ROOT/data/images/ &&
-		tools/jq --compact-output . data/datamap.js >$WEB_ROOT/data/datamap.js &&
+		tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json &&
 		java -jar tools/closure-compiler.jar \
 			--js assets/js/settings.js \
 			--js assets/js/clock.js \

@@ -82,7 +82,7 @@
 			"data": [
 				{
 					"publisher": "konami",
-					"url": "https://www.konami.com/",
+					"url": "https://snowland.ink/?tag=konami",
 					"games": [
 						{
 							"id": 1294,
@@ -174,7 +174,7 @@
 				},
 				{
 					"publisher": "hudson soft",
-					"url": "https://www.konami.com/",
+					"url": "https://snowland.ink/?tag=hudson-soft",
 					"games": [
 						{
 							"id": 1470,
@@ -213,7 +213,7 @@
 				},
 				{
 					"publisher": "technos",
-					"url": "https://en.wikipedia.org/wiki/Techn%C5%8Ds_Japan",
+					"url": "https://snowland.ink/?tag=technos",
 					"games": [
 						{
 							"id": 1447,
@@ -252,7 +252,7 @@
 				},
 				{
 					"publisher": "compile",
-					"url": "https://en.wikipedia.org/wiki/Compile_(company)",
+					"url": "https://snowland.ink/?tag=compile",
 					"games": [
 						{
 							"id": 946,

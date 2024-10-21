@@ -26,7 +26,7 @@ function launch() {
         game.img = getQueryVariable("img", "default.jpg");
         game.title = decodeURI(getQueryVariable("title", DEFAULT_SEO));
     }
-    UI.input(game);
+    UI.bind(game);
     let auto = getQueryVariable("auto", false);
     Emulator.launch(game, auto);
 }
@@ -68,6 +68,7 @@ let Emulator = {
 var Datamap = {
     _loaded: false,
     _all_games: new Map(),
+    _all_game_ids: [],
     _all_genres: new Map(),
     _all_series: new Map(),
     init: function() {
@@ -107,6 +108,7 @@ var Datamap = {
 
                 for (let publisher of platform["data"]) {
                     for (let game of publisher["games"]) {
+                        this._all_game_ids.push(game["id"]);
                         this._all_games.set(game["id"], {
                             publisher: {
                                 name: publisher["publisher"],
@@ -139,7 +141,7 @@ var Datamap = {
         return undefined;
     },
     random: function() {
-        return Array.from(this._all_games.keys())[Math.floor(Math.random() * this._all_games.size)];
+        return this._all_game_ids[Math.floor(Math.random() * this._all_game_ids.length)];
     },
     exists: function(id) {
         return this._all_games.has(parseInt(id));
@@ -170,8 +172,12 @@ function getQueryVariable(key, defaultValue) {
     return defaultValue;
 }
 
-function upper(str, n) {
-    return str.substring(0, n).toUpperCase() + str.substring(n);
+function upper(str) {
+    let tmp = str.split(" ");
+    for(let i = 0; i < tmp.length; i++) {
+        tmp[i] = tmp[i].substring(0, 1).toUpperCase() + tmp[i].substring(1);
+    }
+    return tmp.join(" ");
 }
 
 let UI = {
@@ -193,7 +199,7 @@ let UI = {
             $("#viewport").css("opacity", "1");
         }
     },
-    input: function(game) {
+    bind: function(game) {
         $("#game-img").attr("src", `data/images/${game["img"]}`);
         let title = game["title"];
         $("title").text("Emulator🕹 | " + title);
@@ -211,7 +217,7 @@ let UI = {
         }
         if (game["publisher"]) {
             $("#game-details").append(
-                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${upper(game["publisher"]["name"], 1)}</a></div>`)
+                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${upper(game["publisher"]["name"])}</a></div>`)
             );
         }
         if (game["release"]) {

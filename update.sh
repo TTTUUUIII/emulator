@@ -163,20 +163,20 @@ DATA_MAPPING=(
 	# Technos Japan
 	Double_Dragon_US.nes
 	Double_Dragon_US.nes
-	Double_Dragon_arcade_-_01.jpg
-	Double_Dragon_arcade_-_01.jpg
+	Double_Dragon_NES_-_01.jpg
+	Double_Dragon_NES_-_01.jpg
 	technos/Double_Dragon/
 
 	Double_Dragon_II_-_The_Revenge_EU.nes
 	Double_Dragon_II_-_The_Revenge_EU.nes
-	Double_Dragon_II_The_Revenge_-_01.jpg
-	Double_Dragon_II_The_Revenge_-_01.jpg
+	Double_Dragon_II_The_Revenge_NES_-_01.jpg
+	Double_Dragon_II_The_Revenge_NES_-_01.jpg
 	technos/Double_Dragon_II/
 
 	Double_Dragon_III_-_The_Sacred_Stones_US_.nes
 	Double_Dragon_III_-_The_Sacred_Stones_US_.nes
-	Double_Dragon_III_-_The_Rosetta_Stone_01.jpg
-	Double_Dragon_III_-_The_Rosetta_Stone_01.jpg
+	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
+	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 	technos/Double_Dragon_III/
 )
 

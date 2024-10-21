@@ -244,23 +244,22 @@ Options:
 """
 }
 
-git pull
-
-case $1 in
---all)
-	update_link
-	update_web
-	;;
---update-web)
-	update_web
-	;;
---update-link)
-	update_link
-	;;
---debug)
-	debug
-	;;
-*)
-	help
-	;;
-esac
+cd $HOME/.emulator && git pull &&
+	case $1 in
+	--all)
+		update_link
+		update_web
+		;;
+	--update-web)
+		update_web
+		;;
+	--update-link)
+		update_link
+		;;
+	--debug)
+		debug
+		;;
+	*)
+		help
+		;;
+	esac

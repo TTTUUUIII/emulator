@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WEB_ROOT=var/www/emulator.snowland.ink
+WEB_ROOT=/var/www/emulator.snowland.ink
 SOURCE=/var/www/media.snowland.ink/nes
 DATA_MAPPING=(
 	# KONAMI

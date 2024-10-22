@@ -203,11 +203,13 @@ function update_link() {
 		base=${DATA_MAPPING[((i + 4))]}
 		if [ ! -L "$WEB_ROOT/data/$rom_to" ]; then
 			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to
+			ls -l $WEB_ROOT/data/$rom_to
 		else
 			pr_warn "Link $WEB_ROOT/data/$rom already exists, skip."
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
-			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to || rm $WEB_ROOT/data/$rom_to
+			(ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to) ||
+				rm $WEB_ROOT/data/$rom_to
 		else
 			pr_warn "Link $WEB_ROOT/data/images/$img_to already exists, skip."
 		fi
@@ -215,11 +217,11 @@ function update_link() {
 }
 
 function update_datamap() {
-    if [ ! -x "tools/jq" ]; then
-        chmod +x tools/jq
-    fi
-    tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json
-    return $?
+	if [ ! -x "tools/jq" ]; then
+		chmod +x tools/jq
+	fi
+	tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json
+	return $?
 }
 
 function update_web() {
@@ -265,9 +267,9 @@ cd $HOME/.emulator && git pull &&
 		update_link
 		update_web
 		;;
-    --update-datamap)
-        update_datamap
-        ;;
+	--update-datamap)
+		update_datamap
+		;;
 	--update-web)
 		update_web
 		;;

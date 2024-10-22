@@ -169,6 +169,16 @@
 							],
 							"series_id": 6,
 							"release": 1989
+						},
+						{
+							"id": 1519,
+							"title": "Crisis Force",
+							"rom": "Crisis_Force_JP.nes",
+							"img": "Crisis_Force_-_01.jpg",
+							"genre": [
+								2
+							],
+							"release": 1991
 						}
 					]
 				},

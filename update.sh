@@ -52,6 +52,12 @@ DATA_MAPPING=(
 	TwinBee_3_-_Poko_Poko_Daimaou_-_01.jpg
 	konami/TwinBee_3/
 
+	Crisis_Force_JP.nes
+	Crisis_Force_JP.nes
+	Crisis_Force_-_01_large.jpg
+	Crisis_Force_-_01.jpg
+	konami/Crisis_Force/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes

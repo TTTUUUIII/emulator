@@ -194,7 +194,7 @@ function pr_warn() {
 	echo -e "\e[33m$1\e[0m"
 }
 
-function update_link() {
+function create_link() {
 	for ((i = 0; i < ${#DATA_MAPPING[@]}; i += 5)); do
 		rom=${DATA_MAPPING[((i))]}
 		rom_to=${DATA_MAPPING[((i + 1))]}
@@ -243,41 +243,32 @@ function update_web() {
 	return $?
 }
 
-# function debug() {
-# 	java -jar tools/closure-compiler.jar \
-# 		--js assets/js/settings.js \
-# 		--js assets/js/clock.js \
-# 		--js assets/js/core.js \
-# 		--js_output_file assets/js/main.min.js
-# }
-
 function help() {
 	echo """
 update.sh by wn123o.
 Usage: update.sh [option]
 Options:
     --all               Update link 、datamap and web files.
-    --update-link       Update link.
-    --update-web        Update datamap and web files.
-    --update-datamap    Update datamap.
-    --debug
+    --create-link       Create game link.
+    --web        Update datamap and web files.
+    --datamap    Update datamap.
 """
 }
 
 cd ${GITDIR:-.} && git pull &&
 	case $1 in
 	--all)
-		update_link
+		create_link
 		update_web
 		;;
-	--update-datamap)
+	--datamap)
 		update_datamap
 		;;
-	--update-web)
+	--web)
 		update_web
 		;;
-	--update-link)
-		update_link
+	--create-link)
+		create_link
 		;;
 	--help)
 		help

@@ -277,7 +277,9 @@ cd $HOME/.emulator && git pull &&
 	--debug)
 		debug
 		;;
-	*)
+	--help)
 		help
 		;;
+	*) ;;
+
 	esac

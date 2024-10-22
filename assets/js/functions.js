@@ -1,3 +1,12 @@
+/**
+ *
+ * @param {number} id
+ * @param {number} auto 
+ */
+function reload(id, auto) {
+    window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&auto=${auto}`);
+}
+
 function upper(str) {
     let tmp = str.split(" ");
     for (let i = 0; i < tmp.length; i++) {

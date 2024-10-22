@@ -1,14 +1,16 @@
 let delayedLaunch = false;
 
-$(function () {
-    if (getQueryVariable("id", -1) != -1 && !Datamap.loaded()) {
-        delayedLaunch = true;
+UI.onRandom = () => Datamap.random();
+UI.onGetGenre = (id) => Datamap.findGenreById(id);
+UI.onGetSeries = (id, platform) => Datamap.findSeriesById(id, platform);
+UI.onReload = (id, auto) => {
+    if(Datamap.exists(id)) {
+        reload(id, auto);
     } else {
-        launch();
+        console.warn(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
+        alert(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
     }
-    UI.init();
-    Clock.init($(".clock"));
-});
+}
 
 function launch() {
     let game = undefined;
@@ -24,20 +26,6 @@ function launch() {
     Emulator.launch(game, auto);
 }
 
-/**
- *
- * @param {number} id
- * @param {number} auto 
- */
-function forceReload(id, auto) {
-    if (Datamap.exists(id)) {
-        window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&auto=${auto}`);
-    } else {
-        console.warn(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
-        alert(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
-    }
-}
-
 Datamap.onload = function() {
     console.log("**************************************************")
     console.log(`* Version: ${Datamap.data["version"]}`)
@@ -49,3 +37,13 @@ Datamap.onload = function() {
 };
 
 Datamap.init();
+
+$(function () {
+    if (getQueryVariable("id", -1) != -1 && !Datamap.loaded()) {
+        delayedLaunch = true;
+    } else {
+        launch();
+    }
+    UI.init();
+    Clock.init($(".clock"));
+});

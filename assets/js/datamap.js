@@ -6,23 +6,22 @@ var Datamap = {
     _all_genres: new Map(),
     _all_series: new Map(),
     init: function () {
-        var request = new XMLHttpRequest();
-        request.open("GET", "data/datamap.json", true);
-        request.send();
-        request.onreadystatechange = function () {
-            if (request.readyState == 4 && request.status == 200) {
-                if (request.status == 200) {
-                    Datamap.data = JSON.parse(request.responseText);
-                    Datamap.__index();
-                    Datamap._loaded = true;
-                    if(Datamap.onload) {
-                        Datamap.onload();
-                    }
-                } else {
-                    console.error("Falied to request datamap." + request.status);
+        $.ajax({
+            url:"data/datamap.json", 
+            async: true,
+            dataType: "json", 
+            success: function(data) {
+                Datamap.data = data;
+                Datamap.__index();
+                Datamap._loaded = true;
+                if(Datamap.onload) {
+                    Datamap.onload();
                 }
+            },
+            error: function(_, status) {
+                console.error(`Failed to request datamap.json ${status}`);
             }
-        };
+        });
     },
     __index: function () {
         if (this.data) {

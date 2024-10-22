@@ -1,14 +1,18 @@
 var UI = {
+    onReload: undefined,
+    onGetSeries: undefined,
+    onGetGenre: undefined,
+    onRandom: undefined,
     init: function () {
-        $("#random").click(function () {
-            $("#game-id").val(Datamap.random());
+        $("#random").click(() => {
+            $("#game-id").val(this.onRandom());
         });
-        $("#launch").click(function () {
+        $("#launch").click(() => {
             let id = $("#game-id").val();
-            id && forceReload(id, 1);
+            id && this.onReload(id, 1);
         });
         $("#game-id").keypress((event) => {
-            event.keyCode == 13 && event.target.value && forceReload(event.target.value, 1);
+            event.keyCode == 13 && event.target.value && this.onReload(event.target.value, 1);
         });
         EJS_ready = () => {
             $("#viewport").css("opacity", "0.8");
@@ -45,7 +49,7 @@ var UI = {
             );
         }
         if (game["system"] && game["series_id"]) {
-            let series = Datamap.findSeriesById(game["series_id"], game["system"]);
+            let series = this.onGetSeries(game["series_id"], game["system"]);
             if (series) {
                 $("#game-details").append(
                     $(`<div class="card-item"><label>Series</label><a href="${series["url"]}" target="_blank">${series["title"]}</a></div>`)
@@ -56,7 +60,7 @@ var UI = {
         if (genreIds) {
             let temp = "";
             for (let id of genreIds) {
-                let genre = Datamap.findGenreById(id);
+                let genre = this.onGetGenre(id);
                 if (genre) {
                     temp += `<a href="${genre["url"] ?? "#"}" target="_blank">${genre["title"]}</a>`;
                 }

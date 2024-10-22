@@ -230,23 +230,26 @@ function update_web() {
 	fi
 	cp index.html $WEB_ROOT/ &&
 		cp assets/css/* $WEB_ROOT/assets/css/ &&
-		cp data/images/* $WEB_ROOT/data/images/ &&
+		cp assets/img/* $WEB_ROOT/assets/img/ &&
 		update_datamap &&
 		java -jar tools/closure-compiler.jar \
-			--js assets/js/settings.js \
+			--js assets/js/functions.js \
+			--js assets/js/datamap.js \
+			--js assets/js/ui.js \
+			--js assets/js/emulator.js \
 			--js assets/js/clock.js \
-			--js assets/js/core.js \
+			--js assets/js/main.js \
 			--js_output_file $WEB_ROOT/assets/js/main.min.js
 	return $?
 }
 
-function debug() {
-	java -jar tools/closure-compiler.jar \
-		--js assets/js/settings.js \
-		--js assets/js/clock.js \
-		--js assets/js/core.js \
-		--js_output_file assets/js/main.min.js
-}
+# function debug() {
+# 	java -jar tools/closure-compiler.jar \
+# 		--js assets/js/settings.js \
+# 		--js assets/js/clock.js \
+# 		--js assets/js/core.js \
+# 		--js_output_file assets/js/main.min.js
+# }
 
 function help() {
 	echo """
@@ -261,7 +264,7 @@ Options:
 """
 }
 
-cd $HOME/.emulator && git pull &&
+cd ${GITDIR:-.} && git pull &&
 	case $1 in
 	--all)
 		update_link
@@ -275,9 +278,6 @@ cd $HOME/.emulator && git pull &&
 		;;
 	--update-link)
 		update_link
-		;;
-	--debug)
-		debug
 		;;
 	--help)
 		help

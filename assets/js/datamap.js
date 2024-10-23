@@ -29,18 +29,20 @@ var Datamap = {
             // Index games and series
             for (let platform of this.data["data"]) {
                 let series = new Map();
-                for (let it of platform["series"]) {
-                    series.set(it["id"], it);
+                if(platform["series"]) {
+                    for (let it of platform["series"]) {
+                        series.set(it["id"], it);
+                    }
                 }
                 this._all_series.set(platform["system"], series);
 
-                for (let publisher of platform["data"]) {
-                    for (let game of publisher["games"]) {
+                for (let developer of platform["data"]) {
+                    for (let game of developer["games"]) {
                         this._all_game_ids.push(game["id"]);
                         this._all_games.set(game["id"], {
-                            publisher: {
-                                name: publisher["publisher"],
-                                url: publisher["url"]
+                            developer: {
+                                name: developer["developer"],
+                                url: developer["url"]
                             },
                             system: platform["system"],
                             ...game

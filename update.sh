@@ -3,6 +3,7 @@
 WEB_ROOT=/var/www/emulator.snowland.ink
 SOURCE=/var/www/media.snowland.ink
 DATA_MAPPING=(
+	# NES
 	# KONAMI
 	Circus_Charlie_JP.nes
 	Circus_Charlie_JP.nes
@@ -184,6 +185,13 @@ DATA_MAPPING=(
 	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 	nes/technos/Double_Dragon_III/
+
+	#Sega
+	Twin-Cobra_Genesis_EN.zip
+	Twin-Cobra_Genesis_EN.zip
+	Twin_Cobra_-_MDUS_01.jpg
+	Twin_Cobra_-_MDUS_01.jpg
+	sega/genesis/toaplan/Twin_Cobra/
 )
 
 function pr_error() {

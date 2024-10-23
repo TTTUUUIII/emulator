@@ -9,7 +9,7 @@
 		},
 		{
 			"id": 2,
-			"title": "Shoot 'em up",
+			"title": "STG",
 			"url": "https://snowland.ink/?tag=flight"
 		},
 		{
@@ -81,7 +81,7 @@
 			],
 			"data": [
 				{
-					"publisher": "konami",
+					"developer": "konami",
 					"url": "https://snowland.ink/?tag=konami",
 					"games": [
 						{
@@ -183,7 +183,7 @@
 					]
 				},
 				{
-					"publisher": "hudson soft",
+					"developer": "hudson soft",
 					"url": "https://snowland.ink/?tag=hudson-soft",
 					"games": [
 						{
@@ -222,7 +222,7 @@
 					]
 				},
 				{
-					"publisher": "technos",
+					"developer": "technos",
 					"url": "https://snowland.ink/?tag=technos",
 					"games": [
 						{
@@ -261,7 +261,7 @@
 					]
 				},
 				{
-					"publisher": "compile",
+					"developer": "compile",
 					"url": "https://snowland.ink/?tag=compile",
 					"games": [
 						{
@@ -277,7 +277,7 @@
 					]
 				},
 				{
-					"publisher": "capcom",
+					"developer": "capcom",
 					"url": "https://snowland.ink/?tag=capcom",
 					"games": [
 						{
@@ -327,7 +327,7 @@
 					]
 				},
 				{
-					"publisher": "namco",
+					"developer": "namco",
 					"url": "https://snowland.ink/?tag=namco",
 					"games": [
 						{
@@ -383,7 +383,7 @@
 					]
 				},
 				{
-					"publisher": "nintendo",
+					"developer": "nintendo",
 					"url": "https://snowland.ink/?tag=nintendo",
 					"games": [
 						{
@@ -426,6 +426,27 @@
 								5
 							],
 							"release": 1984
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Sega Mega Drive",
+			"system": "segaMD",
+			"data": [
+				{
+					"developer": "Toaplan",
+					"url": "https://snowland.ink/?tag=toaplan",
+					"games": [
+						{
+							"id": 1526,
+							"title": "Twin Cobra",
+							"rom": "Twin-Cobra_Genesis_EN.zip",
+							"genre": [
+								2
+							],
+							"release": 1987
 						}
 					]
 				}

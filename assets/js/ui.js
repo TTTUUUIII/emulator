@@ -38,9 +38,9 @@ var UI = {
                 $(`<div class="card-item"><label>ID</label><p>${game["id"]}</p></div>`)
             );
         }
-        if (game["publisher"]) {
+        if (game["developer"]) {
             $("#game-details").append(
-                $(`<div class="card-item"><label>Publisher</label><a href="${game["publisher"]["url"] ?? "#"}" target="_blank">${upper(game["publisher"]["name"])}</a></div>`)
+                $(`<div class="card-item"><label>Developer</label><a href="${game["developer"]["url"] ?? "#"}" target="_blank">${upper(game["developer"]["name"])}</a></div>`)
             );
         }
         if (game["release"]) {

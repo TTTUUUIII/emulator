@@ -2,7 +2,7 @@ let delayedLaunch = false;
 
 UI.onRandom = () => Datamap.random();
 UI.onGetGenre = (id) => Datamap.findGenreById(id);
-UI.onGetSeries = (id, platform) => Datamap.findSeriesById(id, platform);
+UI.onGetSeries = (game) => Datamap.findSeriesByGame(game);
 UI.onReload = (id, auto) => {
     if(Datamap.exists(id)) {
         reload(id, auto);

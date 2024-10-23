@@ -192,6 +192,12 @@ DATA_MAPPING=(
 	Twin_Cobra_-_MDUS_01.jpg
 	Twin_Cobra_-_MDUS_01.jpg
 	sega/genesis/toaplan/Twin_Cobra/
+
+	Contra_-_The_Hard_Corps_JP.zip
+	Contra_-_The_Hard_Corps_JP.zip
+	Contra_-_Hard_Corps_-_NA_-_01.jpg
+	Contra_-_Hard_Corps_-_NA_-_01.jpg
+	sega/genesis/konami/Contra_-_Hard_Corps/
 )
 
 function pr_error() {

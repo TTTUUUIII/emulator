@@ -186,6 +186,13 @@ DATA_MAPPING=(
 	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 	nes/technos/Double_Dragon_III/
 
+	# Naxat Soft
+	Summer_Carnival_\'92_-_Recca_JP.nes
+	Summer_Carnival_\'92_-_Recca_JP.nes
+	Summer_Carnival_92_Recca_JP_01_large.jpg
+	Summer_Carnival_92_Recca_JP_01.jpg
+	nes/naxat_soft/Summer_Carnival_\'92/
+
 	#Sega
 	Twin-Cobra_Genesis_EN.zip
 	Twin-Cobra_Genesis_EN.zip

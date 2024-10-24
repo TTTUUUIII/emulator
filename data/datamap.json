@@ -116,7 +116,8 @@
 							"rom": "Contra_JP.nes",
 							"img": "Contra_Logo_01.png",
 							"genre": [
-								6
+								6,
+								1
 							],
 							"series_id": 1,
 							"release": 1987
@@ -127,7 +128,8 @@
 							"rom": "Super_Contra_JP.nes",
 							"img": "Super_Contra_(arcade)_-_01.png",
 							"genre": [
-								6
+								6,
+								1
 							],
 							"series_id": 1,
 							"release": 1988
@@ -431,6 +433,22 @@
 								5
 							],
 							"release": 1984
+						}
+					]
+				},
+				{
+					"developer": "naxat soft",
+					"url": "https://snowland.ink/?tag=naxat-soft",
+					"games": [
+						{
+							"id": 1545,
+							"title": "Summer Carnival'92: Recca",
+							"rom": "Summer_Carnival_'92_-_Recca_JP.nes",
+							"img": "Summer_Carnival_92_Recca_JP_01.jpg",
+							"genre": [
+								2
+							],
+							"release": 1992
 						}
 					]
 				}

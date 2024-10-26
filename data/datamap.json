@@ -186,6 +186,26 @@
 								2
 							],
 							"release": 1991
+						},
+						{
+							"id": 1555,
+							"title": "The Goonies",
+							"rom": "Goonies_JP.nes",
+							"img": "The_Goonies_Famicom_01.jpg",
+							"genre": [
+								1
+							],
+							"release": 1986
+						},
+						{
+							"id": 1563,
+							"title": "The Goonies II: The Fratellis’ Last Stand",
+							"rom": "Goonies_II_US.nes",
+							"img": "The_Goonies_II_01.jpg",
+							"genre": [
+								1
+							],
+							"release": 1987
 						}
 					]
 				},

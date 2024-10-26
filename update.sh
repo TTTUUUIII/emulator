@@ -59,6 +59,18 @@ DATA_MAPPING=(
 	Crisis_Force_-_01.jpg
 	nes/konami/Crisis_Force/
 
+	Goonies_JP.nes
+	Goonies_JP.nes
+	The_Goonies_Famicom_01.jpg
+	The_Goonies_Famicom_01.jpg
+	nes/konami/The_Goonies/
+
+	Goonies_II_US.nes
+	Goonies_II_US.nes
+	The_Goonies_II_01.jpg
+	The_Goonies_II_01.jpg
+	nes/konami/The_Goonies_II/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes

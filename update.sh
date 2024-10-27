@@ -210,13 +210,19 @@ DATA_MAPPING=(
 	Twin-Cobra_Genesis_EN.zip
 	Twin_Cobra_-_MDUS_01.jpg
 	Twin_Cobra_-_MDUS_01.jpg
-	sega/genesis/toaplan/Twin_Cobra/
+	sega-genesis/toaplan/Twin_Cobra/
 
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_Hard_Corps_-_NA_-_01.jpg
 	Contra_-_Hard_Corps_-_NA_-_01.jpg
-	sega/genesis/konami/Contra_-_Hard_Corps/
+	sega-genesis/konami/Contra_-_Hard_Corps/
+
+	Thunder_Force_III_JU.zip
+	Thunder_Force_III_JU.zip
+	Thunder_Force_III_SegaMD_01.jpg
+	Thunder_Force_III_SegaMD_01.jpg
+	sega-genesis/technosoft/Thunder_Force_III/
 )
 
 function pr_error() {
@@ -237,14 +243,10 @@ function create_link() {
 		if [ ! -L "$WEB_ROOT/data/$rom_to" ]; then
 			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to
 			ls -l $WEB_ROOT/data/$rom_to
-		else
-			pr_warn "Link $WEB_ROOT/data/$rom already exists, skip."
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
 			(ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to) ||
 				rm $WEB_ROOT/data/$rom_to
-		else
-			pr_warn "Link $WEB_ROOT/data/images/$img_to already exists, skip."
 		fi
 	done
 }

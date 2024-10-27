@@ -223,6 +223,12 @@ DATA_MAPPING=(
 	Thunder_Force_III_SegaMD_01.jpg
 	Thunder_Force_III_SegaMD_01.jpg
 	sega-genesis/technosoft/Thunder_Force_III/
+
+	Thunder_Force_II_UE.zip
+	Thunder_Force_II_UE.zip
+	Thunder_Force_II_US_01.jpg
+	Thunder_Force_II_US_01.jpg
+	sega-genesis/technosoft/Thunder_Force_II/
 )
 
 function pr_error() {

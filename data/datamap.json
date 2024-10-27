@@ -531,6 +531,17 @@
 							],
 							"series_id": 1,
 							"release": 1990
+						},
+						{
+							"id": 1572,
+							"title": "Thunder Force II",
+							"rom": "Thunder_Force_II_UE.zip",
+							"img": "Thunder_Force_II_US_01.jpg",
+							"genre": [
+								2
+							],
+							"series_id": 1,
+							"release": 1988
 						}
 					]
 				}

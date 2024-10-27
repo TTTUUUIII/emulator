@@ -296,7 +296,7 @@ Options:
 """
 }
 
-cd ${GITDIR:-.} && git pull &&
+cd ${GITDIR:-.} && git pull >/dev/null &&
 	case $1 in
 	--all)
 		create_link

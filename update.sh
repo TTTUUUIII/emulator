@@ -73,20 +73,20 @@ DATA_MAPPING=(
 
 	Akumajou_Dracula_JP.nes
 	Akumajou_Dracula_JP.nes
-	Castlevania_Series_NES_Poster.jpg
-	Castlevania_Series_NES_Poster.jpg
+	Castlevania_-_NA_-_01.jpg
+	Castlevania_-_NA_-_01.jpg
 	nes/konami/Castlevania/
 
 	Castlevania_II_-_Simon\'s_Quest_US.nes
 	Castlevania_II_-_Simon\'s_Quest_US.nes
-	Castlevania_Series_NES_Poster.jpg
-	Castlevania_Series_NES_Poster.jpg
+	Castlevania_II_Simno\'s_Quest_01.jpg
+	Castlevania_II_Simno\'s_Quest_01.jpg
 	nes/konami/Castlevania_II/
 
 	Castlevania_III_-_Dracula\'s_Curse_US.nes
 	Castlevania_III_-_Dracula\'s_Curse_US.nes
-	Castlevania_Series_NES_Poster.jpg
-	Castlevania_Series_NES_Poster.jpg
+	Castlevania_III_-_Dracula\'s_Curse_-_NA_-_01.jpg
+	Castlevania_III_-_Dracula\'s_Curse_-_NA_-_01.jpg
 	nes/konami/Castlevania_III/
 
 	# Hudson Soft

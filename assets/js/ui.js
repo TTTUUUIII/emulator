@@ -36,7 +36,7 @@ var UI = {
         $("#game-title").text(title);
         $("#game-img").attr("src", `data/images/${game["img"]}`);
         let series = this.onGetSeries(game);
-        $("img.main-background").attr("src", `data/imges/${(series && series["poster"]) ? series["poster"] : game["img"]}`);
+        $("img.main-background").attr("src", `data/images/${(series && series["poster"]) ? series["poster"] : game["img"]}`);
         if (game["id"]) {
             $("#game-details").append(
                 $(

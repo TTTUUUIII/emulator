@@ -71,6 +71,24 @@ DATA_MAPPING=(
 	The_Goonies_II_01.jpg
 	nes/konami/The_Goonies_II/
 
+	Akumajou_Dracula_JP.nes
+	Akumajou_Dracula_JP.nes
+	Castlevania_Series_NES_Poster.jpg
+	Castlevania_Series_NES_Poster.jpg
+	nes/konami/Castlevania/
+
+	Castlevania_II_-_Simon\'s_Quest_US.nes
+	Castlevania_II_-_Simon\'s_Quest_US.nes
+	Castlevania_Series_NES_Poster.jpg
+	Castlevania_Series_NES_Poster.jpg
+	nes/konami/Castlevania_II/
+
+	Castlevania_III_-_Dracula's_Curse_US.nes
+	Castlevania_III_-_Dracula's_Curse_US.nes
+	Castlevania_Series_NES_Poster.jpg
+	Castlevania_Series_NES_Poster.jpg
+	nes/konami/Castlevania_III/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes
@@ -251,6 +269,9 @@ function create_link() {
 			ls -l $WEB_ROOT/data/$rom_to
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
+			if [ ! -f $SOURCE/$base$img ] && [ -f $SOURCE/images/$img ]; then
+				base=images/
+			fi
 			(ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to) ||
 				rm $WEB_ROOT/data/$rom_to
 		fi

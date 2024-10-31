@@ -82,6 +82,11 @@
 					"id": 9,
 					"title": "🥊 Double Dragon",
 					"url": "https://snowland.ink/?tag=double-dragon_series"
+				},
+				{
+					"id": 10,
+					"title": "🦇 Castlevania",
+					"url": "https://snowland.ink/?tag=castlevania_series"
 				}
 			],
 			"data": [
@@ -206,6 +211,39 @@
 								1
 							],
 							"release": 1987
+						},
+						{
+							"id": 1625,
+							"title": "Castlevania",
+							"rom": "Akumajou_Dracula_JP.nes",
+							"img": "Castlevania_Series_NES_Poster.jpg",
+							"genre": [
+								1, 3
+							],
+							"series_id": 10,
+							"release": 1986
+						},
+						{
+							"id": 1630,
+							"title": "Castlevania II: Simon's Quest",
+							"rom": "Castlevania_II_-_Simon's_Quest_US.nes",
+							"img": "Castlevania_Series_NES_Poster.jpg",
+							"genre": [
+								1, 3
+							],
+							"series_id": 10,
+							"release": 1987
+						},
+						{
+							"id": 1640,
+							"title": "Castlevania III: Dracula's Curse",
+							"rom": "Castlevania_III_-_Dracula's_Curse_US.nes",
+							"img": "Castlevania_Series_NES_Poster.jpg",
+							"genre": [
+								1, 3
+							],
+							"series_id": 10,
+							"release": 1989
 						}
 					]
 				},

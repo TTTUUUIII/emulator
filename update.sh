@@ -83,8 +83,8 @@ DATA_MAPPING=(
 	Castlevania_Series_NES_Poster.jpg
 	nes/konami/Castlevania_II/
 
-	Castlevania_III_-_Dracula's_Curse_US.nes
-	Castlevania_III_-_Dracula's_Curse_US.nes
+	Castlevania_III_-_Dracula\'s_Curse_US.nes
+	Castlevania_III_-_Dracula\'s_Curse_US.nes
 	Castlevania_Series_NES_Poster.jpg
 	Castlevania_Series_NES_Poster.jpg
 	nes/konami/Castlevania_III/

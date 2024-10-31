@@ -64,7 +64,7 @@ var Datamap = {
     },
     findGameById: function (id) {
         let game = this._all_games.get(parseInt(id));
-        if(game.developer.name.startsWith("@")) {
+        if(game && game.developer && game.developer.name.startsWith("@")) {
             game.developer = this._all_developers.get(game.developer.name.substring(1));
         }
         return game;

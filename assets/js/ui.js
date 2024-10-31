@@ -35,7 +35,9 @@ var UI = {
         }
         $("#game-title").text(title);
         $("#game-img").attr("src", `data/images/${game["img"]}`);
-        $("img.main-background").attr("src", `data/images/${game["img"]}`);
+        let series = this.onGetSeries(game);
+        let background_url = (series && series["poster"]) ? `images/${series["poster"]}` : `data/imges/${game["img"]}`;
+        $("img.main-background").attr("src", background_url);
         if (game["id"]) {
             $("#game-details").append(
                 $(
@@ -61,7 +63,6 @@ var UI = {
                 )
             );
         }
-        let series = this.onGetSeries(game);
         if (series) {
             $("#game-details").append(
                 $(

@@ -275,9 +275,6 @@ function create_link() {
 			ls -l $WEB_ROOT/data/$rom_to
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
-			if [ ! -f $SOURCE/$base$img ] && [ -f $SOURCE/images/$img ]; then
-				base=images/
-			fi
 			(ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to) ||
 				rm $WEB_ROOT/data/$rom_to
 		fi

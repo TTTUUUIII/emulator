@@ -272,6 +272,7 @@ function create_link() {
 		base=${DATA_MAPPING[((i + 4))]}
 		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
 			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && echo "New ROM Link $SOURCE/$base$rom"
+		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
 			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && echo "New IMG Link $SOURCE/$base$img"
 		fi

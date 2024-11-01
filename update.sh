@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. data-mapping.sh
+. "$(dirname `readlink -f $0`)/data-mapping.sh"
 
 WEB_ROOT=/var/www/emulator.snowland.ink
 SOURCE=/var/www/media.snowland.ink

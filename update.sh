@@ -271,13 +271,11 @@ function create_link() {
 		img_to=${DATA_MAPPING[((i + 3))]}
 		base=${DATA_MAPPING[((i + 4))]}
 		if [ ! -L "$WEB_ROOT/data/$rom_to" ]; then
-			echo "Link $WEB_ROOT/data/$rom_to"
-			# ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && ls -l $WEB_ROOT/data/$rom_to
+			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && ls -l $WEB_ROOT/data/$rom_to
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
 		echo "Link $WEB_ROOT/data/images/$img_to"
-			# (ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to) ||
-			# 	rm $WEB_ROOT/data/$rom_to
+			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to
 		fi
 	done
 }

@@ -270,11 +270,10 @@ function create_link() {
 		img=${DATA_MAPPING[((i + 2))]}
 		img_to=${DATA_MAPPING[((i + 3))]}
 		base=${DATA_MAPPING[((i + 4))]}
-		if [ ! -L "$WEB_ROOT/data/$rom_to" ]; then
-			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && ls -l $WEB_ROOT/data/$rom_to
-		fi
-		if [ ! -L "$WEB_ROOT/data/images/$img_to" ]; then
-			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && ls -l $WEB_ROOT/data/images/$img_to
+		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
+			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && echo "New ROM Link $SOURCE/$base$rom"
+		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
+			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && echo "New IMG Link $SOURCE/$base$img"
 		fi
 	done
 }

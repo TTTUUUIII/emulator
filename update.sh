@@ -236,6 +236,12 @@ DATA_MAPPING=(
 	Contra_-_Hard_Corps_-_NA_-_01.jpg
 	sega-genesis/konami/Contra_-_Hard_Corps/
 
+	Castlevania_-_Bloodlines_US.zip
+	Castlevania_-_Bloodlines_US.zip
+	Castlevania_-_Bloodlines_-_NA_-_01.jpg
+	Castlevania_-_Bloodlines_-_NA_-_01.jpg
+	sega-genesis/konami/Castlevania_-_Bloodlines/
+
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III_SegaMD_01.jpg

@@ -236,6 +236,13 @@ DATA_MAPPING=(
 	Super_Castlevania_IV_-_NA_-_01.jpg
 	snes/konami/Super_Castlevania_IV/
 
+	# technosoft
+	Thunder_Spirits_US.zip
+	Thunder_Spirits_US.zip
+	Thunder_Spirits_NA_-_01.jpg
+	Thunder_Spirits_NA_-_01.jpg
+	snes/technosoft/Thunder_Spirits/
+
 	#Sega MD
 	Twin-Cobra_Genesis_EN.zip
 	Twin-Cobra_Genesis_EN.zip

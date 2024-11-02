@@ -389,22 +389,22 @@
 							],
 							"series_id": 7,
 							"release": 1993
-						},
+						}
+					]
+				},
+				{
+					"developer": "toaplan",
+					"url": "https://snowland.ink/?tag=toaplan",
+					"games": [
 						{
-							"developer": "toaplan",
-							"url": "https://snowland.ink/?tag=toaplan",
-							"games": [
-								{
-									"id": 1734,
-									"title": "Twin Cobra",
-									"rom": "Twin_Cobra_US.nes",
-									"img": "Twin_Cobra_NES_NA_01.jpg",
-									"genre": [
-										2
-									],
-									"release": 1989
-								}
-							]
+							"id": 1734,
+							"title": "Twin Cobra",
+							"rom": "Twin_Cobra_US.nes",
+							"img": "Twin_Cobra_NES_NA_01.jpg",
+							"genre": [
+								2
+							],
+							"release": 1989
 						}
 					]
 				},

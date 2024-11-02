@@ -114,6 +114,13 @@ DATA_MAPPING=(
 	GunNacUSCover.jpg
 	nes/compile/gun-nac/
 
+	# Toaplan
+	Twin_Cobra_US.nes
+	Twin_Cobra_US.nes
+	Twin_Cobra_NES_NA_01.jpg
+	Twin_Cobra_NES_NA_01.jpg
+	nes/toaplan/Twin_Cobra/
+
 	# Capcom
 	1942_US.nes
 	1942_US.nes

@@ -14,12 +14,12 @@
 		},
 		{
 			"id": 3,
-			"title": "A-AVG",
+			"title": "ATC",
 			"url": "https://snowland.ink/?tag=action-adventure"
 		},
 		{
 			"id": 4,
-			"title": "Fighting",
+			"title": "FTG",
 			"url": "https://snowland.ink/?tag=fighting"
 		},
 		{
@@ -50,22 +50,22 @@
 				},
 				{
 					"id": 3,
-					"title": "🛩️ Gradius",
+					"title": "Gradius",
 					"url": "https://snowland.ink/?tag=gradius_series"
 				},
 				{
 					"id": 4,
-					"title": "🛩️ 194x",
+					"title": "194x",
 					"url": "https://snowland.ink/?tag=194x_series"
 				},
 				{
 					"id": 5,
-					"title": "🛩️ Galaxian",
+					"title": "Galaxian",
 					"url": "https://snowland.ink/?tag=galaxian_series"
 				},
 				{
 					"id": 6,
-					"title": "🛩️ TwinBee",
+					"title": "TwinBee",
 					"url": "https://snowland.ink/?tag=twinbee_series"
 				},
 				{
@@ -80,7 +80,7 @@
 				},
 				{
 					"id": 9,
-					"title": "🥊 Double Dragon",
+					"title": "Double Dragon",
 					"url": "https://snowland.ink/?tag=double-dragon_series"
 				},
 				{

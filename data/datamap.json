@@ -530,6 +530,28 @@
 			]
 		},
 		{
+			"title": "Super Nintendo Entertainment System",
+			"system": "snes",
+			"data": [
+				{
+					"developer": "@nes/konami",
+					"games": [
+						{
+							"id": 1744,
+							"title": "Super Castlevania IV",
+							"rom": "Super_Castlevania_IV_US.zip",
+							"img": "Super_Castlevania_IV_-_NA_-_01.jpg",
+							"genre": [
+								1, 3
+							],
+							"series_id": "@nes/10",
+							"release": 1991
+						}
+					]
+				}
+			]
+		},
+		{
 			"title": "Sega Mega Drive",
 			"system": "segaMD",
 			"series": [

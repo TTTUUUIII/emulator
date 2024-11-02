@@ -228,7 +228,15 @@ DATA_MAPPING=(
 	Summer_Carnival_92_Recca_JP_01.jpg
 	nes/naxat_soft/Summer_Carnival_\'92/
 
-	#Sega
+	# SNES
+	# Konami
+	Super_Castlevania_IV_US.zip
+	Super_Castlevania_IV_US.zip
+	Super_Castlevania_IV_-_NA_-_01.jpg
+	Super_Castlevania_IV_-_NA_-_01.jpg
+	snes/konami/Super_Castlevania_IV/
+
+	#Sega MD
 	Twin-Cobra_Genesis_EN.zip
 	Twin-Cobra_Genesis_EN.zip
 	Twin_Cobra_-_MDUS_01.jpg

@@ -83,6 +83,10 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 	--mapping | --update-mapping)
 		create_link
 		;;
+	--game | --add-game)
+		create_link
+		update_datamap
+		;;
 	--help)
 		help
 		;;

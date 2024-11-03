@@ -282,5 +282,5 @@ DATA_MAPPING=(
 	Out_of_This_World_US.zip
 	Another-World_NA_-_01.jpg
 	Another-World_NA_-_01.jpg
-	sega-genesis/delphine-software/Another_World/
+	sega-genesis/delphine_software/Another_World/
 )

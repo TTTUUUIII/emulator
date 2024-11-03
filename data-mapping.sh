@@ -244,12 +244,14 @@ DATA_MAPPING=(
 	snes/technosoft/Thunder_Spirits/
 
 	#Sega MD
+	# toaplan
 	Twin-Cobra_Genesis_EN.zip
 	Twin-Cobra_Genesis_EN.zip
 	Twin_Cobra_-_MDUS_01.jpg
 	Twin_Cobra_-_MDUS_01.jpg
 	sega-genesis/toaplan/Twin_Cobra/
 
+	# Konami
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_Hard_Corps_-_NA_-_01.jpg
@@ -262,6 +264,7 @@ DATA_MAPPING=(
 	Castlevania_-_Bloodlines_-_NA_-_01.jpg
 	sega-genesis/konami/Castlevania_-_Bloodlines/
 
+	# Technosoft
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III_SegaMD_01.jpg
@@ -273,4 +276,11 @@ DATA_MAPPING=(
 	Thunder_Force_II_US_01.jpg
 	Thunder_Force_II_US_01.jpg
 	sega-genesis/technosoft/Thunder_Force_II/
+
+	# Delphine
+	Out_of_This_World_US.zip
+	Out_of_This_World_US.zip
+	Another-World_NA_-_01.jpg
+	Another-World_NA_-_01.jpg
+	sega-genesis/delphine-software/Another_World/
 )

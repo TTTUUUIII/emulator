@@ -236,6 +236,12 @@ DATA_MAPPING=(
 	Super_Castlevania_IV_-_NA_-_01.jpg
 	snes/konami/Super_Castlevania_IV/
 
+	Castlevania_-_Dracula_X_US.zip
+	Castlevania_-_Dracula_X_US.zip
+	Castlevania_Dracula_X_NA_-_01.jpg
+	Castlevania_Dracula_X_NA_-_01.jpg
+	snes/konami/Castlevania_Dracula_X/
+
 	# technosoft
 	Thunder_Spirits_US.zip
 	Thunder_Spirits_US.zip

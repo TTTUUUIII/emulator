@@ -20,7 +20,6 @@
     width:100%;
     height: 100vh;
     object-fit: cover;
-    object-position: 0px 50%;
     position: fixed;
     opacity: 0.4;
     filter: blur(8px);

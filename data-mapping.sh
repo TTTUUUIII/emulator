@@ -15,6 +15,12 @@ DATA_MAPPING=(
 	Salamander_NES.jpg
 	nes/konami/salamander/
 
+	Gradius_II_JP.nes
+	Gradius_II_JP.nes
+	Gradius_II_-_GOFER_no_Yabou_-_01.jpg
+	Gradius_II_-_GOFER_no_Yabou_-_01.jpg
+	nes/konami/Gradius_II/
+
 	Contra_JP.nes
 	Contra_JP.nes
 	Contra_Logo_01.png

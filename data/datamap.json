@@ -56,7 +56,8 @@
 				{
 					"id": 3,
 					"title": "Gradius",
-					"url": "https://snowland.ink/?tag=gradius_series"
+					"url": "https://snowland.ink/?tag=gradius_series",
+					"poster": "Gradius_Series_NES_Poster.jpg"
 				},
 				{
 					"id": 4,
@@ -120,6 +121,17 @@
 							],
 							"series_id": 3,
 							"release": 1986
+						},
+						{
+							"id": 1888,
+							"title": "Gradius II: GOFER no Yabō",
+							"rom": "Gradius_II_JP.nes",
+							"img": "Gradius_II_-_GOFER_no_Yabou_-_01.jpg",
+							"genre": [
+								2
+							],
+							"series_id": 3,
+							"release": 1988
 						},
 						{
 							"id": 1163,

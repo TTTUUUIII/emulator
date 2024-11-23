@@ -276,8 +276,8 @@ DATA_MAPPING=(
 	Street_Fighter_II_Special_Championship_Edition_NA_-_01.jpg
 	sega-genesis/capcom/Street_Fighter_II_Special_Champion_Edition/
 
-	Super_Street_Fighter_II_US_\(Virtual Console\).zip
-	Super_Street_Fighter_II_US_\(Virtual Console\).zip
+	Super_Street_Fighter_II_US_\(Virtual\ Console\).zip
+	Super_Street_Fighter_II_US_\(Virtual\ Console\).zip
 	Super_Street_Fighter_II_The_New_Challengers_NA_-_01.jpg
 	Super_Street_Fighter_II_The_New_Challengers_NA_-_01.jpg
 	sega-genesis/capcom/Super_Street_Fighter_II_The_New_Challengers/

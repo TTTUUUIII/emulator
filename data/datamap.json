@@ -604,6 +604,12 @@
 					"id": 1,
 					"title": "Thunder Force",
 					"url": "https://snowland.ink/?tag=thunder-force_series"
+				},
+				{
+					"id": 2,
+					"title": "🥊 Street Fighter",
+					"url": "https://snowland.ink/?tag=street-fighter_series",
+					"poster": "Street_Fighter_Series_Poster.jpg"
 				}
 			],
 			"data": [
@@ -620,6 +626,22 @@
 								2
 							],
 							"release": 1987
+						}
+					]
+				},
+				{
+					"developer": "@nes/capcom",
+					"games": [
+						{
+							"id": 1895,
+							"title": "Street Fighter II': Champion Edition",
+							"rom": "Street_Fighter_II'_-_Champion_Edition_US.zip",
+							"img": "Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": 2,
+							"release": 1992
 						}
 					]
 				},

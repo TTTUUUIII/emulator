@@ -263,6 +263,13 @@ DATA_MAPPING=(
 	Twin_Cobra_-_MDUS_01.jpg
 	sega-genesis/toaplan/Twin_Cobra/
 
+	# Capcom
+	Street_Fighter_II'_-_Champion_Edition_US.zip
+	Street_Fighter_II'_-_Champion_Edition_US.zip
+	Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg
+	Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg
+	sega-genesis/capcom/Street_Fighter_II_Champion_Edition/
+
 	# Konami
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_The_Hard_Corps_JP.zip

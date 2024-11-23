@@ -653,6 +653,17 @@
 							],
 							"series_id": 2,
 							"release": 1993
+						},
+						{
+							"id": 1911,
+							"title": "Super Street Fighter II: The New Challengers",
+							"rom": "Super_Street_Fighter_II_US_(Virtual Console).zip",
+							"img": "Super_Street_Fighter_II_The_New_Challengers_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": 2,
+							"release": 1993
 						}
 					]
 				},

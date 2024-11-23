@@ -578,6 +578,22 @@
 					]
 				},
 				{
+					"developer": "@nes/capcom",
+					"games": [
+						{
+							"id": 1917,
+							"title": "Super Street Fighter II: The New Challengers",
+							"rom": "Super_Street_Fighter_II_US.zip",
+							"img": "Super_Street_Fighter_II_SNES_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": "@segaMD/2",
+							"release": 1993
+						}
+					]
+				},
+				{
 					"developer": "technosoft",
 					"url": "https://snowland.ink/?tag=technosoft",
 					"games": [

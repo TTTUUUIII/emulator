@@ -248,6 +248,13 @@ DATA_MAPPING=(
 	Castlevania_Dracula_X_NA_-_01.jpg
 	snes/konami/Castlevania_Dracula_X/
 
+	# Capcom
+	Super_Street_Fighter_II_US.zip
+	Super_Street_Fighter_II_US.zip
+	Super_Street_Fighter_II_SNES_NA_-_01.jpg
+	Super_Street_Fighter_II_SNES_NA_-_01.jpg
+	snes/capcom/Super_Street_Fighter_II_The_New_Challengers/
+
 	# technosoft
 	Thunder_Spirits_US.zip
 	Thunder_Spirits_US.zip

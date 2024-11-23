@@ -270,6 +270,12 @@ DATA_MAPPING=(
 	Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg
 	sega-genesis/capcom/Street_Fighter_II_Champion_Edition/
 
+	Street_Fighter_II\'_-_Special_Champion_Edition_US.zip
+	Street_Fighter_II\'_-_Special_Champion_Edition_US.zip
+	Street_Fighter_II_Special_Championship_Edition_NA_-_01.jpg
+	Street_Fighter_II_Special_Championship_Edition_NA_-_01.jpg
+	sega-genesis/capcom/Street_Fighter_II_Special_Champion_Edition/
+
 	# Konami
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_The_Hard_Corps_JP.zip

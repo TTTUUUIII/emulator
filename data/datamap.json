@@ -642,6 +642,17 @@
 							],
 							"series_id": 2,
 							"release": 1992
+						},
+						{
+							"id": 1905,
+							"title": "Street Fighter II': Special Champion Edition",
+							"rom": "Street_Fighter_II'_-_Special_Champion_Edition_US.zip",
+							"img": "Street_Fighter_II_Special_Championship_Edition_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": 2,
+							"release": 1993
 						}
 					]
 				},

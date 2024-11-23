@@ -21,10 +21,10 @@ function create_link() {
 		img_to=${DATA_MAPPING[((i + 3))]}
 		base=${DATA_MAPPING[((i + 4))]}
 		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
-			ln -s $SOURCE/$base$rom $WEB_ROOT/data/$rom_to && echo "New ROM Link $WEB_ROOT/data/$rom_to"
+			ln -s "$SOURCE/$base$rom" "$WEB_ROOT/data/$rom_to" && echo "New ROM Link $WEB_ROOT/data/$rom_to"
 		fi
 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
-			ln -s $SOURCE/$base$img $WEB_ROOT/data/images/$img_to && echo "NEW IMG Link $WEB_ROOT/data/images/$img_to"
+			ln -s "$SOURCE/$base$img" "$WEB_ROOT/data/images/$img_to" && echo "NEW IMG Link $WEB_ROOT/data/images/$img_to"
 		fi
 	done
 }
@@ -83,7 +83,7 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 	--mapping | --update-mapping)
 		create_link
 		;;
-	--game | --add-game)
+	--game | --update-game)
 		create_link
 		update_datamap
 		;;

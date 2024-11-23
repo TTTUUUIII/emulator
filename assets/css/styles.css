@@ -21,8 +21,8 @@
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    opacity: 0.4;
-    filter: blur(8px);
+    /* opacity: 0.4; */
+    filter: blur(4px);
 }
 
 .background-widget {

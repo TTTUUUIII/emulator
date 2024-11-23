@@ -264,8 +264,8 @@ DATA_MAPPING=(
 	sega-genesis/toaplan/Twin_Cobra/
 
 	# Capcom
-	Street_Fighter_II'_-_Champion_Edition_US.zip
-	Street_Fighter_II'_-_Champion_Edition_US.zip
+	Street_Fighter_II\'_-_Champion_Edition_US.zip
+	Street_Fighter_II\'_-_Champion_Edition_US.zip
 	Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg
 	Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg
 	sega-genesis/capcom/Street_Fighter_II_Champion_Edition/

@@ -267,6 +267,12 @@ DATA_MAPPING=(
 	Street_Fighter_II_Turbo_SNES_NA_-_01.jpg
 	snes/capcom/Street_Fighter_II_Turbo/
 
+	Street_Fighter_Alpha_2_US.zip
+	Street_Fighter_Alpha_2_US.zip
+	Street-Fighter-Alpha_2_SNES_NA_-_01.webp
+	Street-Fighter-Alpha_2_SNES_NA_-_01.webp
+	snes/capcom/Street_Fighter_Alpha_II/
+
 	# technosoft
 	Thunder_Spirits_US.zip
 	Thunder_Spirits_US.zip

@@ -612,6 +612,17 @@
 							],
 							"series_id": "@segaMD/2",
 							"release": 1992
+						},
+						{
+							"id": 1935,
+							"title": "Street Fighter Alpha 2",
+							"rom": "Street_Fighter_Alpha_2_US.zip",
+							"img": "Street-Fighter-Alpha_2_SNES_NA_-_01.webp",
+							"genre": [
+								4
+							],
+							"series_id": "@segaMD/2",
+							"release": 1996
 						}
 					]
 				},

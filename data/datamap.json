@@ -601,6 +601,17 @@
 							],
 							"series_id": "@segaMD/2",
 							"release": 1993
+						},
+						{
+							"id": 1932,
+							"title": "Street Fighter II: Turbo",
+							"rom": "Street_Fighter_II_Turbo_US.zip",
+							"img": "Street_Fighter_II_Turbo_SNES_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": "@segaMD/2",
+							"release": 1992
 						}
 					]
 				},

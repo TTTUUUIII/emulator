@@ -339,4 +339,13 @@ DATA_MAPPING=(
 	Another—World_NA_-_01.jpg
 	Another_World_NA_-_01.jpg
 	sega-genesis/delphine_software/Another_World/
+
+	# Sega Saturn
+	# Capcom
+
+	Street_Fighter_Alpha_2_\(USA\).zip
+	Street_Fighter_Alpha_2_\(USA\).zip
+	Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
+	Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
+	sega-saturn/capcom/Street_Fighter_Alpha_II/
 )

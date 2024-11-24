@@ -255,6 +255,12 @@ DATA_MAPPING=(
 	Super_Street_Fighter_II_SNES_NA_-_01.jpg
 	snes/capcom/Super_Street_Fighter_II_The_New_Challengers/
 
+	Street_Fighter_II_The_World_Warrior_US.zip
+	Street_Fighter_II_The_World_Warrior_US.zip
+	Street_Fighter_II_The_World_Warrior_SNES_NA_-_01.jpg
+	Street_Fighter_II_The_World_Warrior_SNES_NA_-_01.jpg
+	snes/capcom/Street_Fighter_II_The_World_Warrior/
+
 	# technosoft
 	Thunder_Spirits_US.zip
 	Thunder_Spirits_US.zip

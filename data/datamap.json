@@ -590,6 +590,17 @@
 							],
 							"series_id": "@segaMD/2",
 							"release": 1993
+						},
+						{
+							"id": 1927,
+							"title": "Street Fighter II: The World Warrior",
+							"rom": "Street_Fighter_II_The_World_Warrior_US.zip",
+							"img": "Street_Fighter_II_The_World_Warrior_SNES_NA_-_01.jpg",
+							"genre": [
+								4
+							],
+							"series_id": "@segaMD/2",
+							"release": 1993
 						}
 					]
 				},

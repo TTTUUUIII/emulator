@@ -58,13 +58,6 @@ var UI = {
                 )
             );
         }
-        if (game["release"]) {
-            $("#game-details").append(
-                $(
-                    `<div class="card-item"><label>Release</label><p>${game["release"]}</p></div>`
-                )
-            );
-        }
         if (series) {
             $("#game-details").append(
                 $(
@@ -90,6 +83,13 @@ var UI = {
                     )
                 );
             }
+        }
+        if (game["release"]) {
+            $("#game-details").append(
+                $(
+                    `<div class="card-item"><label>Release</label><p>${game["release"]}</p></div>`
+                )
+            );
         }
     },
 };

@@ -76,12 +76,12 @@
 				},
 				{
 					"id": 7,
-					"title": "🐿️ Chip 'n Dale: Rescue Rangers",
+					"title": "Chip 'n Dale: Rescue Rangers",
 					"url": "https://snowland.ink/?tag=rescue-rangers_series"
 				},
 				{
 					"id": 8,
-					"title": "🏝️ Adventure Island",
+					"title": "Adventure Island",
 					"url": "https://snowland.ink/?tag=adventure-island_series"
 				},
 				{
@@ -91,7 +91,7 @@
 				},
 				{
 					"id": 10,
-					"title": "🦇 Castlevania",
+					"title": "Castlevania",
 					"url": "https://snowland.ink/?tag=castlevania_series",
 					"poster": "Castlevania_Series_NES_Poster.jpg"
 				}
@@ -645,7 +645,7 @@
 				},
 				{
 					"id": 2,
-					"title": "🥊 Street Fighter",
+					"title": "Street Fighter",
 					"url": "https://snowland.ink/?tag=street-fighter_series",
 					"poster": "Street_Fighter_Series_Poster.jpg"
 				}

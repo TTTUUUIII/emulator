@@ -45,5 +45,4 @@ $(function () {
         launch();
     }
     UI.init();
-    Clock.init($(".clock"));
 });

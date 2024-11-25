@@ -20,11 +20,14 @@ var UI = {
                 event.target.value &&
                 this.onReload(event.target.value, 1);
         });
+        $(document).keydown((event) => {
+            event.keyCode == 27 && $(".ejs_menu_button")[0].click();
+        })
         EJS_ready = () => {
-            $("#viewport").css("opacity", "0.8");
+            $("#game").css("opacity", "0.8");
         };
         EJS_onGameStart = (e) => {
-            $("#viewport").css("opacity", "1");
+            $("#game").css("opacity", "1");
         };
     },
     __refresh_clock: function(target) {

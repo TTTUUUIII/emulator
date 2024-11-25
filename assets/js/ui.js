@@ -4,6 +4,10 @@ var UI = {
     onGetGenre: undefined,
     onRandom: undefined,
     init: function () {
+        this.__bind_event();
+        this.__refresh_clock($(".clock"));
+    },
+    __bind_event: function() {
         $("#random").click(() => {
             $("#game-id").val(this.onRandom());
         });
@@ -22,6 +26,30 @@ var UI = {
         EJS_onGameStart = (e) => {
             $("#viewport").css("opacity", "1");
         };
+    },
+    __refresh_clock: function(target) {
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+            session = "PM";
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s + " " + session;
+        target.text(time);
+        setTimeout(UI.__refresh_clock, 1000, target);
     },
     bind: function (game) {
         if (!game) return;

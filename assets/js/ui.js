@@ -7,7 +7,7 @@ var UI = {
         this.__bind_event();
         this.__refresh_clock($(".clock"));
     },
-    __bind_event: function() {
+    __bind_event: function () {
         $("#random").click(() => {
             $("#game-id").val(this.onRandom());
         });
@@ -21,7 +21,18 @@ var UI = {
                 this.onReload(event.target.value, 1);
         });
         $(document).keydown((event) => {
-            event.keyCode == 27 && $(".ejs_menu_button")[0].click();
+            let ctrl = undefined;
+            if (event.keyCode == 27) {
+                ctrl = $("#game > div.ejs_menu_bar > button")[0];
+            } else if (event.ctrlKey) {
+                ctrl = event.shiftKey ? $("#game > div.ejs_menu_bar > button")[3] : $("#game > div.ejs_context_menu > ul > li")[3];
+            } else if (event.altKey) {
+                ctrl = event.shiftKey ? $("#game > div.ejs_menu_bar > button")[4] : $("#game > div.ejs_context_menu > ul > li")[4];
+            }
+            if (ctrl) {
+                ctrl.click();
+                event.preventDefault();
+            }
         })
         EJS_ready = () => {
             $("#game").css("opacity", "0.8");
@@ -30,26 +41,26 @@ var UI = {
             $("#game").css("opacity", "1");
         };
     },
-    __refresh_clock: function(target) {
+    __refresh_clock: function (target) {
         var date = new Date();
         var h = date.getHours(); // 0 - 23
         var m = date.getMinutes(); // 0 - 59
         var s = date.getSeconds(); // 0 - 59
         var session = "AM";
-        
-        if(h == 0){
+
+        if (h == 0) {
             h = 12;
         }
-        
-        if(h > 12){
+
+        if (h > 12) {
             h = h - 12;
             session = "PM";
         }
-        
+
         h = (h < 10) ? "0" + h : h;
         m = (m < 10) ? "0" + m : m;
         s = (s < 10) ? "0" + s : s;
-        
+
         var time = h + ":" + m + ":" + s + " " + session;
         target.text(time);
         setTimeout(UI.__refresh_clock, 1000, target);
@@ -81,8 +92,7 @@ var UI = {
         if (game["developer"]) {
             $("#game-details").append(
                 $(
-                    `<div class="card-item"><label>Developer</label><a href="${
-                        game["developer"]["url"] ?? "#"
+                    `<div class="card-item"><label>Developer</label><a href="${game["developer"]["url"] ?? "#"
                     }" target="_blank">${upper(
                         game["developer"]["name"]
                     )}</a></div>`
@@ -102,9 +112,8 @@ var UI = {
             for (let id of genreIds) {
                 let genre = this.onGetGenre(id);
                 if (genre) {
-                    temp += `<a href="${genre["url"] ?? "#"}" target="_blank">${
-                        genre["title"]
-                    }</a>`;
+                    temp += `<a href="${genre["url"] ?? "#"}" target="_blank">${genre["title"]
+                        }</a>`;
                 }
             }
             if (temp) {

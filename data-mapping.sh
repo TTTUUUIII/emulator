@@ -23,8 +23,8 @@ DATA_MAPPING=(
 
 	Contra_JP.nes
 	Contra_JP.nes
-	Contra_Logo_01.png
-	Contra_Logo_01.png
+	Contra_NA_01.jpg
+	Contra_NA_01.jpg
 	nes/konami/contra/
 
 	Super_Contra_JP.nes

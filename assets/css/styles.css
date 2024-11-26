@@ -91,7 +91,7 @@
 
 .card > .card-img-bordered {
     width: 100%;
-    border: 0.5rem outset var(--border-color);
+    border: 0.5rem ridge var(--border-color);
 }
 
 .card > .card-body {

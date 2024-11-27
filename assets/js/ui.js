@@ -13,7 +13,7 @@ var UI = {
         });
         $("#launch").click(() => {
             let id = $("#game-id").val();
-            id && this.onReload(id, 1);
+            this.onReload(id, 1);
         });
         $("#game-id").keypress((event) => {
             event.keyCode == 13 &&

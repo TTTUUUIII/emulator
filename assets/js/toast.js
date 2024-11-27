@@ -11,7 +11,7 @@ var Toast = {
     show: function(text, level=TOAST_LEVEL_INFO, duration=2000) {
         let container = $(".toast-container");
         let element = this.__create_toast_element(text, level);
-        element.find(".close").click(() => {
+        element.find(".close").off("click").on("click", () => {
             element.remove();
         });
         container && container.prepend(element) && element.slideDown("fast");

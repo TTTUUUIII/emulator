@@ -12,12 +12,13 @@
      <script type="text/javascript" src="assets/js/functions.js"></script>
      <script type="text/javascript" src="assets/js/datamap.js"></script>
      <script type="text/javascript" src="assets/js/ui.js"></script>
+     <script type="text/javascript" src="assets/js/toast.js"></script>
      <script type="text/javascript" src="assets/js/emulator.js"></script>
      <script type="text/javascript" src="assets/js/main.js"></script>
     <title>🕹 Emulator | Online 🎮 Game Arcade - Play all games online! 🛸</title>
 </head>
 <body>
-    <div class="flex-window">
+    <div class="full-window h-stack">
         <img class="main-background" src="assets/img/default.jpg" />
         <div class="sliderbar">
             <div class="card p-m radius-sm hover-shadow background-widget">
@@ -46,7 +47,7 @@
                 <div id="game" class="radius-m"></div>
             </div>
         </div>
-        <div class="sliderbar right">
+        <div class="sliderbar">
             <div class="clock"></div>
             <div class="mt-sm p-m radius-sm hover-shadow background-widget">
                 <table class="basic-table">
@@ -101,6 +102,9 @@
                 </table>
             </div>
         </div>
+    </div>
+
+    <div class="toast-container v-stack">
     </div>
 </body>
 </html>

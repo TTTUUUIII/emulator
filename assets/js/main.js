@@ -4,11 +4,12 @@ UI.onRandom = () => Datamap.random();
 UI.onGetGenre = (id) => Datamap.findGenreById(id);
 UI.onGetSeries = (game) => Datamap.findSeriesByGame(game);
 UI.onReload = (id, auto) => {
-    if(Datamap.exists(id)) {
+    if(id && Datamap.exists(id)) {
         reload(id, auto);
+    } else if(id) {
+        Toast.error(`¯\_(ツ)_/¯ Sorry, game not found! ${id}`);
     } else {
-        console.warn(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
-        alert(`¯\_(ツ)_/¯ Sorry, no game with ${id}`);
+        Toast.warn("( ͡° ͜ʖ ͡°) Please provide game's ID");
     }
 }
 

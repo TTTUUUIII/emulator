@@ -49,6 +49,7 @@ function update_web() {
 			--js assets/js/functions.js \
 			--js assets/js/datamap.js \
 			--js assets/js/ui.js \
+			--js assets/js/toast.js \
 			--js assets/js/emulator.js \
 			--js assets/js/main.js \
 			--js_output_file $WEB_ROOT/assets/js/main.min.js

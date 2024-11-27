@@ -8,19 +8,19 @@ var UI = {
         this.__refresh_clock($(".clock"));
     },
     __bind_event: function () {
-        $("#random").click(() => {
+        $("#random").off("click").on("click", () => {
             $("#game-id").val(this.onRandom());
         });
-        $("#launch").click(() => {
+        $("#launch").off("click").on("click", () => {
             let id = $("#game-id").val();
             this.onReload(id, 1);
         });
-        $("#game-id").keypress((event) => {
+        $("#game-id").off("keydown").on("keydown", (event) => {
             event.keyCode == 13 &&
                 event.target.value &&
                 this.onReload(event.target.value, 1);
         });
-        $(document).keydown((event) => {
+        $(document).off("keydown").on("keydown", (event) => {
             let ctrl = undefined;
             if (event.keyCode == 27) {
                 ctrl = $("#game > div.ejs_menu_bar > button")[0];

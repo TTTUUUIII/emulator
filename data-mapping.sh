@@ -295,6 +295,12 @@ DATA_MAPPING=(
 	Twin_Cobra_-_MDUS_01.jpg
 	sega-genesis/toaplan/Twin_Cobra/
 
+	Snow_Bros._-_Nick_\&_Tom.zip
+	Snow_Bros._-_Nick_\&_Tom.zip
+	Snow_Bros._Genesis_NA_-_01.png
+	Snow_Bros._Genesis_NA_-_01.png
+	sega-genesis/toaplan/Snow_Bros._-_Nick_\&_Tom/
+
 	# Capcom
 	Street_Fighter_II\'_-_Champion_Edition_US.zip
 	Street_Fighter_II\'_-_Champion_Edition_US.zip

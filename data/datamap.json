@@ -692,6 +692,16 @@
 								2
 							],
 							"release": 1987
+						},
+						{
+							"id": 1967,
+							"title": "Snow Bros. - Nick & Tom",
+							"rom": "Snow_Bros._-_Nick_&_Tom.zip",
+							"img": "Snow_Bros._Genesis_NA_-_01.png",
+							"genre": [
+								1
+							],
+							"release": 1990
 						}
 					]
 				},

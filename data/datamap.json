@@ -544,6 +544,22 @@
 							"release": 1992
 						}
 					]
+				},
+				{
+					"developer": "DotGears",
+					"url": "https://dotgears.com/",
+					"games": [
+						{
+							"id": -2,
+							"title": "Flappy Bird",
+							"rom": "FlappyBird.nes",
+							"img": ["FlappyBird_NES_-_01.jpg", "FlappyBird_NES_Poster.png"],
+							"genre": [
+								1
+							],
+							"release": 2013
+						}
+					]
 				}
 			]
 		},

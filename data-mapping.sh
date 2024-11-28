@@ -234,6 +234,13 @@ DATA_MAPPING=(
 	Summer_Carnival_92_Recca_JP_01.jpg
 	nes/naxat_soft/Summer_Carnival_\'92/
 
+	# DotGears
+	FlappyBird.nes
+	FlappyBird.nes
+	FlappyBird_NES_-_01.jpg
+	FlappyBird_NES_-_01.jpg
+	nes/dotgears/FlappyBird/
+
 	# SNES
 	# Konami
 	Super_Castlevania_IV_US.zip

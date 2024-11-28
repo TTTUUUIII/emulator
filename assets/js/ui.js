@@ -76,10 +76,19 @@ var UI = {
                 .addClass("marquee");
         }
         $("#game-title").text(title);
-        $("#game-img").attr("src", `data/images/${game["img"]}`);
+        let gameImg = game["img"];
+        let gamePoster = undefined;
+        if(Array.isArray(gameImg)) {
+            gamePoster = gameImg[1];
+            gameImg = gameImg[0];
+        }
+        $("#game-img").attr("src", `data/images/${gameImg}`);
         let series = this.onGetSeries(game);
-        $("img.main-background").attr("src", `data/images/${(series && series["poster"]) ? series["poster"] : game["img"]}`);
-        if (!series || !series["poster"]) {
+        if(!gamePoster) {
+            gamePoster = (series && series["poster"]) ? series["poster"] : gameImg;
+        }
+        $("img.main-background").attr("src", `data/images/${gamePoster}`);
+        if (gameImg === gamePoster) {
             $("img.main-background").css("object-position", "0px 50%");
         }
         if (game["id"]) {

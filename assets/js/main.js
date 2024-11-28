@@ -7,7 +7,7 @@ UI.onReload = (id, auto) => {
     if(id && Datamap.exists(id)) {
         reload(id, auto);
     } else if(id) {
-        Toast.error(`¯\_(ツ)_/¯ Sorry, game not found! ${id}`);
+        Toast.error(`¯\_(ツ)_/¯ Sorry, game "${id}" not found!`);
     } else {
         Toast.warn("( ͡° ͜ʖ ͡°) Please provide game's ID");
     }

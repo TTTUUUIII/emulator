@@ -4,9 +4,10 @@
     --border_color: #987D9A;
     --primary_color: #0d6efd;
     --background_color: rgba(255, 255, 255, 0.7);
-    --padding-size-tiny: 3px;
-    --padding-size-sm: 8px;
-    --padding-size-m: 15px;
+    --padding_size_tiny: 3px;
+    --padding_size_s: 5px;
+    --padding_size_sm: 8px;
+    --padding_size_m: 15px;
 }
 
 * {
@@ -67,7 +68,7 @@ body {
     max-width: 300px;
     max-height: 100vh;
     z-index: 1;
-    padding: var(--padding-size-sm);
+    padding: var(--padding_size_sm);
 }
 
 /* Game container */
@@ -111,11 +112,11 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--border_color);
-    padding-bottom: var(--padding-size-tiny);
+    padding-bottom: var(--padding_size_tiny);
 }
 
 .toast > .toast-body {
-    padding-top: var(--padding-size-sm);
+    padding-top: var(--padding_size_sm);
 }
 
 /* Components */
@@ -135,15 +136,15 @@ body {
 }
 
 .card > .card-body {
-    padding: var(--padding-size-sm);
+    padding: var(--padding_size_sm);
     flex-direction: column;
 }
 
 .card-body .card-item {
     display: flex;
     flex-direction: row;
-    padding-top: var(--padding-size-tiny);
-    padding-bottom: var(--padding-size-tiny);
+    padding-top: var(--padding_size_tiny);
+    padding-bottom: var(--padding_size_tiny);
     font-size: smaller;
 }
 
@@ -153,10 +154,10 @@ body {
 
 .clock {
     color: var(--primary_color);
-    font-family: "Orbitron", sans-serif;
-    letter-spacing: 0.1rem;
-    text-align: right;
-    font-weight: bolder;
+    font-family: "VT323", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    /* letter-spacing: 0.1rem; */
 }
 
 .basic-table {
@@ -165,7 +166,7 @@ body {
 }
 
 .basic-table td {
-    padding: var(--padding-size-sm);
+    padding: var(--padding_size_sm);
     border: 3px ridge var(--border_color);
     font-size: small;
 }
@@ -210,27 +211,27 @@ kbd {
 }
 
 .p-sm {
-    padding: var(--padding-size-sm);
+    padding: var(--padding_size_sm);
 }
 
 .p-m {
-    padding: var(--padding-size-m);
+    padding: var(--padding_size_m);
 }
 
 .pt-sm {
-    padding-top: var(--padding-size-sm);
+    padding-top: var(--padding_size_sm);
 }
 
 .mt-sm {
-    margin-top: var(--padding-size-sm);
+    margin-top: var(--padding_size_sm);
 }
 
 .ml-sm {
-    margin-left: var(--padding-size-sm);
+    margin-left: var(--padding_size_sm);
 }
 
 .mr-sm {
-    margin-right: var(--padding-size-sm);
+    margin-right: var(--padding_size_sm);
 }
 
 .italic {

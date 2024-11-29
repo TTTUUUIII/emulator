@@ -127,6 +127,12 @@ DATA_MAPPING=(
 	Twin_Cobra_NES_NA_01.jpg
 	nes/toaplan/Twin_Cobra/
 
+	Snow_Bros._JP.nes
+	Snow_Bros._JP.nes
+	Snow_Bros._-_NES_NA_-_01.jpg
+	Snow_Bros._-_NES_NA_-_01.jpg
+	nes/toaplan/Snow_Bros/
+
 	# Capcom
 	1942_US.nes
 	1942_US.nes

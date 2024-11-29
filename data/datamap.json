@@ -423,6 +423,16 @@
 								2
 							],
 							"release": 1989
+						},
+						{
+							"id": 1970,
+							"title": "Snow Bros.",
+							"rom": "Snow_Bros._JP.nes",
+							"img": "Snow_Bros._-_NES_NA_-_01.jpg",
+							"genre": [
+								1
+							],
+							"release": 1991
 						}
 					]
 				},

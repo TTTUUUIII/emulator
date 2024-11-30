@@ -13,6 +13,13 @@ UI.onReload = (id, auto) => {
     }
 }
 
+// GPScanner.onConnectStateChanged = (gpindex, id, isconnected) => {
+//     console.log(`onConnectStateChanged: ${gpindex}, ${id}, ${isconnected}`);
+// }
+// GPScanner.onKeyDown = (gpindex, keys) => {
+//     console.log(`onKeyDown: ${gpindex}: ${keys}`);
+// }
+
 function launch() {
     let game = undefined;
     let id = getQueryVariable("id", -1);
@@ -46,4 +53,5 @@ $(function () {
         launch();
     }
     UI.init();
+    // GPScanner.init();
 });

@@ -302,6 +302,16 @@
 							],
 							"series_id": 8,
 							"release": 1992
+						},
+						{
+							"id": 1984,
+							"title": "Lode Runner",
+							"rom": "Lode_Runner_JP.nes",
+							"img": "Lode_Runnder_NES_JP_-_01.jpg",
+							"genre": [
+								1,7
+							],
+							"release": 1984
 						}
 					]
 				},

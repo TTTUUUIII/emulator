@@ -113,6 +113,12 @@ DATA_MAPPING=(
 	Adventure_Island_3_NES_01.jpg
 	nes/hudson_soft/Adventure_Island_III/
 
+	Lode_Runner_JP.nes
+	Lode_Runner_JP.nes
+	Lode_Runnder_NES_JP_-_01.jpg
+	Lode_Runnder_NES_JP_-_01.jpg
+	nes/hudson_soft/Lode_Runner/
+
 	# Compile
 	Gun-Nac_US.nes
 	Gun-Nac_US.nes

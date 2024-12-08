@@ -95,6 +95,11 @@
 					"title": "Castlevania",
 					"url": "https://snowland.ink/?tag=castlevania_series",
 					"poster": "Castlevania_Series_NES_Poster.jpg"
+				},
+				{
+					"id": 11,
+					"title": "Teenage Mutant Ninja Turtles",
+					"url": "https://snowland.ink/?tag=teenage-mutant-ninja-turtles_series"
 				}
 			],
 			"data": [
@@ -263,6 +268,18 @@
 							],
 							"series_id": 10,
 							"release": 1989
+						},
+						{
+							
+							"id": 1990,
+							"title": "Teenage Mutant Ninja Turtles III: The Manhattan Project",
+							"rom": "Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_US.nes",
+							"img": "Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 11,
+							"release": 1991
 						}
 					]
 				},

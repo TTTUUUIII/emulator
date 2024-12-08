@@ -828,6 +828,18 @@
 							],
 							"series_id": "@nes/10",
 							"release": 1994
+						},
+						{
+							
+							"id": 2009,
+							"title": "Teenage Mutant Ninja Turtles: The Hyperstone Heist",
+							"rom": "Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist_US.zip",
+							"img": "Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": "@nes/11",
+							"release": 1992
 						}
 					]
 				},

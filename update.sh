@@ -37,6 +37,10 @@ function update_datamap() {
 	return $?
 }
 
+function update_sitemap() {
+	python tools/generate-sitemap.py $WEB_ROOT
+}
+
 function update_web() {
 	if [ ! -x "tools/jq" ]; then
 		chmod +x tools/jq
@@ -53,6 +57,7 @@ function update_web() {
 			--js assets/js/emulator.js \
 			--js assets/js/main.js \
 			--js_output_file $WEB_ROOT/assets/js/main.min.js
+	update_sitemap
 	return $?
 }
 
@@ -65,6 +70,7 @@ Options:
     --create-link       Create game link.
     --web        Update datamap and web files.
     --datamap    Update datamap.
+	--sitemap	 Update sitemap.
 """
 }
 
@@ -86,6 +92,10 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 	--game | --update-game)
 		create_link
 		update_datamap
+		update_sitemap
+		;;
+	--sitemap | --update-sitemap)
+		update_sitemap
 		;;
 	--help)
 		help

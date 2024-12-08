@@ -17,7 +17,7 @@ def parse_gameids():
     return gameids
 
 def write_datamap(gameids):
-    with open(f"{os.path.join(OUT_DIR, "sitemap.xml")}", 'w') as fp:
+    with open(os.path.join(OUT_DIR, "sitemap.xml"), 'w') as fp:
         fp.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         fp.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for id in gameids:

@@ -363,6 +363,12 @@ DATA_MAPPING=(
 	Castlevania_-_Bloodlines_-_NA_-_01.jpg
 	sega-genesis/konami/Castlevania_-_Bloodlines/
 
+	Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist_US.zip
+	Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist_US.zip
+	Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
+	Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
+	sega-genesis/konami/Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist/
+
 	# Technosoft
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III_JU.zip

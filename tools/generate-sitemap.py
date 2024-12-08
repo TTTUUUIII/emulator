@@ -2,7 +2,7 @@
 import os
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 
 OUT_DIR=os.path.dirname(os.path.dirname(__file__))
 
@@ -23,7 +23,7 @@ def write_datamap(gameids):
         for id in gameids:
             fp.write("\t<url>\n")
             fp.write(f"\t\t<loc>https://emulator.snowland.ink/?id={id}</loc>\n")
-            fp.write(f"\t\t<lastmod>{datetime.now().isoformat()}</lastmod>\n")
+            fp.write(f"\t\t<lastmod>{datetime.now(timezone.utc).isoformat()}</lastmod>\n")
             fp.write("\t\t<changefreq>weekly</changefreq>\n")
             fp.write("\t\t<priority>0.5</priority>\n")
             fp.write("\t</url>\n")

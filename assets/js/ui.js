@@ -68,7 +68,7 @@ var UI = {
     bind: function (game) {
         if (!game) return;
         let title = game["title"];
-        $("title").text("🕹 Emulator | " + title);
+        $("title").text(`🕹 Emulator | Play ${title} Online!`);
         if (title.length > 20) {
             $("#game-title")
                 .addClass("marquee-content")

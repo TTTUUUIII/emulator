@@ -93,6 +93,12 @@ DATA_MAPPING=(
 	Castlevania_III_-_Dracula\'s_Curse_-_NA_-_01.jpg
 	nes/konami/Castlevania_III/
 
+	Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_US.nes
+	Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_US.nes
+	Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg
+	Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg
+	nes/konami/Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes

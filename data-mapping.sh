@@ -279,6 +279,12 @@ DATA_MAPPING=(
 	Castlevania_Dracula_X_NA_-_01.jpg
 	snes/konami/Castlevania_Dracula_X/
 
+	Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time_US.zip
+	Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time_US.zip
+	Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time_SNES_NA_-_01.jpg
+	Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time_SNES_NA_-_01.jpg
+	snes/konami/Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time/
+
 	# Capcom
 	Super_Street_Fighter_II_US.zip
 	Super_Street_Fighter_II_US.zip

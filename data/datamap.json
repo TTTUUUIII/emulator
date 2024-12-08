@@ -292,6 +292,18 @@
 							],
 							"series_id": 11,
 							"release": 1990
+						},
+						{
+							
+							"id": 2001,
+							"title": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+							"rom": "Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time_US.zip",
+							"img": "Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time_SNES_NA_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 11,
+							"release": 1992
 						}
 					]
 				},

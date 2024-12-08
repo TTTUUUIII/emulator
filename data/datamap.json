@@ -280,6 +280,18 @@
 							],
 							"series_id": 11,
 							"release": 1991
+						},
+						{
+							
+							"id": 1995,
+							"title": "Teenage Mutant Ninja Turtles II: The Arcade Game",
+							"rom": "Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_US.nes",
+							"img": "Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 11,
+							"release": 1990
 						}
 					]
 				},

@@ -99,6 +99,12 @@ DATA_MAPPING=(
 	Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg
 	nes/konami/Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project/
 
+	Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_US.nes
+	Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_US.nes
+	Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg
+	Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg
+	nes/konami/Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes

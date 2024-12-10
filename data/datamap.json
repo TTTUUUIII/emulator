@@ -292,6 +292,18 @@
 							],
 							"series_id": 11,
 							"release": 1990
+						},
+						{
+							
+							"id": 2028,
+							"title": "Teenage Mutant Ninja Turtles",
+							"rom": "Teenage_Mutant_Ninja_Turtles@US.nes",
+							"img": "TMNT_NES_NA_-_01.jpg",
+							"genre": [
+								1
+							],
+							"series_id": 11,
+							"release": 1989
 						}
 					]
 				},

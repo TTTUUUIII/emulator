@@ -105,6 +105,12 @@ DATA_MAPPING=(
 	Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg
 	nes/konami/Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game/
 
+	Teenage_Mutant_Ninja_Turtles@US.nes
+	Teenage_Mutant_Ninja_Turtles@US.nes
+	TMNT_NES_NA_-_01.jpg
+	TMNT_NES_NA_-_01.jpg
+	nes/konami/Teenage_Mutant_Ninja_Turtles/
+
 	# Hudson Soft
 
 	Adventure_Island_US.nes

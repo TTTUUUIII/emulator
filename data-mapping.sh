@@ -96,6 +96,8 @@ LN_ARRAY=(
 	^nes/konami/Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project/
 	Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_US.nes
 	Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project@US.nes
+	Teenage_Mutant_Ninja_Turtles_2_-_The_Manhattan_Project_JP.nes
+	Teenage_Mutant_Ninja_Turtles_2_-_The_Manhattan_Project@JP.nes
 	Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg
 	images/Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg
 

@@ -108,10 +108,16 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 		update_web
 		;;
 	--mapping | --update-mapping)
-		[ ! create_link ] && exit 1
+		if ! create_link; then
+			pr_error "create_link exit error status."
+			exit 1
+		fi
 		;;
 	--game | --update-game)
-		[ ! create_link ] && exit 1
+		if ! create_link; then
+			pr_error "create_link exit error status."
+			exit 1
+		fi
 		update_datamap
 		update_sitemap
 		;;

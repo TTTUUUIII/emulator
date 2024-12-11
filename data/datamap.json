@@ -350,7 +350,11 @@
 						{
 							"id": 1984,
 							"title": "Lode Runner",
-							"rom": "Lode_Runner@JP.nes",
+							"rom": [
+								"Lode_Runner@JP.nes",
+								"Lode_Runner@US.nes",
+								"Lode_Runner@EU.nes"
+							],
 							"img": "Lode_Runnder_NES_JP_-_01.jpg",
 							"genre": [
 								1,7
@@ -481,7 +485,11 @@
 						{
 							"id": 1970,
 							"title": "Snow Bros.",
-							"rom": "Snow_Bros.@JP.nes",
+							"rom": [
+								"Snow_Bros.@JP.nes",
+								"Snow_Bros.@US.nes",
+								"Snow_Bros.@EU.nes"
+							],
 							"img": "Snow_Bros._-_NES_NA_-_01.jpg",
 							"genre": [
 								1
@@ -553,7 +561,7 @@
 						{
 							"id": 1195,
 							"title": "Super Mario Bros.",
-							"rom": "Super_Mario_Bros@US.nes",
+							"rom": "Super_Mario_Bros@EU.nes",
 							"img": "Super_Mario_Bros_USA.jpg",
 							"genre": [
 								1

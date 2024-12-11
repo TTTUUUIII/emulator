@@ -300,7 +300,10 @@
 							
 							"id": 2028,
 							"title": "Teenage Mutant Ninja Turtles",
-							"rom": "Teenage_Mutant_Ninja_Turtles@US.nes",
+							"rom": [
+								"Teenage_Mutant_Ninja_Turtles@US.nes",
+								"Teenage_Mutant_Hero_Turtles@EU.nes"
+							],
 							"img": "TMNT_NES_NA_-_01.jpg",
 							"genre": [
 								1

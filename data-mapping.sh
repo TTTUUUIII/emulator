@@ -24,6 +24,8 @@ LN_ARRAY=(
 	^nes/konami/contra/
 	Contra_JP.nes
 	Contra@JP.nes
+	Contra@US.nes
+	Contra@US.nes
 	Contra_NA_01.jpg
 	images/Contra_NA_01.jpg
 

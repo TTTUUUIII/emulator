@@ -151,6 +151,8 @@ LN_ARRAY=(
 	^nes/compile/gun-nac/
 	Gun-Nac_US.nes
 	Gun-Nac@US.nes
+	Gun-Nac@JP.nes
+	Gun-Nac@JP.nes
 	GunNacUSCover_large.jpg
 	images/GunNacUSCover.jpg
 

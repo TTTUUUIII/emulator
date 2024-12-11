@@ -109,7 +109,7 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 	--web | --update-web)
 		update_web
 		;;
-	--mapping | --update-mapping)
+	--link | --create-link)
 		if ! create_link; then
 			exit 1
 		fi

@@ -273,7 +273,10 @@
 							
 							"id": 1990,
 							"title": "Teenage Mutant Ninja Turtles III: The Manhattan Project",
-							"rom": "Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project@US.nes",
+							"rom": [
+								"Teenage_Mutant_Ninja_Turtles_2_-_The_Manhattan_Project@JP.nes",
+								"Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project@US.nes"
+							],
 							"img": "Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg",
 							"genre": [
 								3

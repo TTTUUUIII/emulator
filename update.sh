@@ -42,6 +42,8 @@ function create_link() {
 		if [ ! -L "$WEB_ROOT/data/$to" ] && [ ! -f "$WEB_ROOT/data/$to" ]; then
 			if ! ln -s "$SOURCE/$rel$from" "$WEB_ROOT/data/$to"; then
 				return 1
+			else
+				echo "New Link $WEB_ROOT/data/$to"
 			fi
 		fi
 	done

@@ -106,7 +106,7 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 		update_web
 		;;
 	--mapping | --update-mapping)
-		exit create_link
+		[ ! create_link ] && exit 1
 		;;
 	--game | --update-game)
 		[ ! create_link ] && exit 1

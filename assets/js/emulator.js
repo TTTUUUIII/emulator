@@ -1,5 +1,5 @@
 EJS_player = "#game";
-EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";
+EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
 EJS_lightgun = false; // Lightgun
 EJS_Buttons = {
     playPause: false,
@@ -27,7 +27,7 @@ EJS_startButtonName = "👾Launch ☢️🚀🕹️"
 
 
 var Emulator = {
-    launch: (game, auto) => {
+    launch: function (game, auto, region) {
         if (!game) {
             console.warn("Invalid game, ignored.");
             return;
@@ -41,12 +41,31 @@ var Emulator = {
         EJS_biosUrl = "";
 
         // URL to Game rom
-        EJS_gameUrl = "data/" + game["rom"];
+        
+        EJS_gameUrl = "data/" + this.selectRom(game, region);
         $("head")
             .append(
                 $("<script></script>")
                     .attr("type", "text/javascript")
-                    .attr("src", "https://cdn.emulatorjs.org/latest/data/loader.js")
+                    .attr("src", "https://cdn.emulatorjs.org/stable/data/loader.js")
             )
+    },
+    selectRom: (game, region) => {
+        let rom = undefined;
+        if(Array.isArray(game["rom"])) {
+            if(region) {
+                for(it of game["rom"]) {
+                    if(region.toUpperCase() === parseRegion(it)) {
+                        rom = it;
+                        break
+                    }
+                }
+            }
+            if(!rom) {
+                rom = game["rom"][0];
+            }
+        } else {
+            rom = game["rom"];
+        }
     }
 };

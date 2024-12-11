@@ -3,8 +3,15 @@
  * @param {number} id
  * @param {number} auto 
  */
-function reload(id, auto) {
-    window.location.replace(`${window.location.href.split("?")[0]}?id=${id}&auto=${auto}`);
+function reload(id, auto, region=undefined) {
+    let queries = `?id=${id}`;
+    if(auto) {
+        queries += `&auto=1`
+    }
+    if(region) {
+        queries += `&reg=${region}`
+    }
+    window.location.replace(`${window.location.href.split("?")[0]}${queries}`);
 }
 
 function upper(str) {
@@ -34,4 +41,13 @@ function getQueryVariable(key, defaultValue) {
         }
     }
     return defaultValue;
+}
+
+function parseRegion(name) {
+    let begin = name.lastIndexOf("@");
+    let end = name.lastIndexOf(".");
+    if (begin != -1 && end != -1) {
+        return name.substring(begin + 1, end);
+    }
+    return undefined
 }

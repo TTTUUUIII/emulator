@@ -392,7 +392,7 @@ LN_ARRAY=(
 	^sega-genesis/delphine_software/Another_World/
 	Out_of_This_World_US.zip
 	Out_of_This_World@US.zip
-	Another—World_NA_-_01.jpg
+	Another-World_NA_-_01.jpg
 	images/Another_World_NA_-_01.jpg
 
 	# Sega Saturn

@@ -136,6 +136,10 @@ LN_ARRAY=(
 	^nes/hudson_soft/Lode_Runner/
 	Lode_Runner_JP.nes
 	Lode_Runner@JP.nes
+	Lode_Runner_US.nes
+	Lode_Runner@US.nes
+	Lode_Runner_EU.nes
+	Lode_Runner@EU.nes
 	Lode_Runnder_NES_JP_-_01.jpg
 	images/Lode_Runnder_NES_JP_-_01.jpg
 
@@ -156,6 +160,10 @@ LN_ARRAY=(
 	^nes/toaplan/Snow_Bros/
 	Snow_Bros._JP.nes
 	Snow_Bros.@JP.nes
+	Snow_Bros._US.nes
+	Snow_Bros.@US.nes
+	Snow_Bros._EU.nes
+	Snow_Bros.@EU.nes
 	Snow_Bros._-_NES_NA_-_01.jpg
 	images/Snow_Bros._-_NES_NA_-_01.jpg
 

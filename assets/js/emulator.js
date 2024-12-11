@@ -67,5 +67,6 @@ var Emulator = {
         } else {
             rom = game["rom"];
         }
+        return rom;
     }
 };

@@ -415,7 +415,10 @@
 						{
 							"id": 946,
 							"title": "Gun-Nac",
-							"rom": "Gun-Nac@US.nes",
+							"rom": [
+								"Gun-Nac@US.nes",
+								"Gun-Nac@JP.nes"
+							],
 							"img": "GunNacUSCover.jpg",
 							"genre": [
 								2

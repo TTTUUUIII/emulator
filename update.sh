@@ -13,20 +13,39 @@ function pr_warn() {
 	echo -e "\e[33m$1\e[0m"
 }
 
+# function create_link() {
+# 	for ((i = 0; i < ${#DATA_MAPPING[@]}; i += 5)); do
+# 		rom=${DATA_MAPPING[((i))]}
+# 		rom_to=${DATA_MAPPING[((i + 1))]}
+# 		img=${DATA_MAPPING[((i + 2))]}
+# 		img_to=${DATA_MAPPING[((i + 3))]}
+# 		base=${DATA_MAPPING[((i + 4))]}
+# 		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
+# 			ln -s "$SOURCE/$base$rom" "$WEB_ROOT/data/$rom_to" && echo "New ROM Link $WEB_ROOT/data/$rom_to"
+# 		fi
+# 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
+# 			ln -s "$SOURCE/$base$img" "$WEB_ROOT/data/images/$img_to" && echo "NEW IMG Link $WEB_ROOT/data/images/$img_to"
+# 		fi
+# 	done
+# }
+
 function create_link() {
-	for ((i = 0; i < ${#DATA_MAPPING[@]}; i += 5)); do
-		rom=${DATA_MAPPING[((i))]}
-		rom_to=${DATA_MAPPING[((i + 1))]}
-		img=${DATA_MAPPING[((i + 2))]}
-		img_to=${DATA_MAPPING[((i + 3))]}
-		base=${DATA_MAPPING[((i + 4))]}
-		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
-			ln -s "$SOURCE/$base$rom" "$WEB_ROOT/data/$rom_to" && echo "New ROM Link $WEB_ROOT/data/$rom_to"
+	local rel=""
+	for ((i = 0; i < ${#LN_ARRAY[@]}; ++i)); do
+        local index=$(expr index "${LN_ARRAY[i]}" "^")
+		if [ $index -ne 0 ]; then
+			rel=${LN_ARRAY[i]:1}
+			continue
 		fi
-		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
-			ln -s "$SOURCE/$base$img" "$WEB_ROOT/data/images/$img_to" && echo "NEW IMG Link $WEB_ROOT/data/images/$img_to"
+		local from=${LN_ARRAY[((i))]}
+		local to=${LN_ARRAY[((++i))]}
+		if [ ! -L "$WEB_ROOT/data/$to" ] && [ ! -f "$WEB_ROOT/data/$to" ]; then
+			if ! ln -s "$SOURCE/$rel$from" "$WEB_ROOT/data/$to"; then
+				return 1
+			fi
 		fi
 	done
+	return 0
 }
 
 function update_datamap() {
@@ -77,7 +96,7 @@ Options:
 cd ${GITDIR:-.} && git pull >/dev/null &&
 	case $1 in
 	--all)
-		create_link
+		[ ! create_link ] && exit 1
 		update_web
 		;;
 	--datamap | --update-datamap)
@@ -87,10 +106,10 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 		update_web
 		;;
 	--mapping | --update-mapping)
-		create_link
+		exit create_link
 		;;
 	--game | --update-game)
-		create_link
+		[ ! create_link ] && exit 1
 		update_datamap
 		update_sitemap
 		;;

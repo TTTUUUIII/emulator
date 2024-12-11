@@ -12,6 +12,15 @@ UI.onReload = (id, auto) => {
         Toast.warn("( ͡° ͜ʖ ͡°) Please provide game's ID");
     }
 }
+UI.onRegionChanged = (region) => {
+    let id = getQueryVariable("id");
+    if (id == -1) {
+        Toast.error("Unable find game's ID.");
+        return;
+    }
+    let auto = getQueryVariable("auto", false);
+    reload(id, auto, region);
+}
 
 // GPScanner.onConnectStateChanged = (gpindex, id, isconnected) => {
 //     console.log(`onConnectStateChanged: ${gpindex}, ${id}, ${isconnected}`);
@@ -31,7 +40,8 @@ function launch() {
     }
     UI.bind(game);
     let auto = getQueryVariable("auto", false);
-    Emulator.launch(game, auto);
+    let region = getQueryVariable("reg", undefined);
+    Emulator.launch(game, auto, region);
 }
 
 Datamap.onload = function() {

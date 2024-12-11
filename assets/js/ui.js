@@ -3,6 +3,7 @@ var UI = {
     onGetSeries: undefined,
     onGetGenre: undefined,
     onRandom: undefined,
+    onRegionChanged: undefined,
     init: function () {
         this.__bind_event();
         this.__refresh_clock($(".clock"));
@@ -140,5 +141,25 @@ var UI = {
                 )
             );
         }
-    },
+        let region = undefined;
+        let container = $(".screen > select");
+        if (Array.isArray(game["rom"])) {
+            for(it of game["rom"]) {
+                region = parseRegion(it);
+                region && container.append(
+                    $(`<option value=${region.toLowerCase()}>${region}</option>`)
+                );
+            }
+        } else {
+            region = parseRegion(game["rom"]);
+            region && container.append(
+                $(`<option value=${region.toLowerCase()}>${region}</option>`)
+            );
+        }
+        region = getQueryVariable("reg", undefined);
+        region && container.val(region);
+        container.change(function() {
+            UI.onRegionChanged(this.value);
+        });
+    }
 };

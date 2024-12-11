@@ -1,6 +1,6 @@
 {
 	"description": "Emulator datamap edit by SNOWLAND.",
-	"version": 2.0,
+	"version": 3.0,
 	"genres": [
 		{
 			"id": 1,
@@ -110,7 +110,7 @@
 						{
 							"id": 1294,
 							"title": "Circus Charlie",
-							"rom": "Circus_Charlie_JP.nes",
+							"rom": "Circus_Charlie@JP.nes",
 							"img": "Circus_CharlieFlyer.jpg",
 							"genre": [
 								1
@@ -120,7 +120,7 @@
 						{
 							"id": 998,
 							"title": "Salamander",
-							"rom": "Salamander_JP.nes",
+							"rom": "Salamander@JP.nes",
 							"img": "Salamander_NES.jpg",
 							"genre": [
 								2
@@ -131,7 +131,7 @@
 						{
 							"id": 1888,
 							"title": "Gradius II: GOFER no Yabō",
-							"rom": "Gradius_II_JP.nes",
+							"rom": "Gradius_II@JP.nes",
 							"img": "Gradius_II_-_GOFER_no_Yabou_-_01.jpg",
 							"genre": [
 								2
@@ -142,7 +142,7 @@
 						{
 							"id": 1163,
 							"title": "Contra",
-							"rom": "Contra_JP.nes",
+							"rom": "Contra@JP.nes",
 							"img": "Contra_NA_01.jpg",
 							"genre": [
 								6,
@@ -154,7 +154,7 @@
 						{
 							"id": 1203,
 							"title": "Super Contra",
-							"rom": "Super_Contra_JP.nes",
+							"rom": "Super_Contra@JP.nes",
 							"img": "Super_Contra_(arcade)_-_01.png",
 							"genre": [
 								6,
@@ -166,7 +166,7 @@
 						{
 							"id": 1170,
 							"title": "Rush 'n Attack",
-							"rom": "Rush_'n_Attack_US.nes",
+							"rom": "Rush_'n_Attack@US.nes",
 							"img": "Rush_'n_Attack_(Flyer).png",
 							"genre": [
 								3
@@ -176,7 +176,7 @@
 						{
 							"id": 1436,
 							"title": "TwinBee",
-							"rom": "TwinBee_JP.nes",
+							"rom": "TwinBee@JP.nes",
 							"img": "TwinBee_(front)_JP.png",
 							"genre": [
 								2
@@ -187,7 +187,7 @@
 						{
 							"id": 1445,
 							"title": "Moero TwinBee - Cinnamon Hakase o Sukue!",
-							"rom": "Moero_TwinBee_-_Cinnamon_Hakase_o_Sukue!_JP.nes",
+							"rom": "Moero_TwinBee_-_Cinnamon_Hakase_o_Sukue!@JP.nes",
 							"img": "Moero_TwinBee_-_Cinnamon-hakase_o_Sukue_01.jpg",
 							"genre": [
 								2
@@ -198,7 +198,7 @@
 						{
 							"id": 1455,
 							"title": "TwinBee 3: Poko Poko Daimaou",
-							"rom": "TwinBee_3_-_Poko_Poko_Daimaou_JP.nes",
+							"rom": "TwinBee_3_-_Poko_Poko_Daimaou@JP.nes",
 							"img": "TwinBee_3_-_Poko_Poko_Daimaou_-_01.jpg",
 							"genre": [
 								2
@@ -209,7 +209,7 @@
 						{
 							"id": 1519,
 							"title": "Crisis Force",
-							"rom": "Crisis_Force_JP.nes",
+							"rom": "Crisis_Force@JP.nes",
 							"img": "Crisis_Force_-_01.jpg",
 							"genre": [
 								2
@@ -219,7 +219,7 @@
 						{
 							"id": 1555,
 							"title": "The Goonies",
-							"rom": "Goonies_JP.nes",
+							"rom": "Goonies@JP.nes",
 							"img": "The_Goonies_Famicom_01.jpg",
 							"genre": [
 								1
@@ -229,7 +229,7 @@
 						{
 							"id": 1563,
 							"title": "The Goonies II: The Fratellis’ Last Stand",
-							"rom": "Goonies_II_US.nes",
+							"rom": "Goonies_II@US.nes",
 							"img": "The_Goonies_II_01.jpg",
 							"genre": [
 								1
@@ -239,7 +239,7 @@
 						{
 							"id": 1625,
 							"title": "Castlevania",
-							"rom": "Akumajou_Dracula_JP.nes",
+							"rom": "Akumajou_Dracula@JP.nes",
 							"img": "Castlevania_-_NA_-_01.jpg",
 							"genre": [
 								1, 3
@@ -250,7 +250,7 @@
 						{
 							"id": 1630,
 							"title": "Castlevania II: Simon's Quest",
-							"rom": "Castlevania_II_-_Simon's_Quest_US.nes",
+							"rom": "Castlevania_II_-_Simon's_Quest@US.nes",
 							"img": "Castlevania_II_Simno's_Quest_01.jpg",
 							"genre": [
 								1, 3
@@ -261,7 +261,7 @@
 						{
 							"id": 1640,
 							"title": "Castlevania III: Dracula's Curse",
-							"rom": "Castlevania_III_-_Dracula's_Curse_US.nes",
+							"rom": "Castlevania_III_-_Dracula's_Curse@US.nes",
 							"img": "Castlevania_III_-_Dracula's_Curse_-_NA_-_01.jpg",
 							"genre": [
 								1, 3
@@ -273,7 +273,7 @@
 							
 							"id": 1990,
 							"title": "Teenage Mutant Ninja Turtles III: The Manhattan Project",
-							"rom": "Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_US.nes",
+							"rom": "Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project@US.nes",
 							"img": "Teenage_Mutant_Ninja_Turtles_III_The_Manhattan_Project_NES_-_01.jpg",
 							"genre": [
 								3
@@ -285,7 +285,7 @@
 							
 							"id": 1995,
 							"title": "Teenage Mutant Ninja Turtles II: The Arcade Game",
-							"rom": "Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_US.nes",
+							"rom": "Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game@US.nes",
 							"img": "Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg",
 							"genre": [
 								3
@@ -314,7 +314,7 @@
 						{
 							"id": 1470,
 							"title": "Adventure Island",
-							"rom": "Adventure_Island_US.nes",
+							"rom": "Adventure_Island@US.nes",
 							"img": "Hudson's_Adventure_Island_01.png",
 							"genre": [
 								1
@@ -325,7 +325,7 @@
 						{
 							"id": 1473,
 							"title": "Adventure Island II",
-							"rom": "Adventure_Island_II_US.nes",
+							"rom": "Adventure_Island_II@US.nes",
 							"img": "Adventure_Island_II_US_01.jpg",
 							"genre": [
 								1
@@ -336,7 +336,7 @@
 						{
 							"id": 1475,
 							"title": "Adventure Island III",
-							"rom": "Adventure_Island_3_US.nes",
+							"rom": "Adventure_Island_3@US.nes",
 							"img": "Adventure_Island_3_NES_01.jpg",
 							"genre": [
 								1
@@ -347,7 +347,7 @@
 						{
 							"id": 1984,
 							"title": "Lode Runner",
-							"rom": "Lode_Runner_JP.nes",
+							"rom": "Lode_Runner@JP.nes",
 							"img": "Lode_Runnder_NES_JP_-_01.jpg",
 							"genre": [
 								1,7
@@ -363,7 +363,7 @@
 						{
 							"id": 1477,
 							"title": "Double Dragon",
-							"rom": "Double_Dragon_US.nes",
+							"rom": "Double_Dragon@US.nes",
 							"img": "Double_Dragon_NES_-_01.jpg",
 							"genre": [
 								3
@@ -374,7 +374,7 @@
 						{
 							"id": 1480,
 							"title": "Double Dragon II",
-							"rom": "Double_Dragon_II_-_The_Revenge_EU.nes",
+							"rom": "Double_Dragon_II_-_The_Revenge@EU.nes",
 							"img": "Double_Dragon_II_The_Revenge_NES_-_01.jpg",
 							"genre": [
 								3
@@ -385,7 +385,7 @@
 						{
 							"id": 1482,
 							"title": "Double Dragon III",
-							"rom": "Double_Dragon_III_-_The_Sacred_Stones_US_.nes",
+							"rom": "Double_Dragon_III_-_The_Sacred_Stones@US.nes",
 							"img": "Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg",
 							"genre": [
 								3
@@ -402,7 +402,7 @@
 						{
 							"id": 946,
 							"title": "Gun-Nac",
-							"rom": "Gun-Nac_US.nes",
+							"rom": ["Gun-Nac@US.nes", "Gun-Nac@JP.nes"],
 							"img": "GunNacUSCover.jpg",
 							"genre": [
 								2
@@ -418,7 +418,7 @@
 						{
 							"id": 1234,
 							"title": "1942",
-							"rom": "1942_US.nes",
+							"rom": "1942@US.nes",
 							"img": "1942_US_Flyer.jpg",
 							"genre": [
 								2
@@ -429,7 +429,7 @@
 						{
 							"id": 1238,
 							"title": "1943 - The Battle of Valhalla.",
-							"rom": "1943_JP.nes",
+							"rom": "1943@JP.nes",
 							"img": "1943_Flyer.jpg",
 							"genre": [
 								2
@@ -440,7 +440,7 @@
 						{
 							"id": 1102,
 							"title": "Chip 'n Dale - Rescue Rangers",
-							"rom": "Rescue_'n_Dale_-_Rescue_Rangers_US.nes",
+							"rom": "Rescue_'n_Dale_-_Rescue_Rangers@US.nes",
 							"img": "Rescue_Rangers_NES.jpg",
 							"genre": [
 								1
@@ -451,7 +451,7 @@
 						{
 							"id": 1095,
 							"title": "Chip 'n Dale - Rescue Rangers 2",
-							"rom": "Rescue_'n_Dale_-_Rescue_Rangers_2_US.nes",
+							"rom": "Rescue_'n_Dale_-_Rescue_Rangers_2@US.nes",
 							"img": "Rescue_Rangers2_NES.jpg",
 							"genre": [
 								1
@@ -468,7 +468,7 @@
 						{
 							"id": 1734,
 							"title": "Twin Cobra",
-							"rom": "Twin_Cobra_US.nes",
+							"rom": "Twin_Cobra@US.nes",
 							"img": "Twin_Cobra_NES_NA_01.jpg",
 							"genre": [
 								2
@@ -478,7 +478,7 @@
 						{
 							"id": 1970,
 							"title": "Snow Bros.",
-							"rom": "Snow_Bros._JP.nes",
+							"rom": "Snow_Bros.@JP.nes",
 							"img": "Snow_Bros._-_NES_NA_-_01.jpg",
 							"genre": [
 								1
@@ -494,7 +494,7 @@
 						{
 							"id": 1177,
 							"title": "Xevious",
-							"rom": "Xevious_US.nes",
+							"rom": "Xevious@US.nes",
 							"img": "Xevious.jpg",
 							"genre": [
 								2
@@ -504,14 +504,14 @@
 						{
 							"id": 1152,
 							"title": "Battle City",
-							"rom": "Battle_City_JP.nes",
+							"rom": "Battle_City@JP.nes",
 							"img": "Battle_City_NES.jpg",
 							"release": 1985
 						},
 						{
 							"id": 1404,
 							"title": "Galaxian",
-							"rom": "Galaxian_JP.nes",
+							"rom": "Galaxian@JP.nes",
 							"img": "Galaxian_JP_Flyer.jpg",
 							"genre": [
 								2
@@ -522,7 +522,7 @@
 						{
 							"id": 1407,
 							"title": "Galaga",
-							"rom": "Galaga_JP.nes",
+							"rom": "Galaga@JP.nes",
 							"img": "Galaga.jpg",
 							"genre": [
 								2
@@ -533,7 +533,7 @@
 						{
 							"id": 1413,
 							"title": "Gaplus",
-							"rom": "Gaplus_W.nes",
+							"rom": "Gaplus@W.nes",
 							"img": "Gaplus_(front)_EU.jpg",
 							"genre": [
 								2
@@ -550,7 +550,7 @@
 						{
 							"id": 1195,
 							"title": "Super Mario Bros.",
-							"rom": "Super_Mario_Bros_US.nes",
+							"rom": "Super_Mario_Bros@US.nes",
 							"img": "Super_Mario_Bros_USA.jpg",
 							"genre": [
 								1
@@ -561,7 +561,7 @@
 						{
 							"id": 1466,
 							"title": "Ice Climber",
-							"rom": "Ice_Climber_JP.nes",
+							"rom": "Ice_Climber@JP.nes",
 							"img": "NES_Ice_Climber_01.jpg",
 							"genre": [
 								1
@@ -571,7 +571,7 @@
 						{
 							"id": 1256,
 							"title": "F-1 Race",
-							"rom": "F-1_Race_US.nes",
+							"rom": "F-1_Race@US.nes",
 							"img": "F-1_Race_Cover.jpg",
 							"genre": [
 								5
@@ -581,7 +581,7 @@
 						{
 							"id": 1463,
 							"title": "Excitebike",
-							"rom": "Excitebike_JU.nes",
+							"rom": "Excitebike@JU.nes",
 							"img": "Excitebike_NA_01.png",
 							"genre": [
 								5
@@ -597,7 +597,7 @@
 						{
 							"id": 1545,
 							"title": "Summer Carnival'92: Recca",
-							"rom": "Summer_Carnival_'92_-_Recca_JP.nes",
+							"rom": "Summer_Carnival_'92_-_Recca@JP.nes",
 							"img": "Summer_Carnival_92_Recca_JP_01.jpg",
 							"genre": [
 								2
@@ -613,7 +613,7 @@
 						{
 							"id": 1,
 							"title": "Flappy Bird",
-							"rom": "FlappyBird.nes",
+							"rom": "FlappyBird@W.nes",
 							"img": ["FlappyBird_NES_-_01.jpg", "FlappyBird_NES_Poster.png"],
 							"genre": [
 								1
@@ -634,7 +634,7 @@
 						{
 							"id": 1744,
 							"title": "Super Castlevania IV",
-							"rom": "Super_Castlevania_IV_US.zip",
+							"rom": "Super_Castlevania_IV@US.zip",
 							"img": "Super_Castlevania_IV_-_NA_-_01.jpg",
 							"genre": [
 								1, 3
@@ -645,7 +645,7 @@
 						{
 							"id": 1882,
 							"title": "Castlevania: Dracula X",
-							"rom": "Castlevania_-_Dracula_X_US.zip",
+							"rom": "Castlevania_-_Dracula_X@US.zip",
 							"img": "Castlevania_Dracula_X_NA_-_01.jpg",
 							"genre": [
 								1, 3
@@ -657,7 +657,7 @@
 							
 							"id": 2001,
 							"title": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
-							"rom": "Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time_US.zip",
+							"rom": "Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time@US.zip",
 							"img": "Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time_SNES_NA_-_01.jpg",
 							"genre": [
 								3
@@ -673,7 +673,7 @@
 						{
 							"id": 1917,
 							"title": "Super Street Fighter II: The New Challengers",
-							"rom": "Super_Street_Fighter_II_US.zip",
+							"rom": "Super_Street_Fighter_II@US.zip",
 							"img": "Super_Street_Fighter_II_SNES_NA_-_01.jpg",
 							"genre": [
 								4
@@ -684,7 +684,7 @@
 						{
 							"id": 1927,
 							"title": "Street Fighter II: The World Warrior",
-							"rom": "Street_Fighter_II_The_World_Warrior_US.zip",
+							"rom": "Street_Fighter_II_The_World_Warrior@US.zip",
 							"img": "Street_Fighter_II_The_World_Warrior_SNES_NA_-_01.jpg",
 							"genre": [
 								4
@@ -695,7 +695,7 @@
 						{
 							"id": 1932,
 							"title": "Street Fighter II: Turbo",
-							"rom": "Street_Fighter_II_Turbo_US.zip",
+							"rom": "Street_Fighter_II_Turbo@US.zip",
 							"img": "Street_Fighter_II_Turbo_SNES_NA_-_01.jpg",
 							"genre": [
 								4
@@ -706,7 +706,7 @@
 						{
 							"id": 1935,
 							"title": "Street Fighter Alpha 2",
-							"rom": "Street_Fighter_Alpha_2_US.zip",
+							"rom": "Street_Fighter_Alpha_2_-_SNES@US.zip",
 							"img": "Street-Fighter-Alpha_2_SNES_NA_-_01.webp",
 							"genre": [
 								4
@@ -723,7 +723,7 @@
 						{
 							"id": 1814,
 							"title": "Thunder Spirits",
-							"rom": "Thunder_Spirits_US.zip",
+							"rom": "Thunder_Spirits@US.zip",
 							"img": "Thunder_Spirits_NA_-_01.jpg",
 							"genre": [
 								2
@@ -759,7 +759,7 @@
 						{
 							"id": 1526,
 							"title": "Twin Cobra",
-							"rom": "Twin-Cobra_Genesis_EN.zip",
+							"rom": "Twin-Cobra_Genesis@EN.zip",
 							"img": "Twin_Cobra_-_MDUS_01.jpg",
 							"genre": [
 								2
@@ -769,7 +769,7 @@
 						{
 							"id": 1967,
 							"title": "Snow Bros. - Nick & Tom",
-							"rom": "Snow_Bros._-_Nick_&_Tom.zip",
+							"rom": "Snow_Bros._-_Nick_&_Tom@US.zip",
 							"img": "Snow_Bros._Genesis_NA_-_01.png",
 							"genre": [
 								1
@@ -784,7 +784,7 @@
 						{
 							"id": 1895,
 							"title": "Street Fighter II': Champion Edition",
-							"rom": "Street_Fighter_II'_-_Champion_Edition_US.zip",
+							"rom": "Street_Fighter_II'_-_Champion_Edition@US.zip",
 							"img": "Street_Fighter_II_Champion_Edition_Genesis_NA_-_01.jpg",
 							"genre": [
 								4
@@ -795,7 +795,7 @@
 						{
 							"id": 1905,
 							"title": "Street Fighter II': Special Champion Edition",
-							"rom": "Street_Fighter_II'_-_Special_Champion_Edition_US.zip",
+							"rom": "Street_Fighter_II'_-_Special_Champion_Edition@US.zip",
 							"img": "Street_Fighter_II_Special_Championship_Edition_NA_-_01.jpg",
 							"genre": [
 								4
@@ -806,7 +806,7 @@
 						{
 							"id": 1911,
 							"title": "Super Street Fighter II: The New Challengers",
-							"rom": "Super_Street_Fighter_II_US_(Virtual Console).zip",
+							"rom": "Super_Street_Fighter_II_-_MD@US.zip",
 							"img": "Super_Street_Fighter_II_The_New_Challengers_NA_-_01.jpg",
 							"genre": [
 								4
@@ -833,7 +833,7 @@
 						{
 							"id": 1643,
 							"title": "Castlevania: Bloodlines",
-							"rom": "Castlevania_-_Bloodlines_US.zip",
+							"rom": "Castlevania_-_Bloodlines@US.zip",
 							"img": "Castlevania_-_Bloodlines_-_NA_-_01.jpg",
 							"genre": [
 								1, 3
@@ -845,7 +845,7 @@
 							
 							"id": 2009,
 							"title": "Teenage Mutant Ninja Turtles: The Hyperstone Heist",
-							"rom": "Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist_US.zip",
+							"rom": "Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist@US.zip",
 							"img": "Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg",
 							"genre": [
 								3
@@ -862,7 +862,7 @@
 						{
 							"id": 1568,
 							"title": "Thunder Force III",
-							"rom": "Thunder_Force_III_JU.zip",
+							"rom": "Thunder_Force_III@JU.zip",
 							"img": "Thunder_Force_III_SegaMD_01.jpg",
 							"genre": [
 								2
@@ -873,7 +873,7 @@
 						{
 							"id": 1572,
 							"title": "Thunder Force II",
-							"rom": "Thunder_Force_II_UE.zip",
+							"rom": "Thunder_Force_II@UE.zip",
 							"img": "Thunder_Force_II_US_01.jpg",
 							"genre": [
 								2
@@ -890,7 +890,7 @@
 						{
 							"id": 1869,
 							"title": "Another World",
-							"rom": "Out_of_This_World_US.zip",
+							"rom": "Out_of_This_World@US.zip",
 							"img": "Another_World_NA_-_01.jpg",
 							"genre": [
 								1,3,7
@@ -911,7 +911,7 @@
 						{
 							"id": 1940,
 							"title": "Street Fighter Alpha 2",
-							"rom": "Street_Fighter_Alpha_2_(USA).zip",
+							"rom": "Street_Fighter_Alpha_2@US.zip",
 							"img": "Street_Fighter_Alpha_2_Saturn_NA_-_01.webp",
 							"genre": [
 								4

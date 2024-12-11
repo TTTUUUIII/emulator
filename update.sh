@@ -98,7 +98,9 @@ Options:
 cd ${GITDIR:-.} && git pull >/dev/null &&
 	case $1 in
 	--all)
-		[ ! create_link ] && exit 1
+		if ! create_link ; then
+			exit 1
+		fi
 		update_web
 		;;
 	--datamap | --update-datamap)
@@ -109,13 +111,11 @@ cd ${GITDIR:-.} && git pull >/dev/null &&
 		;;
 	--mapping | --update-mapping)
 		if ! create_link; then
-			pr_error "create_link exit error status."
 			exit 1
 		fi
 		;;
 	--game | --update-game)
 		if ! create_link; then
-			pr_error "create_link exit error status."
 			exit 1
 		fi
 		update_datamap

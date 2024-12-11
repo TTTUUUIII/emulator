@@ -110,6 +110,8 @@ LN_ARRAY=(
 	^nes/konami/Teenage_Mutant_Ninja_Turtles/
 	Teenage_Mutant_Ninja_Turtles@US.nes
 	Teenage_Mutant_Ninja_Turtles@US.nes
+	Teenage_Mutant_Hero_Turtles@EU.nes
+	Teenage_Mutant_Hero_Turtles@EU.nes
 	TMNT_NES_NA_-_01.jpg
 	images/TMNT_NES_NA_-_01.jpg
 

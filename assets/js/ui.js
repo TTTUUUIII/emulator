@@ -142,7 +142,7 @@ var UI = {
             );
         }
         let region = undefined;
-        let container = $(".screen > select");
+        let container = $(".screen select");
         if (Array.isArray(game["rom"])) {
             for(it of game["rom"]) {
                 region = parseRegion(it);

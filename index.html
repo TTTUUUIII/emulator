@@ -13,94 +13,100 @@
     <title>🕹 Emulator | Online 🎮 Game Arcade - Play all games online! 🛸</title>
 </head>
 <body>
-    <div class="full-window h-stack">
-        <img class="main-background" src="assets/img/default.jpg" />
-        <div class="sliderbar">
-            <div class="card p-m radius-sm hover-shadow background-widget">
-                <div class="card-header">
-                    <div class="marquee">
-                        <h4 id="game-title" class="text-center italic one-line text-shadow">
-                            👾 Welcome~
-                        </h4>
+    <img class="main-background" src="assets/img/default.jpg" />
+    <div class="full-window v-stack">
+        <div class="page-body h-stack">
+            <div class="sliderbar">
+                <div class="card p-m radius-sm hover-shadow background-widget">
+                    <div class="card-header">
+                        <div class="marquee">
+                            <h4 id="game-title" class="text-center italic one-line text-shadow">
+                                👾 Welcome~
+                            </h4>
+                        </div>
+                    </div>
+                    <img id="game-img" class="card-img-bordered" src="assets/img/default.jpg" >
+                    <div id="game-details" class="card-body">
+                        <!-- card-item -->
                     </div>
                 </div>
-                <img id="game-img" class="card-img-bordered" src="assets/img/default.jpg" >
-                <div id="game-details" class="card-body">
-                    <!-- card-item -->
+                <div class="launch-panel mt-sm p-m radius-sm hover-shadow background-widget">
+                    <div class="h-stack">
+                        <button id="random" title="A random id.">🎲</button>
+                        <input autocomplete="off" placeholder="ID" type="number" id="game-id" />
+                        <button id="launch" title="Launch now!">🚀</i></button>
+                    </div>
                 </div>
             </div>
-            <div class="launch-panel mt-sm p-m radius-sm hover-shadow background-widget">
-                <div class="h-stack">
-                    <button id="random" title="A random id.">🎲</button>
-                    <input autocomplete="off" placeholder="ID" type="number" id="game-id" />
-                    <button id="launch" title="Launch now!">🚀</i></button>
+            <div class="game-container v-stack">
+                <div class="screen">
+                    <div class="region-select h-stack-inline">
+                        <span class="icon">🌏️</span>
+                        <select></select>
+                    </div>
+                    <div id="game" class="radius-m mt-sm"></div>
                 </div>
             </div>
-        </div>
-        <div class="game-container">
-            <div class="screen">
-                <select class="select radius-sm"></select>
-                <div id="game" class="radius-m"></div>
-            </div>
-        </div>
-        <div class="sliderbar">
-            <div class="clock radius-sm background-widget hover-shadow"></div>
-            <div class="mt-sm p-m radius-sm hover-shadow background-widget">
-                <table class="basic-table">
-                    <tr>
-                        <td>
-                            <kbd class="command-key">
-                                <svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg>
-                            </kbd>
-                        </td>
-                        <td>Soft reset.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <kbd class="command-key">
-                                <svg width="15" height="15" class="DocSearch-Control-Key-Icon"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
-                            </kbd>
-                        </td>
-                        <td>Quick save state.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <kbd class="command-key">
-                                ⎇
-                            </kbd>
-                        </td>
-                        <td>Quick load state.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="h-stack">
-                                <kbd class="command-key mr-sm">⇧</kbd>
-                                +
-                                <kbd class="command-key ml-sm">
-                                    <svg width="15" height="15" class="DocSearch-Control-Key-Icon"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
+            <div class="sliderbar">
+                <div class="clock radius-sm background-widget hover-shadow"></div>
+                <div class="mt-sm p-m radius-sm hover-shadow background-widget">
+                    <table class="basic-table">
+                        <tr>
+                            <td>
+                                <kbd class="command-key">
+                                    <svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg>
                                 </kbd>
-                            </div>
-                        </td>
-                        <td>Save state to disk.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="h-stack">
-                                <kbd class="command-key mr-sm">⇧</kbd>
-                                +
-                                <kbd class="command-key ml-sm">
+                            </td>
+                            <td>Soft reset.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <kbd class="command-key">
+                                    <svg width="15" height="15"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
+                                </kbd>
+                            </td>
+                            <td>Quick save state.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <kbd class="command-key">
                                     ⎇
                                 </kbd>
-                            </div>
-                        </td>
-                        <td>Load state from disk.</td>
-                    </tr>
-                </table>
+                            </td>
+                            <td>Quick load state.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="h-stack">
+                                    <kbd class="command-key mr-s">⇧</kbd>
+                                    +
+                                    <kbd class="command-key ml-s">
+                                        <svg width="15" height="15"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg>
+                                    </kbd>
+                                </div>
+                            </td>
+                            <td>Save state to disk.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="h-stack">
+                                    <kbd class="command-key mr-s">⇧</kbd>
+                                    +
+                                    <kbd class="command-key ml-s">
+                                        ⎇
+                                    </kbd>
+                                </div>
+                            </td>
+                            <td>Load state from disk.</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+        <div class="page-footer">
+            <div>Copyright © 2007 Free Software Foundation, Inc. &lt;<a href="https://fsf.org/"/>https://fsf.org/</a>&gt;, Power by <a href="https://github.com/EmulatorJS/EmulatorJS">EmulatorJS</a>, Design by <a href="https://github.com/TTTUUUIII/emulator">SNOWLAND</a>.</div>
+        </div>
     </div>
-
-    <div class="toast-container v-stack">
-    </div>
+    <div class="toast-container v-stack"></div>
 </body>
 </html>

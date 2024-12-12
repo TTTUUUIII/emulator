@@ -994,6 +994,36 @@
 					]
 				}
 			]
+		},
+		{
+			"title": "Arcade",
+			"system": "arcade",
+			"series": [
+				{
+					"id": 1,
+					"title": "Metal Slug",
+					"url": "https://snowland.ink/?tag=metal-slug_series",
+					"poster": "Metal_Slug_Series_Poster.jpg"
+				}
+			],
+			"data": [
+				{
+					"developer": "SNK",
+					"games": [
+						{
+							"id": 2068,
+							"title": "Metal Slug: Super Vehicle-001",
+							"rom": "Metal_Slug_-_Super_Vehicle-001@US.zip",
+							"img": "Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg",
+							"genre": [
+								1, 6
+							],
+							"series_id": 1,
+							"release": 1996
+						}
+					]
+				}
+			]
 		}
 	],
 	"license": "GPLv3.0+"

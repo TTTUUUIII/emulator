@@ -21,8 +21,13 @@ function create_link() {
 			rel=${LN_ARRAY[i]:1}
 			continue
 		fi
-		local from=${LN_ARRAY[((i))]}
-		local to=${LN_ARRAY[((++i))]}
+		if [[ ${LN_ARRAY[i]} == ~* ]]; then
+			local from=${LN_ARRAY[i]:1}
+			local to=$from
+		else
+			local from=${LN_ARRAY[i]}
+			local to=${LN_ARRAY[((++i))]}
+		fi
 		if [ ! -L "$WEB_ROOT/data/$to" ] && [ ! -f "$WEB_ROOT/data/$to" ]; then
 			if ! ln -s "$SOURCE/$rel$from" "$WEB_ROOT/data/$to"; then
 				return 1

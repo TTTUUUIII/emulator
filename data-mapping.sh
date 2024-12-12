@@ -12,6 +12,8 @@ LN_ARRAY=(
 	^nes/konami/salamander/
 	Salamander_JP.nes
 	Salamander@JP.nes
+	Life_Force_-_Salamander@EU.nes
+	Life_Force_-_Salamander@EU.nes
 	Salamander_NES_large.jpg
 	images/Salamander_NES.jpg
 
@@ -32,6 +34,8 @@ LN_ARRAY=(
 	^nes/konami/Super_Contra/
 	Super_Contra_JP.nes
 	Super_Contra@JP.nes
+	Super_Contra@US.nes
+	Super_Contra@US.nes
 	Super_Contra_\(arcade\)_-_01.png
 	images/Super_Contra_\(arcade\)_-_01.png
 
@@ -54,6 +58,8 @@ LN_ARRAY=(
 	^nes/konami/Moero_TwinBee/
 	Moero_TwinBee_-_Cinnamon_Hakase_o_Sukue\!_JP.nes
 	Moero_TwinBee_-_Cinnamon_Hakase_o_Sukue\!@JP.nes
+	Stinger_US.nes
+	Stinger@US.nes
 	Moero_TwinBee_-_Cinnamon-hakase_o_Sukue_01.jpg
 	images/Moero_TwinBee_-_Cinnamon-hakase_o_Sukue_01.jpg
 
@@ -78,24 +84,34 @@ LN_ARRAY=(
 	^nes/konami/The_Goonies_II/
 	Goonies_II_US.nes
 	Goonies_II@US.nes
+	Goonies_II_EU.nes
+	Goonies_II@EU.nes
+	Goonies_II_JP.nes
+	Goonies_II@JP.nes
 	The_Goonies_II_01.jpg
 	images/The_Goonies_II_01.jpg
 
 	^nes/konami/Castlevania/
 	Akumajou_Dracula_JP.nes
 	Akumajou_Dracula@JP.nes
+	Castlevania_EU.nes
+	Castlevania@EU.nes
 	Castlevania_-_NA_-_01.jpg
 	images/Castlevania_-_NA_-_01.jpg
 
 	^nes/konami/Castlevania_II/
 	Castlevania_II_-_Simon\'s_Quest_US.nes
 	Castlevania_II_-_Simon\'s_Quest@US.nes
+	Castlevania_II_-_Simon\'s_Quest_EU.nes
+	Castlevania_II_-_Simon\'s_Quest@EU.nes
 	Castlevania_II_Simno\'s_Quest_01.jpg
 	images/Castlevania_II_Simno\'s_Quest_01.jpg
 
 	^nes/konami/Castlevania_III/
 	Castlevania_III_-_Dracula\'s_Curse_US.nes
 	Castlevania_III_-_Dracula\'s_Curse@US.nes
+	Castlevania_III_-_Dracula\'s_Curse_EU.nes
+	Castlevania_III_-_Dracula\'s_Curse@EU.nes
 	Castlevania_III_-_Dracula\'s_Curse_-_NA_-_01.jpg
 	images/Castlevania_III_-_Dracula\'s_Curse_-_NA_-_01.jpg
 
@@ -110,6 +126,10 @@ LN_ARRAY=(
 	^nes/konami/Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game/
 	Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_US.nes
 	Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game@US.nes
+	Teenage_Mutant_Hero_Turtles_II_-_The_Arcade_Game_EU.nes
+	Teenage_Mutant_Hero_Turtles_II_-_The_Arcade_Game@EU.nes
+	Teenage_Mutant_Ninja_Turtles_JP.nes
+	Teenage_Mutant_Ninja_Turtles@JP.nes
 	Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg
 	images/Teenage_Mutant_Ninja_Turtles_II_The_Arcade_Game_NES_NA_-_01.jpg
 
@@ -187,18 +207,24 @@ LN_ARRAY=(
 	^nes/capcom/1943/
 	1943_JP.nes
 	1943@JP.nes
+	1943_-_The_Battle_of_Midway@US.nes,
+	1943_-_The_Battle_of_Midway@US.nes
 	1943_Flyer.jpg
 	images/1943_Flyer.jpg
 
 	^nes/capcom/chipndalerescuerangers/
 	Rescue_\'n_Dale_-_Rescue_Rangers_US.nes
 	Rescue_\'n_Dale_-_Rescue_Rangers@US.nes
+	Chip_to_Dale_no_Daisakusen@JP.nes
+	Chip_to_Dale_no_Daisakusen@JP.nes
 	Rescue_Rangers_NES_large.jpg
 	images/Rescue_Rangers_NES.jpg
 
 	^nes/capcom/chipndalerescuerangers2/
 	Rescue_\'n_Dale_-_Rescue_Rangers_2_US.nes
 	Rescue_\'n_Dale_-_Rescue_Rangers_2@US.nes
+	Chip_to_Dale_no_Daisakusen_2@JP.nes
+	Chip_to_Dale_no_Daisakusen_2@JP.nes
 	Rescue_Rangers2_NES_large.jpg
 	images/Rescue_Rangers2_NES.jpg
 
@@ -206,6 +232,10 @@ LN_ARRAY=(
 	^nes/namco/Xevious/
 	Xevious_US.nes
 	Xevious@US.nes
+	Xevious@JP.nes
+	Xevious@JP.nes
+	Xevious@EU.nes
+	Xevious@EU.nes
 	Xevious_Large.jpg
 	images/Xevious.jpg
 
@@ -224,6 +254,8 @@ LN_ARRAY=(
 	^nes/namco/Galaga/
 	Galaga_JP.nes
 	Galaga@JP.nes
+	Galaga_EU.nes
+	Galaga@EU.nes
 	Galaga.jpg
 	images/Galaga.jpg
 
@@ -262,6 +294,8 @@ LN_ARRAY=(
 	^nes/technos/Double_Dragon/
 	Double_Dragon_US.nes
 	Double_Dragon@US.nes
+	Double_Dragon_EU.nes
+	Double_Dragon@EU.nes
 	Double_Dragon_NES_-_01.jpg
 	images/Double_Dragon_NES_-_01.jpg
 
@@ -274,6 +308,8 @@ LN_ARRAY=(
 	^nes/technos/Double_Dragon_III/
 	Double_Dragon_III_-_The_Sacred_Stones_US_.nes
 	Double_Dragon_III_-_The_Sacred_Stones@US.nes
+	Double_Dragon_III_-_The_Sacred_Stones_EU_.nes
+	Double_Dragon_III_-_The_Sacred_Stones@EU.nes
 	Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 	images/Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 

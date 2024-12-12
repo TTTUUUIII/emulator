@@ -105,12 +105,13 @@ body {
 }
 
 .region-select > select {
-    min-width: 65px;
+    min-width: 77px;
     padding-left: var(--padding_size_s);
 }
 
 .region-select > span {
     background-color: var(--color_foreground);
+    padding: var(--padding_size_tiny);
 }
 
 .toast-container {
@@ -220,6 +221,10 @@ kbd {
 
 .hidden {
     display: none;
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 .hover-shadow {

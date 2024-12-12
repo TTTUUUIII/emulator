@@ -142,23 +142,24 @@ var UI = {
             );
         }
         let region = undefined;
-        let container = $(".screen select");
+        let regionSelectElement = $(".region-select > select");
         if (Array.isArray(game["rom"])) {
             for(it of game["rom"]) {
                 region = parseRegion(it);
-                region && container.append(
+                region && regionSelectElement.append(
                     $(`<option value=${region.toLowerCase()}>${region}</option>`)
                 );
             }
         } else {
             region = parseRegion(game["rom"]);
-            region && container.append(
+            region && regionSelectElement.append(
                 $(`<option value=${region.toLowerCase()}>${region}</option>`)
             );
         }
+        regionSelectElement.children().length > 0 && regionSelectElement.parent().removeClass("invisible")
         region = getQueryVariable("reg", undefined);
-        region && container.val(region);
-        container.change(function() {
+        region && regionSelectElement.val(region);
+        regionSelectElement.change(function() {
             UI.onRegionChanged(this.value);
         });
     }

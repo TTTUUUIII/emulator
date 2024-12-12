@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. "$(dirname `readlink -f $0`)/data-mapping.sh"
+. "$(dirname $(readlink -f $0))/data-mapping.sh"
 
 WEB_ROOT=/var/www/emulator.snowland.ink
 SOURCE=/var/www/media.snowland.ink
@@ -13,26 +13,11 @@ function pr_warn() {
 	echo -e "\e[33m$1\e[0m"
 }
 
-# function create_link() {
-# 	for ((i = 0; i < ${#DATA_MAPPING[@]}; i += 5)); do
-# 		rom=${DATA_MAPPING[((i))]}
-# 		rom_to=${DATA_MAPPING[((i + 1))]}
-# 		img=${DATA_MAPPING[((i + 2))]}
-# 		img_to=${DATA_MAPPING[((i + 3))]}
-# 		base=${DATA_MAPPING[((i + 4))]}
-# 		if [ ! -L "$WEB_ROOT/data/$rom_to" ] && [ ! -f "$WEB_ROOT/data/$rom_to" ]; then
-# 			ln -s "$SOURCE/$base$rom" "$WEB_ROOT/data/$rom_to" && echo "New ROM Link $WEB_ROOT/data/$rom_to"
-# 		fi
-# 		if [ ! -L "$WEB_ROOT/data/images/$img_to" ] && [ ! -f "$WEB_ROOT/data/images/$img_to" ]; then
-# 			ln -s "$SOURCE/$base$img" "$WEB_ROOT/data/images/$img_to" && echo "NEW IMG Link $WEB_ROOT/data/images/$img_to"
-# 		fi
-# 	done
-# }
-
 function create_link() {
+	return 1
 	local rel=""
 	for ((i = 0; i < ${#LN_ARRAY[@]}; ++i)); do
-        local index=$(expr index "${LN_ARRAY[i]}" "^")
+		local index=$(expr index "${LN_ARRAY[i]}" "^")
 		if [ $index -ne 0 ]; then
 			rel=${LN_ARRAY[i]:1}
 			continue
@@ -55,21 +40,16 @@ function update_datamap() {
 		chmod +x tools/jq
 	fi
 	tools/jq --compact-output . data/datamap.json >$WEB_ROOT/data/datamap.json
-	return $?
 }
 
 function update_sitemap() {
 	python tools/generate-sitemap.py $WEB_ROOT
 }
 
-function update_web() {
-	if [ ! -x "tools/jq" ]; then
-		chmod +x tools/jq
-	fi
+function update_assets() {
 	cp index.html $WEB_ROOT/ &&
 		cp assets/css/* $WEB_ROOT/assets/css/ &&
 		cp assets/img/* $WEB_ROOT/assets/img/ &&
-		update_datamap &&
 		java -jar tools/closure-compiler.jar \
 			--js assets/js/functions.js \
 			--js assets/js/datamap.js \
@@ -78,54 +58,42 @@ function update_web() {
 			--js assets/js/emulator.js \
 			--js assets/js/main.js \
 			--js_output_file $WEB_ROOT/assets/js/main.min.js
-	return $?
 }
 
 function help() {
 	echo """
 update.sh by wn123o.
-Usage: update.sh [option]
-Options:
-    --all               Update link 、datamap and web files.
-    --create-link       Create game link.
-    --web        Update datamap and web files.
-    --datamap    Update datamap.
-	--sitemap	 Update sitemap.
+Usage: update.sh [action...]
+Actions:
+    slink			Create file soft link.
+    assets			Update web assets. css, js, img
+    sitemap			Gnenerate sitemap.
+    datamap			Update data map.
 """
 }
 
-cd ${GITDIR:-.} && git pull >/dev/null &&
-	case $1 in
-	--all)
-		if ! create_link ; then
-			exit 1
-		fi
-		update_web
+while (("$#" > 0)); do
+	case "$1" in
+	slink)
+		create_link
 		;;
-	--datamap | --update-datamap)
-		update_datamap
+	assets)
+		update_assets
 		;;
-	--web | --update-web)
-		update_web
-		;;
-	--link | --create-link)
-		if ! create_link; then
-			exit 1
-		fi
-		;;
-	--game | --update-game)
-		if ! create_link; then
-			exit 1
-		fi
-		update_datamap
+	sitemap)
 		update_sitemap
 		;;
-	--sitemap | --update-sitemap)
-		update_sitemap
+	datamap)
+		update_datamap
 		;;
-	--help)
-		help
+		*)
+		pr_error "Unkown action \"$1\"!"
+		exit 1
 		;;
-	*) ;;
-
 	esac
+	if [ "$?" -ne 0 ]; then
+		pr_error "Action \"$1\" execution failed!"
+		exit 1
+	fi
+	shift
+done

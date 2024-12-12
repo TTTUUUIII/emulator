@@ -27,6 +27,13 @@ EJS_startButtonName = "👾Launch ☢️🚀🕹️"
 
 
 var Emulator = {
+    __testLaunch: function(rom, system) {
+        this.launch({
+            "title": "Test Launch",
+            "rom": rom,
+            "system": system
+        }, false);
+    },
     launch: function (game, auto, region) {
         if (!game) {
             console.warn("Invalid game, ignored.");

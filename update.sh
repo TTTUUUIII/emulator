@@ -78,7 +78,6 @@ function update_web() {
 			--js assets/js/emulator.js \
 			--js assets/js/main.js \
 			--js_output_file $WEB_ROOT/assets/js/main.min.js
-	update_sitemap
 	return $?
 }
 

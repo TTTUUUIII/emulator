@@ -14,7 +14,6 @@ function pr_warn() {
 }
 
 function create_link() {
-	return 1
 	local rel=""
 	for ((i = 0; i < ${#LN_ARRAY[@]}; ++i)); do
 		local index=$(expr index "${LN_ARRAY[i]}" "^")

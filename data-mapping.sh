@@ -466,7 +466,7 @@ LN_ARRAY=(
 	# Arcade
 	# SNK
 	^arcade/snk/Metal_Slug_-_Super_Vehicle-001/
-	~Metal_Slug_-_Super_Vehicle-001@US.zip
+	~mslug.zip
 	Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
 	images/Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
 )

@@ -269,6 +269,8 @@ LN_ARRAY=(
 	^nes/nintendo/Super_Mario_Bros/
 	Super_Mario_Bros_EU.nes
 	Super_Mario_Bros@EU.nes
+	Super_Mario_Brothers@JP.fds
+	Super_Mario_Brothers@JP.fds
 	Super_Mario_Bros_USA_Large.jpg
 	images/Super_Mario_Bros_USA.jpg
 

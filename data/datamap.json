@@ -618,7 +618,10 @@
 						{
 							"id": 1195,
 							"title": "Super Mario Bros.",
-							"rom": "Super_Mario_Bros@EU.nes",
+							"rom": [
+								"Super_Mario_Bros@EU.nes",
+								"Super_Mario_Brothers@JP.fds"
+							],
 							"img": "Super_Mario_Bros_USA.jpg",
 							"genre": [
 								1

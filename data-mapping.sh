@@ -104,6 +104,8 @@ LN_ARRAY=(
 	Castlevania_II_-_Simon\'s_Quest@US.nes
 	Castlevania_II_-_Simon\'s_Quest_EU.nes
 	Castlevania_II_-_Simon\'s_Quest@EU.nes
+	Dracula_II_-_Noroi_no_Fuuin@JP.fds
+	Dracula_II_-_Noroi_no_Fuuin@JP.fds
 	Castlevania_II_Simno\'s_Quest_01.jpg
 	images/Castlevania_II_Simno\'s_Quest_01.jpg
 

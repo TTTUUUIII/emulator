@@ -169,7 +169,11 @@
 						{
 							"id": 1170,
 							"title": "Rush 'n Attack",
-							"rom": "Rush_'n_Attack@US.nes",
+							"rom": [
+								"Green_Beret@JP.fds",
+								"Rush_'n_Attack@US.nes",
+								"Rush_'n_Attack@EU.nes"
+							],
 							"img": "Rush_'n_Attack_(Flyer).png",
 							"genre": [
 								3

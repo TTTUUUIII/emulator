@@ -60,6 +60,10 @@ function update_assets() {
 			--js_output_file $WEB_ROOT/assets/js/main.min.js
 }
 
+function copy_bios() {
+	cp -r data/bios $WEB_ROOT/data/
+}
+
 function help() {
 	echo """
 update.sh by wn123o.
@@ -69,6 +73,7 @@ Actions:
     assets			Update web assets. css, js, img
     sitemap			Gnenerate sitemap.
     datamap			Update data map.
+	copy-bios		Copy bios.
 """
 }
 
@@ -85,6 +90,9 @@ while (("$#" > 0)); do
 		;;
 	datamap)
 		update_datamap
+		;;
+	copy-bios)
+		copy_bios
 		;;
 		*)
 		pr_error "Unkown action \"$1\"!"

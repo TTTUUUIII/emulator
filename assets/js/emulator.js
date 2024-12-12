@@ -37,12 +37,11 @@ var Emulator = {
         // Can also be fceumm or nestopia
         EJS_core = game["system"];
 
-        // URL to BIOS file
-        EJS_biosUrl = "";
-
         // URL to Game rom
-        
-        EJS_gameUrl = "data/" + this.selectRom(game, region);
+        EJS_gameUrl = this.chooseRom(game, region);
+
+        // URL to BIOS file
+        EJS_biosUrl = this.chooseBios();
         $("head")
             .append(
                 $("<script></script>")
@@ -50,7 +49,7 @@ var Emulator = {
                     .attr("src", "https://cdn.emulatorjs.org/stable/data/loader.js")
             )
     },
-    selectRom: (game, region) => {
+    chooseRom: (game, region) => {
         let rom = undefined;
         if(Array.isArray(game["rom"])) {
             if(region) {
@@ -67,6 +66,12 @@ var Emulator = {
         } else {
             rom = game["rom"];
         }
-        return rom;
+        return `data/${rom}`;
+    },
+    chooseBios: () => {
+        if(EJS_gameUrl.endsWith("fds")) {
+            return "data/bios/disksys.rom";
+        }
+        return ""
     }
 };

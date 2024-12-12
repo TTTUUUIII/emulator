@@ -38,6 +38,10 @@ LN_ARRAY=(
 	^nes/konami/Rush\'n_Attack/
 	Rush_\'n_Attack_US.nes
 	Rush_\'n_Attack@US.nes
+	Rush_\'n_Attack@EU.nes
+	Rush_\'n_Attack@EU.nes
+	Green_Beret@JP.fds
+	Green_Beret@JP.fds
 	Rush\'n_Attack_\(Flyer\)_Large.png
 	images/Rush_\'n_Attack_\(Flyer\).png
 

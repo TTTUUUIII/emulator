@@ -422,6 +422,10 @@ LN_ARRAY=(
 	~mslug.zip
 	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
 
+	^arcade/snk/Metal_Slug2_-_Super_Vehicle-001/
+	~mslug2.zip
+	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

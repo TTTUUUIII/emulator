@@ -994,6 +994,17 @@
 							],
 							"series_id": 3,
 							"release": 1994
+						},
+						{
+							"id": 2090,
+							"title": "Streets of Rate 2",
+							"rom": "Streets_of_Rage_2@US.zip",
+							"img": "Streets_of_Rage_2_MD_-_01@JP.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 3,
+							"release": 1992
 						}
 					]
 				}

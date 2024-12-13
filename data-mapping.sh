@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LN_ARRAY=(
-	# NES
+	# Platform: NES
 	# KONAMI
 	^nes/konami/Circus_Charlie/
 	Circus_Charlie_JP.nes
@@ -288,7 +288,7 @@ LN_ARRAY=(
 	FlappyBird@W.nes
 	~FlappyBird_NES_-_01.jpg
 
-	# SNES
+	# Platform: SNES
 	# Konami
 	^snes/konami/Super_Castlevania_IV/
 	Super_Castlevania_IV_US.zip
@@ -332,7 +332,7 @@ LN_ARRAY=(
 	Thunder_Spirits@US.zip
 	~Thunder_Spirits_NA_-_01.jpg
 
-	#Sega MD
+	# Platform: Sega MD
 	# toaplan
 	^sega-genesis/toaplan/Twin_Cobra/
 	Twin-Cobra_Genesis_EN.zip
@@ -400,14 +400,19 @@ LN_ARRAY=(
 	~Bare_Knuckle_III@JP.zip
 	~Streets_of_Rage_3_MD_-_01@JP.jpg
 
-	# Sega Saturn
+	^sega-genesis/sega/Streets_of_Rage_2/
+	~Streets_of_Rage_2@US.zip
+	~Streets_of_Rage_2_MD_-_01@JP.jpg
+
+
+	# Platform: Sega Saturn
 	# Capcom
 	^sega-saturn/capcom/Street_Fighter_Alpha_II/
 	Street_Fighter_Alpha_2_\(USA\).zip
 	Street_Fighter_Alpha_2@US.zip
 	~Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
 
-	# Arcade
+	# Platform: Arcade
 	# SNK
 	^arcade/snk/Metal_Slug_-_Super_Vehicle-001/
 	~mslug.zip

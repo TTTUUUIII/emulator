@@ -978,12 +978,12 @@
 					]
 				},
 				{
-					"developer": "sega",
+					"developer": "SEGA",
 					"url": "https://snowland.ink/?tag=sega",
 					"games": [
 						{
 							"id": 2079,
-							"title": "Streets of Rate 3",
+							"title": "Streets of Rage 3",
 							"rom": [
 								"Bare_Knuckle_III@JP.zip",
 								"Streets_of_Rage_3@US.zip"
@@ -997,7 +997,7 @@
 						},
 						{
 							"id": 2090,
-							"title": "Streets of Rate 2",
+							"title": "Streets of Rage 2",
 							"rom": "Streets_of_Rage_2@US.zip",
 							"img": "Streets_of_Rage_2_MD_-_01@JP.jpg",
 							"genre": [
@@ -1005,6 +1005,17 @@
 							],
 							"series_id": 3,
 							"release": 1992
+						},
+						{
+							"id": 2101,
+							"title": "Streets of Rage",
+							"rom": "Bare_Knuckle_-_Ikari_no_Tekken_~_Streets_of_Rage@W.zip",
+							"img": "Street_of_Rage_MD_-_01@JP.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 3,
+							"release": 1991
 						}
 					]
 				}

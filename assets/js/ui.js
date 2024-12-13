@@ -1,9 +1,20 @@
+const KEY_ESC                               = 27;
+const KEY_P                                 = 80;
+
+const SK_RESET                              = 1;
+const SK_QUICK_SAVE_STATE                   = 2;
+const SK_QUICK_LOAD_STATE                   = 3;
+const SK_SAVE_STATE_TO_DISK                 = 4;
+const SK_LOAD_STATE_FROM_DISK               = 5;
+const SK_TOGGLE_PLAY_PAUSE                  = 6;
+
 var UI = {
     onReload: undefined,
     onGetSeries: undefined,
     onGetGenre: undefined,
     onRandom: undefined,
     onRegionChanged: undefined,
+    onShortcutKey: undefined,
     init: function () {
         this.__bind_event();
         this.__refresh_clock($(".clock"));
@@ -22,16 +33,18 @@ var UI = {
                 this.onReload(event.target.value, 1);
         });
         $(document).off("keydown").on("keydown", (event) => {
-            let ctrl = undefined;
-            if (event.keyCode == 27) {
-                ctrl = $("#game > div.ejs_menu_bar > button")[0];
+            let sk = -1;
+            console.log(event.keyCode);
+            if (event.keyCode == KEY_ESC) {
+                sk = SK_RESET;
+            } else if(event.keyCode == KEY_P) {
+                sk = SK_TOGGLE_PLAY_PAUSE;
             } else if (event.ctrlKey) {
-                ctrl = event.shiftKey ? $("#game > div.ejs_menu_bar > button")[3] : $("#game > div.ejs_context_menu > ul > li")[3];
+                sk = event.shiftKey ? SK_SAVE_STATE_TO_DISK : SK_QUICK_SAVE_STATE;
             } else if (event.altKey) {
-                ctrl = event.shiftKey ? $("#game > div.ejs_menu_bar > button")[4] : $("#game > div.ejs_context_menu > ul > li")[4];
+                sk = event.shiftKey ? SK_LOAD_STATE_FROM_DISK : SK_QUICK_LOAD_STATE;
             }
-            if (ctrl) {
-                ctrl.click();
+            if (sk != -1 && this.onShortcutKey(sk)) {
                 event.preventDefault();
             }
         })

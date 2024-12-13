@@ -21,6 +21,36 @@ UI.onRegionChanged = (region) => {
     let auto = getQueryVariable("auto", false);
     reload(id, auto, region);
 }
+UI.onShortcutKey = (sk) => {
+    if(!EJS_emulator || EJS_emulator.isNetplay) {return false};
+    let ctrl = undefined;
+    switch(sk) {
+        case SK_RESET:
+            EJS_emulator.gameManager.restart();
+            break
+        case SK_QUICK_SAVE_STATE:
+            ctrl = $("#game > div.ejs_context_menu > ul > li")[3];
+            break
+        case SK_QUICK_LOAD_STATE:
+            ctrl = $("#game > div.ejs_context_menu > ul > li")[4];
+            break
+        case SK_SAVE_STATE_TO_DISK:
+            ctrl = $("#game > div.ejs_menu_bar > button")[3];
+            break
+        case SK_LOAD_STATE_FROM_DISK:
+            ctrl = $("#game > div.ejs_menu_bar > button")[4];
+            break
+        case SK_TOGGLE_PLAY_PAUSE:
+            EJS_emulator.togglePlaying();
+            break
+        default:
+            return false;
+    }
+    if(ctrl) {
+        ctrl.click();
+    }
+    return true;
+}
 
 // GPScanner.onConnectStateChanged = (gpindex, id, isconnected) => {
 //     console.log(`onConnectStateChanged: ${gpindex}, ${id}, ${isconnected}`);

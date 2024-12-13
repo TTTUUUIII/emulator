@@ -394,6 +394,11 @@ LN_ARRAY=(
 	Another-World_NA_-_01.jpg
 	images/Another_World_NA_-_01.jpg
 
+	# Sega
+	^sega-genesis/sega/Streets_of_Rage_3/
+	~Streets_of_Rage_3@US.zip
+	~Streets_of_Rage_3_MD_-_01@JP.jpg
+
 	# Sega Saturn
 	# Capcom
 	^sega-saturn/capcom/Street_Fighter_Alpha_II/
@@ -415,4 +420,5 @@ LN_ARRAY=(
 	~Street_Fighter_Series_Poster.jpg
 	~Contra_-_Konami_Series_Poster.jpg
 	~Castlevania_Series_NES_Poster.jpg
+	~Streets_of_Rage_Series_Poster.jpg
 )

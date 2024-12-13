@@ -25,7 +25,7 @@ function create_link() {
 		if [[ "${LN_ARRAY[i]}" == \~* ]]; then
 			local from=${LN_ARRAY[i]:1}
 			local to=$from
-			if [[ $from =~ \.jpg|\.jpeg|\.png|\.webp|\.gif|\.svg ]]; then
+			if [[ $from =~ \.jpg|\.jpeg|\.png|\.webp|\.bmp|\.gif|\.svg ]]; then
 				to="images/$from"
 			fi
 		else

@@ -424,7 +424,7 @@ LN_ARRAY=(
 
 	^arcade/snk/Metal_Slug2_-_Super_Vehicle-001/
 	~mslug2.zip
-	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+	~Metal_Slug2_-_Super_Vehicle-001_NEO_-_GEO.jpg
 
 	# Series Poster
 	^images/

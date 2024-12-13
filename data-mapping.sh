@@ -397,6 +397,7 @@ LN_ARRAY=(
 	# Sega
 	^sega-genesis/sega/Streets_of_Rage_3/
 	~Streets_of_Rage_3@US.zip
+	~Bare_Knuckle_III@JP.zip
 	~Streets_of_Rage_3_MD_-_01@JP.jpg
 
 	# Sega Saturn

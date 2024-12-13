@@ -404,6 +404,10 @@ LN_ARRAY=(
 	~Streets_of_Rage_2@US.zip
 	~Streets_of_Rage_2_MD_-_01@JP.jpg
 
+	^sega-genesis/sega/Streets_of_Rage/
+	~Bare_Knuckle_-_Ikari_no_Tekken_~_Streets_of_Rage@W.zip
+	~Street_of_Rage_MD_-_01@JP.jpg
+
 
 	# Platform: Sega Saturn
 	# Capcom

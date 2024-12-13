@@ -399,13 +399,11 @@ LN_ARRAY=(
 	^sega-saturn/capcom/Street_Fighter_Alpha_II/
 	Street_Fighter_Alpha_2_\(USA\).zip
 	Street_Fighter_Alpha_2@US.zip
-	Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
-	images/Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
+	~Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
 
 	# Arcade
 	# SNK
 	^arcade/snk/Metal_Slug_-_Super_Vehicle-001/
 	~mslug.zip
-	Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
-	images/Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
 )

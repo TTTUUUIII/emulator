@@ -1069,6 +1069,17 @@
 							],
 							"series_id": 1,
 							"release": 1996
+						},
+						{
+							"id": 2108,
+							"title": "Metal Slug 2: Super Vehicle-001/II",
+							"rom": "mslug2.zip",
+							"img": "Metal_Slug2_-_Super_Vehicle-001_NEO_-_GEO.jpg",
+							"genre": [
+								1, 6
+							],
+							"series_id": 1,
+							"release": 1998
 						}
 					]
 				}

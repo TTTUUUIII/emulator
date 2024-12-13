@@ -15,15 +15,19 @@ function pr_warn() {
 
 function create_link() {
 	local rel=""
+	shopt -s nocasematch
 	for ((i = 0; i < ${#LN_ARRAY[@]}; ++i)); do
 		local index=$(expr index "${LN_ARRAY[i]}" "^")
 		if [ $index -ne 0 ]; then
 			rel=${LN_ARRAY[i]:1}
 			continue
 		fi
-		if [[ ${LN_ARRAY[i]} == ~* ]]; then
+		if [[ "${LN_ARRAY[i]}" == \~* ]]; then
 			local from=${LN_ARRAY[i]:1}
 			local to=$from
+			if [[ $from =~ \.jpg|\.jpeg|\.png|\.webp|\.gif|\.svg ]]; then
+				to="images/$from"
+			fi
 		else
 			local from=${LN_ARRAY[i]}
 			local to=${LN_ARRAY[((++i))]}
@@ -36,6 +40,7 @@ function create_link() {
 			fi
 		fi
 	done
+	shopt -u nocasematch
 	return 0
 }
 
@@ -98,7 +103,7 @@ while (("$#" > 0)); do
 	copy-bios)
 		copy_bios
 		;;
-		*)
+	*)
 		pr_error "Unkown action \"$1\"!"
 		exit 1
 		;;

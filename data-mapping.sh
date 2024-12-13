@@ -420,53 +420,59 @@ LN_ARRAY=(
 	^sega-genesis/konami/Contra_-_Hard_Corps/
 	Contra_-_The_Hard_Corps_JP.zip
 	Contra_-_The_Hard_Corps@JP.zip
-	Contra_-_Hard_Corps_-_NA_-_01.jpg
-	images/Contra_-_Hard_Corps_-_NA_-_01.jpg
+	~Contra_-_Hard_Corps_-_NA_-_01.jpg
 
 	^sega-genesis/konami/Castlevania_-_Bloodlines/
 	Castlevania_-_Bloodlines_US.zip
 	Castlevania_-_Bloodlines@US.zip
-	Castlevania_-_Bloodlines_-_NA_-_01.jpg
-	images/Castlevania_-_Bloodlines_-_NA_-_01.jpg
+	~Castlevania_-_Bloodlines_-_NA_-_01.jpg
 
 	^sega-genesis/konami/Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist/
 	Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist_US.zip
 	Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist@US.zip
-	Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
-	images/Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
+	~Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
 
 	# Technosoft
 	^sega-genesis/technosoft/Thunder_Force_III/
 	Thunder_Force_III_JU.zip
 	Thunder_Force_III@JU.zip
-	Thunder_Force_III_SegaMD_01.jpg
-	images/Thunder_Force_III_SegaMD_01.jpg
+	~Thunder_Force_III_SegaMD_01.jpg
 
 	^sega-genesis/technosoft/Thunder_Force_II/
 	Thunder_Force_II_UE.zip
 	Thunder_Force_II@UE.zip
-	Thunder_Force_II_US_01.jpg
-	images/Thunder_Force_II_US_01.jpg
+	~Thunder_Force_II_US_01.jpg
 
 	# Delphine
 	^sega-genesis/delphine_software/Another_World/
 	Out_of_This_World_US.zip
 	Out_of_This_World@US.zip
-	Another-World_NA_-_01.jpg
-	images/Another_World_NA_-_01.jpg
+	~Another-World_NA_-_01.jpg
+
+	# Sega
+	^sega-genesis/sega/Streets_of_Rage_3/
+	~Streets_of_Rage_3@US.zip
+	~Streets_of_Rage_3_MD_-_01@JP.jpg
 
 	# Sega Saturn
 	# Capcom
 	^sega-saturn/capcom/Street_Fighter_Alpha_II/
 	Street_Fighter_Alpha_2_\(USA\).zip
 	Street_Fighter_Alpha_2@US.zip
-	Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
-	images/Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
+	~Street_Fighter_Alpha_2_Saturn_NA_-_01.webp
 
 	# Arcade
 	# SNK
 	^arcade/snk/Metal_Slug_-_Super_Vehicle-001/
 	~mslug.zip
-	Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
-	images/Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+
+	# Series Poster
+	^images/
+	~FlappyBird_NES_Poster.png
+	~Gradius_Series_NES_Poster.jpg
+	~Metal_Slug_Series_Poster.jpg
+	~Street_Fighter_Series_Poster.jpg
+	~Castlevania_Series_NES_Poster.jpg
+	~Contra_-_Konami_Series_Poster.jpg
 )

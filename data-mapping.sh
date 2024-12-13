@@ -406,4 +406,13 @@ LN_ARRAY=(
 	^arcade/snk/Metal_Slug_-_Super_Vehicle-001/
 	~mslug.zip
 	~Metal_Slug_-_Super_Vehicle-001_NEO_-_GEO.jpg
+
+	# Series Poster
+	^images/
+	~FlappyBird_NES_Poster.png
+	~Gradius_Series_NES_Poster.jpg
+	~Metal_Slug_Series_Poster.jpg
+	~Street_Fighter_Series_Poster.jpg
+	~Contra_-_Konami_Series_Poster.jpg
+	~Castlevania_Series_NES_Poster.jpg
 )

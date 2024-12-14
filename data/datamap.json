@@ -1082,6 +1082,22 @@
 							"release": 1998
 						}
 					]
+				},
+				{
+					"developer": "@nes/technos",
+					"games": [
+						{
+							"id": 2112,
+							"title": "Double Dragon II: The Revenge",
+							"rom": "ddragon2.zip",
+							"img": "Double_Dragon_II_-_The_Revenge_Arcade_-_01.jpg",
+							"genre": [
+								3
+							],
+							"series_id": "@nes/9",
+							"release": 1988
+						}
+					]
 				}
 			]
 		}

@@ -842,7 +842,7 @@
 							"genre": [
 								2
 							],
-							"release": 1987
+							"release": 1991
 						},
 						{
 							"id": 1967,
@@ -1096,6 +1096,21 @@
 							],
 							"series_id": "@nes/9",
 							"release": 1988
+						}
+					]
+				},
+				{
+					"developer": "@segaMD/toaplan",
+					"games": [
+						{
+							"id": 2121,
+							"title": "Twin Cobra",
+							"rom": "twincobr.zip",
+							"img": "Twin_Cobra_Romstar_Arcade_-_NA_-_01.jpg",
+							"genre": [
+								2
+							],
+							"release": 1987
 						}
 					]
 				}

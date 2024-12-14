@@ -71,8 +71,7 @@ function launch() {
     UI.bind(game);
     let auto = getQueryVariable("auto", false);
     let region = getQueryVariable("reg", undefined);
-    // Emulator.launch(game, auto, region);
-    Emulator.__testLaunch("ddragon2.zip", "arcade");
+    Emulator.launch(game, auto, region);
 }
 
 Datamap.onload = function() {

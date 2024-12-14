@@ -13,8 +13,7 @@ LN_ARRAY=(
 	Salamander_JP.nes
 	Salamander@JP.nes
 	~Life_Force_-_Salamander@EU.nes
-	Salamander_NES_large.jpg
-	images/Salamander_NES.jpg
+	~Life_Force_NES_NA_-_01.jpg
 
 	^nes/konami/Gradius_II/
 	Gradius_II_JP.nes

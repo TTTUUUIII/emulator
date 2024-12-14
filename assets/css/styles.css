@@ -7,7 +7,7 @@
     --color_blue: rgba(13, 110, 253, 1);
     --color_orange: rgba(252, 102, 104, 1);
     --color_outline: var(--color_purple);
-    --color_foreground: var(--color_orange);
+    --color_surface: var(--color_orange);
     --color_background: var(--color_white);
     --color_background_translucent: var(--color_white_800);
     --padding_size_tiny: 3px;
@@ -54,7 +54,7 @@ body {
 
 .launch-panel div > button {
     transition: 300ms;
-    background-color: var(--color_foreground);
+    background-color: var(--color_surface);
 }
 
 .launch-panel div > button:first-child {
@@ -82,6 +82,7 @@ body {
     justify-content: end;
     font-style: italic;
     font-size: smaller;
+    color: var(--color_surface);
 }
 
 /* Sliderbar */
@@ -110,7 +111,7 @@ body {
 }
 
 .region-select > span {
-    background-color: var(--color_foreground);
+    background-color: var(--color_surface);
     padding: var(--padding_size_tiny);
 }
 
@@ -179,7 +180,7 @@ body {
 }
 
 .clock {
-    color: var(--color_foreground);
+    color: var(--color_surface);
     font-family: "VT323", sans-serif;
     text-align: center;
     font-size: 3rem;

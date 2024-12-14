@@ -425,6 +425,16 @@ LN_ARRAY=(
 	~mslug2.zip
 	~Metal_Slug2_-_Super_Vehicle-001_NEO_-_GEO.jpg
 
+	# Technōs
+	^arcade/technos/Double_Dragon_II_-_The_Revenge/
+	~ddragon2.zip
+	~Double_Dragon_II_-_The_Revenge_Arcade_-_01.jpg
+
+	# toaplan
+	^arcade/toaplan/Twin_Cobra/
+	~twincobr.zip
+	~Twin_Cobra_Romstar_Arcade_-_NA_-_01.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

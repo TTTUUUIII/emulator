@@ -34,7 +34,6 @@ var UI = {
         });
         $(document).off("keydown").on("keydown", (event) => {
             let sk = -1;
-            console.log(event.keyCode);
             if (event.keyCode == KEY_ESC) {
                 sk = SK_RESET;
             } else if(event.keyCode == KEY_P) {

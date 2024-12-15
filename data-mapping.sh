@@ -435,6 +435,10 @@ LN_ARRAY=(
 	~twincobr.zip
 	~Twin_Cobra_Romstar_Arcade_-_NA_-_01.jpg
 
+	^arcade/toaplan/Snow_Bros./
+	~snowbros.zip
+	~Snow_Bros._Arcade_-_01@JP.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

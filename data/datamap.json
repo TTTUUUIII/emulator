@@ -1111,6 +1111,16 @@
 								2
 							],
 							"release": 1987
+						},
+						{
+							"id": 2151,
+							"title": "Snow Bros. - Nick & Tom",
+							"rom": "snowbros.zip",
+							"img": "Snow_Bros._Arcade_-_01@JP.jpg",
+							"genre": [
+								1
+							],
+							"release": 1990
 						}
 					]
 				}

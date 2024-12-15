@@ -374,7 +374,8 @@ kbd {
         display: none;
     }
     
-    .game-container {
+    .game-container .screen {
         width: 100%;
+        height: 100%;
     }
 }

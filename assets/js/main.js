@@ -70,17 +70,11 @@ function launch() {
         }
     }
     let auto = getQueryVariable("auto", false);
-<<<<<<< HEAD
-    let region = getQueryVariable("reg", undefined);
-    // Emulator.launch(game, auto, region);
-    Emulator.__testLaunch("ddragon2.zip", "arcade");
-=======
     let region = getQueryVariable("reg", undefined) ?? Properties.get(`game.region.${id}`);
     if (game) {
         UI.bind({...game, "region": region});
     }
     Emulator.launch(game, auto, region);
->>>>>>> 507b100 (Save last selected region.)
 }
 
 Datamap.onload = function() {

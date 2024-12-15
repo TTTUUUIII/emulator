@@ -80,6 +80,7 @@ var UI = {
     },
     bind: function (game) {
         if (!game) return;
+        console.log(game);
         let title = game["title"];
         $("title").text(`🕹 Emulator | Play「${title}」Online!`);
         if (title.length > 20) {
@@ -169,8 +170,7 @@ var UI = {
             );
         }
         regionSelectElement.children().length > 0 && regionSelectElement.parent().removeClass("invisible")
-        region = getQueryVariable("reg", undefined);
-        region && regionSelectElement.val(region);
+        game["region"] && regionSelectElement.val(game["region"]);
         regionSelectElement.change(function() {
             UI.onRegionChanged(this.value);
         });

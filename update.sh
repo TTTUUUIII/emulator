@@ -61,6 +61,7 @@ function update_assets() {
 		cp assets/img/* $WEB_ROOT/assets/img/ &&
 		java -jar tools/closure-compiler.jar \
 			--js assets/js/functions.js \
+			--js assets/js/properties.js \
 			--js assets/js/datamap.js \
 			--js assets/js/ui.js \
 			--js assets/js/toast.js \

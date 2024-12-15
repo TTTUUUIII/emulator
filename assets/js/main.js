@@ -18,6 +18,7 @@ UI.onRegionChanged = (region) => {
         Toast.error("Unable find game's ID.");
         return;
     }
+    Properties.put(`game.region.${id}`, region);
     let auto = getQueryVariable("auto", false);
     reload(id, auto, region);
 }
@@ -68,9 +69,11 @@ function launch() {
             game["system"] = getQueryVariable("core", game["system"]);
         }
     }
-    UI.bind(game);
     let auto = getQueryVariable("auto", false);
-    let region = getQueryVariable("reg", undefined);
+    let region = getQueryVariable("reg", undefined) ?? Properties.get(`game.region.${id}`);
+    if (game) {
+        UI.bind({...game, "region": region});
+    }
     Emulator.launch(game, auto, region);
 }
 

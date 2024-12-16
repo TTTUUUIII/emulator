@@ -425,6 +425,10 @@ LN_ARRAY=(
 	~mslug2.zip
 	~Metal_Slug2_-_Super_Vehicle-001_NEO_-_GEO.jpg
 
+	^arcade/snk/Metal_Slug_X/
+	~mslugx.zip
+	~Metal_Slug_X_Arcade_Flyer.jpg
+
 	# Technōs
 	^arcade/technos/Double_Dragon_II_-_The_Revenge/
 	~ddragon2.zip

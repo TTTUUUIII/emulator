@@ -1080,6 +1080,17 @@
 							],
 							"series_id": 1,
 							"release": 1998
+						},
+						{
+							"id": 2288,
+							"title": "Metal Slug X",
+							"rom": "mslugx.zip",
+							"img": "Metal_Slug_X_Arcade_Flyer.jpg",
+							"genre": [
+								1, 6
+							],
+							"series_id": 1,
+							"release": 1999
 						}
 					]
 				},

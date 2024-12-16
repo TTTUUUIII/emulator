@@ -72,9 +72,10 @@ function launch() {
     let auto = getQueryVariable("auto", false);
     let region = getQueryVariable("reg", undefined) ?? Properties.get(`game.region.${id}`);
     if (game) {
-        UI.bind({...game, "region": region});
+        game = {...game, "region": region};
+        UI.bind(game);
+        Emulator.launch(game, {"auto":auto});
     }
-    Emulator.launch(game, auto, region);
 }
 
 Datamap.onload = function() {

@@ -34,18 +34,19 @@ var Emulator = {
             "system": system
         }, false);
     },
-    launch: function (game, auto, region) {
+    launch: function (game, options={}) {
         if (!game) {
             console.warn("Invalid game, ignored.");
             return;
         }
         EJS_gameName = game["title"];
-        EJS_startOnLoaded = auto;
+        EJS_startOnLoaded = options["auto"] ?? false;
+        EJS_fullscreenOnLoaded = options["fullscreen"] ?? false;
         // Can also be fceumm or nestopia
         EJS_core = game["system"];
 
         // URL to Game rom
-        EJS_gameUrl = this.chooseRom(game, region);
+        EJS_gameUrl = this.chooseRom(game);
 
         // URL to BIOS file
         EJS_biosUrl = this.chooseBios();
@@ -56,8 +57,9 @@ var Emulator = {
                     .attr("src", "https://cdn.emulatorjs.org/stable/data/loader.js")
             )
     },
-    chooseRom: (game, region) => {
+    chooseRom: (game) => {
         let rom = undefined;
+        let region = game["region"];
         if(Array.isArray(game["rom"])) {
             if(region) {
                 for(it of game["rom"]) {

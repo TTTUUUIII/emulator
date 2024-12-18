@@ -27,6 +27,10 @@ EJS_startButtonName = "👾Launch ☢️🚀🕹️"
 
 
 var Emulator = {
+    onReady: undefined,
+    onGameStart: undefined,
+    hashcode: 0,
+    _actived: false,
     __testLaunch: function(rom, system) {
         this.launch({
             "title": "Test Launch",
@@ -44,7 +48,13 @@ var Emulator = {
         EJS_fullscreenOnLoaded = options["fullscreen"] ?? false;
         // Can also be fceumm or nestopia
         EJS_core = game["system"];
-
+        EJS_ready = () => {
+            this.onReady && this.onReady();
+        }
+        EJS_onGameStart = (e) => {
+            this._actived = true;
+            this.onGameStart && this.onGameStart(e);
+        }
         // URL to Game rom
         EJS_gameUrl = this.chooseRom(game);
 
@@ -57,7 +67,36 @@ var Emulator = {
                     .attr("src", "https://cdn.emulatorjs.org/stable/data/loader.js")
             )
     },
-    chooseRom: (game) => {
+    restart: function() {
+        this._actived && EJS_emulator.gameManager.restart();
+    },
+    tooglePlayOrPause: function() {
+        this._actived && EJS_emulator.togglePlaying();
+    },
+    getBase64State: function() {
+        if(this._actived) {
+            let state = EJS_emulator.gameManager.getState();
+            let stateInText = "";
+            for(let i = 0; i < state.length; i++) {
+                stateInText += String.fromCharCode(state[i]);
+            }
+            return btoa(stateInText);
+        }
+        return undefined;
+    },
+    loadBase64State: function(base64State) {
+        if(!this._actived) {
+            console.log("Unable load state, because game not start yet!");
+            return;
+        }
+        let stateInText = atob(base64State);
+        let state = new Uint8Array(stateInText.length);
+        for(let i = 0; i < state.length; ++i) {
+            state[i] = stateInText.charCodeAt(i);
+        }
+        EJS_emulator.gameManager.loadState(state);
+    },
+    chooseRom: function(game) {
         let rom = undefined;
         let region = game["region"];
         if(Array.isArray(game["rom"])) {
@@ -75,6 +114,7 @@ var Emulator = {
         } else {
             rom = game["rom"];
         }
+        this.hashcode = hashCode(rom);
         return `data/${rom}`;
     },
     chooseBios: () => {

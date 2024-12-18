@@ -1,7 +1,7 @@
 const TOAST_LEVEL_WARN = "warn";
 const TOAST_LEVEL_INFO = "info";
 const TOAST_LEVEL_ERROR = "error";
-var Toast = {
+var Toasts = {
     error: function(text) {
         this.show(text, TOAST_LEVEL_ERROR);
     },

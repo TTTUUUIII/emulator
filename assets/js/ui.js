@@ -10,9 +10,6 @@ const SK_TOGGLE_PLAY_PAUSE                  = 6;
 
 var UI = {
     onReload: undefined,
-    onGetSeries: undefined,
-    onGetGenre: undefined,
-    onRandom: undefined,
     onRegionChanged: undefined,
     onShortcutKey: undefined,
     init: function () {
@@ -21,7 +18,7 @@ var UI = {
     },
     __bind_event: function () {
         $("#random").off("click").on("click", () => {
-            $("#game-id").val(this.onRandom());
+            $("#game-id").val(Datamap.random());
         });
         $("#launch").off("click").on("click", () => {
             let id = $("#game-id").val();
@@ -47,12 +44,6 @@ var UI = {
                 event.preventDefault();
             }
         })
-        EJS_ready = () => {
-            $("#game").css("opacity", "0.8");
-        };
-        EJS_onGameStart = (e) => {
-            $("#game").css("opacity", "1");
-        };
     },
     __refresh_clock: function (target) {
         var date = new Date();
@@ -78,9 +69,11 @@ var UI = {
         target.text(time);
         setTimeout(UI.__refresh_clock, 1000, target);
     },
+    setGameElementOpacity: (v) => {
+        $("#game").css("opacity", v);
+    },
     bind: function (game) {
         if (!game) return;
-        console.log(game);
         let title = game["title"];
         $("title").text(`🕹 Emulator | Play「${title}」Online!`);
         if (title.length > 20) {
@@ -97,7 +90,7 @@ var UI = {
             gameImg = gameImg[0];
         }
         $("#game-img").attr("src", `data/images/${gameImg}`);
-        let series = this.onGetSeries(game);
+        let series = Datamap.findSeriesByGame(game);
         if(!gamePoster) {
             gamePoster = (series && series["poster"]) ? series["poster"] : gameImg;
         }
@@ -133,7 +126,7 @@ var UI = {
         if (genreIds) {
             let temp = "";
             for (let id of genreIds) {
-                let genre = this.onGetGenre(id);
+                let genre = Datamap.findGenreById(id);
                 if (genre) {
                     temp += `<a href="${genre["url"] ?? "#"}" target="_blank">${genre["title"]
                         }</a>`;

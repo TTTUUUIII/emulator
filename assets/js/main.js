@@ -1,21 +1,18 @@
 let delayedLaunch = false;
 
-UI.onRandom = () => Datamap.random();
-UI.onGetGenre = (id) => Datamap.findGenreById(id);
-UI.onGetSeries = (game) => Datamap.findSeriesByGame(game);
 UI.onReload = (id, auto) => {
     if(id && Datamap.exists(id)) {
         reload(id, auto);
     } else if(id) {
-        Toast.error(`¯\_(ツ)_/¯ Sorry, game "${id}" not found!`);
+        Toasts.error(`¯\_(ツ)_/¯ Sorry, game "${id}" not found!`);
     } else {
-        Toast.warn("( ͡° ͜ʖ ͡°) Please provide game's ID");
+        Toasts.warn("( ͡° ͜ʖ ͡°) Please provide game's ID");
     }
 }
 UI.onRegionChanged = (region) => {
     let id = getQueryVariable("id");
     if (id == -1) {
-        Toast.error("Unable find game's ID.");
+        Toasts.error("Unable find game's ID.");
         return;
     }
     Properties.put(`game.region.${id}`, region);
@@ -27,7 +24,7 @@ UI.onShortcutKey = (sk) => {
     let ctrl = undefined;
     switch(sk) {
         case SK_RESET:
-            EJS_emulator.gameManager.restart();
+            Emulator.restart();
             break
         case SK_QUICK_SAVE_STATE:
             ctrl = $("#game > div.ejs_context_menu > ul > li")[3];
@@ -42,7 +39,7 @@ UI.onShortcutKey = (sk) => {
             ctrl = $("#game > div.ejs_menu_bar > button")[4];
             break
         case SK_TOGGLE_PLAY_PAUSE:
-            EJS_emulator.togglePlaying();
+            Emulator.tooglePlayOrPause();
             break
         default:
             return false;
@@ -53,6 +50,21 @@ UI.onShortcutKey = (sk) => {
     return true;
 }
 
+Emulator.onGameStart = () => {
+    UI.setGameElementOpacity(1.0);
+    let autorestore = Properties.getOrDefault("game.autorestore", "true");
+    if(autorestore == "true") {
+        let base64State = Properties.get(`game.last_state.${Emulator.hashcode}`);
+        if(base64State) {
+            Emulator.loadBase64State(base64State);
+            Toasts.show("Auto restored to last state!")
+        }
+    }
+}
+
+Emulator.onReady = () => {
+    UI.setGameElementOpacity(0.8);
+}
 // GPScanner.onConnectStateChanged = (gpindex, id, isconnected) => {
 //     console.log(`onConnectStateChanged: ${gpindex}, ${id}, ${isconnected}`);
 // }
@@ -98,4 +110,8 @@ $(function () {
     }
     UI.init();
     // GPScanner.init();
+});
+
+window.addEventListener("beforeunload", function() {
+    Emulator._actived && Properties.put(`game.last_state.${Emulator.hashcode}`, Emulator.getBase64State());
 });

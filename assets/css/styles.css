@@ -43,29 +43,29 @@ body {
     background-color: var(--color_background_translucent);
 }
 
-.launch-panel div {
+.launch-box {
     height: 27px;
 }
 
-.launch-panel div > input {
+.launch-box > input {
     width: 70%;
     padding-left: 4px;
 }
 
-.launch-panel div > button {
+.launch-box > button {
     transition: 300ms;
     background-color: var(--color_surface);
 }
 
-.launch-panel div > button:first-child {
+.launch-box > button:first-child {
     width: 13%;
 }
 
-.launch-panel div > button:last-child {
+.launch-box > button:last-child {
     width: 30%;
 }
 
-.launch-panel div > button:hover {
+.launch-box > button:hover {
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 }
 
@@ -87,7 +87,7 @@ body {
 
 /* Sliderbar */
 .sliderbar {
-    width: 28%;
+    width: 50%;
     max-width: 300px;
     max-height: 100vh;
     padding: var(--padding_size_sm);
@@ -241,6 +241,10 @@ kbd {
     text-align: center;
 }
 
+.p-s {
+    padding: var(--padding_size_s);
+}
+
 .p-sm {
     padding: var(--padding_size_sm);
 }
@@ -312,6 +316,11 @@ kbd {
     flex-direction: row;
 }
 
+.v-stack-inline {
+    display: inline-flex;
+    flex-direction: column;
+}
+
 .text-shadow {
     text-shadow: gray 0.1em 0.2em 0.3em;
 }
@@ -369,13 +378,18 @@ kbd {
     }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 992px) {
     .sliderbar {
         display: none;
+    }
+
+    .screen .launch-box {
+        visibility: visible;
     }
     
     .game-container .screen {
         width: 100%;
         height: 70%;
+        padding: var(--padding_size_m);
     }
 }

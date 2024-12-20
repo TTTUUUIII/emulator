@@ -17,14 +17,14 @@ var UI = {
         this.__refresh_clock($(".clock"));
     },
     __bind_event: function () {
-        $("#random").off("click").on("click", () => {
-            $("#game-id").val(Datamap.random());
+        $(".action-random").off("click").on("click", () => {
+            $("input.game-id").val(Datamap.random());
         });
-        $("#launch").off("click").on("click", () => {
-            let id = $("#game-id").val();
+        $(".action-launch").off("click").on("click", () => {
+            let id = $("input.game-id").val();
             this.onReload(id, 1);
         });
-        $("#game-id").off("keydown").on("keydown", (event) => {
+        $("input.game-id").off("keydown").on("keydown", (event) => {
             event.keyCode == 13 &&
                 event.target.value &&
                 this.onReload(event.target.value, 1);

@@ -30,19 +30,26 @@
                         <!-- card-item -->
                     </div>
                 </div>
-                <div class="launch-panel mt-sm p-m radius-sm hover-shadow background-widget">
-                    <div class="h-stack">
-                        <button id="random" title="A random id.">🎲</button>
-                        <input autocomplete="off" placeholder="ID" type="number" id="game-id" />
-                        <button id="launch" title="Launch now!">🚀</i></button>
+                <div class="mt-sm p-m radius-sm hover-shadow background-widget">
+                    <div class="launch-box h-stack">
+                        <button class="action-random" title="A random id.">🎲</button>
+                        <input autocomplete="off" placeholder="ID" type="number" class="game-id" />
+                        <button class="action-launch" title="Launch now!">🚀</i></button>
                     </div>
                 </div>
             </div>
             <div class="game-container v-stack">
                 <div class="screen">
-                    <div title="Change region" class="region-select h-stack-inline invisible">
-                        <span class="icon">🌏️</span>
-                        <select></select>
+                    <div class="h-stack">
+                        <div title="Change region" class="region-select h-stack-inline ml-s invisible">
+                            <span class="icon">🌏️</span>
+                            <select></select>
+                        </div>
+                        <div class="launch-box h-stack invisible">
+                            <button class="action-random" title="A random id.">🎲</button>
+                            <input autocomplete="off" placeholder="ID" type="number" class="game-id" />
+                            <button class="action-launch" title="Launch now!">🚀</i></button>
+                        </div>
                     </div>
                     <div id="game" class="radius-m mt-sm"></div>
                 </div>

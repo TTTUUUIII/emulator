@@ -1157,6 +1157,16 @@
 								1
 							],
 							"release": 1990
+						},
+						{
+							"id": 2312,
+							"title": "Snow Bros. 2: With New Elves",
+							"rom": "snowbro2.zip",
+							"img": "SnowBros.2_Arcade_-_01@JP.jpg",
+							"genre": [
+								1
+							],
+							"release": 1994
 						}
 					]
 				}

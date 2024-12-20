@@ -450,6 +450,10 @@ LN_ARRAY=(
 	~snowbros.zip
 	~Snow_Bros._Arcade_-_01@JP.jpg
 
+	^arcade/toaplan/Snow_Bros.2/
+	~snowbro2.zip
+	~SnowBros.2_Arcade_-_01@JP.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

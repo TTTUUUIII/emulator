@@ -384,7 +384,7 @@ kbd {
     }
 
     .screen .launch-box {
-        visibility: visible;
+        display: inline-flex;
     }
     
     .game-container .screen {

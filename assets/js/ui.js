@@ -162,7 +162,7 @@ var UI = {
                 $(`<option value=${region.toLowerCase()}>${region}</option>`)
             );
         }
-        regionSelectElement.children().length > 0 && regionSelectElement.parent().removeClass("invisible")
+        regionSelectElement.children().length > 0 && regionSelectElement.parent().addClass("h-stack-inline").removeClass("invisible");
         game["region"] && regionSelectElement.val(game["region"]);
         regionSelectElement.change(function() {
             UI.onRegionChanged(this.value);

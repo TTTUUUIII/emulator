@@ -100,6 +100,11 @@
 					"id": 11,
 					"title": "Teenage Mutant Ninja Turtles",
 					"url": "https://snowland.ink/?tag=teenage-mutant-ninja-turtles_series"
+				},
+				{
+					"id": 12,
+					"title": "Ninja Gaiden",
+					"url": "https://snowland.ink/?tag=ninja-gaiden_series"
 				}
 			],
 			"data": [
@@ -442,6 +447,26 @@
 							],
 							"series_id": 9,
 							"release": 1991
+						}
+					]
+				},
+				{
+					"developer": "tecmo",
+					"url": "https://snowland.ink/?tag=tecmo",
+					"games": [
+						{
+							"id": 2295,
+							"title": "Ninja Gaiden",
+							"rom": [
+								"Ninja_Ryuukenden@JP.nes",
+								"Ninja_Gaiden@US.nes",
+								"Shadow_Warriors_-_Ninja_Gaiden@EU.nes"
+							],
+							"img": "Ninja_Gaiden_NES_-_01@US.png",
+							"genre": [
+								1
+							],
+							"release": 1998
 						}
 					]
 				},

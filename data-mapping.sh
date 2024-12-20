@@ -121,6 +121,13 @@ LN_ARRAY=(
 	~Teenage_Mutant_Hero_Turtles@EU.nes
 	~TMNT_NES_NA_-_01.jpg
 
+	# Tecmo
+	^nes/tecmo/Ninja_Gaiden/
+	~Ninja_Ryuukenden@JP.nes
+	~Ninja_Gaiden@US.nes
+	~Shadow_Warriors_-_Ninja_Gaiden@EU.nes
+	~Ninja_Gaiden_NES_-_01@US.png
+
 	# Hudson Soft
 
 	^nes/hudson_soft/Adventure_Island/

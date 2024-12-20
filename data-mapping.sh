@@ -128,6 +128,12 @@ LN_ARRAY=(
 	~Shadow_Warriors_-_Ninja_Gaiden@EU.nes
 	~Ninja_Gaiden_NES_-_01@US.png
 
+	^nes/tecmo/Star_Force/
+	~Ninja_Ryuukenden@JP.nes
+	~Ninja_Ryuukenden@US.nes
+	~Ninja_Ryuukenden@EU.nes
+	~Star_Force_NES_-_01@US.jpg
+
 	# Hudson Soft
 
 	^nes/hudson_soft/Adventure_Island/

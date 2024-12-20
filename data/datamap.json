@@ -467,6 +467,20 @@
 								1
 							],
 							"release": 1998
+						},
+						{
+							"id": 2318,
+							"title": "Star Force",
+							"rom": [
+								"Star_Force@JP.nes",
+								"Star_Force@US.nes",
+								"Star_Force@EU.nes"
+							],
+							"img": "Star_Force_NES_-_01@US.jpg",
+							"genre": [
+								2
+							],
+							"release": 1985
 						}
 					]
 				},

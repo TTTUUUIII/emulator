@@ -1183,6 +1183,21 @@
 							"release": 1994
 						}
 					]
+				},
+				{
+					"developer": "@nes/konami",
+					"games": [
+						{
+							"id": 2332,
+							"title": "Yie Ar Kung-Fu",
+							"rom": "yiear.zip",
+							"img": "Yie_Ar_Kung-Fu_Arcade_-_01@US.jpg",
+							"genre": [
+								4
+							],
+							"release": 1984
+						}
+					]
 				}
 			]
 		}

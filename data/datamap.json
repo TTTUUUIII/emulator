@@ -349,6 +349,16 @@
 							],
 							"series_id": 11,
 							"release": 1989
+						},
+						{
+							"id": 2339,
+							"title": "Yie Ar Kung-Fu",
+							"rom": "Yie_Ar_Kung-Fu@JP.nes",
+							"img": "Yie_Ar_Kung-Fu_NES_-_01@US.jpg",
+							"genre": [
+								4
+							],
+							"release": 1985
 						}
 					]
 				},

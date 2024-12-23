@@ -121,6 +121,10 @@ LN_ARRAY=(
 	~Teenage_Mutant_Hero_Turtles@EU.nes
 	~TMNT_NES_NA_-_01.jpg
 
+	^nes/konami/Yie_Ar_Kung-Fu/
+	~Yie_Ar_Kung-Fu@JP.nes
+	~Yie_Ar_Kung-Fu_NES_-_01@US.jpg
+
 	# Tecmo
 	^nes/tecmo/Ninja_Gaiden/
 	~Ninja_Ryuukenden@JP.nes

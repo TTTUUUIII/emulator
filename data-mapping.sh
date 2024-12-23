@@ -460,6 +460,11 @@ LN_ARRAY=(
 	~snowbro2.zip
 	~SnowBros.2_Arcade_-_01@JP.jpg
 
+	# konami
+	^arcade/konami/Yie_Ar_Kung-Fu/
+	~yiear.zip
+	~Yie_Ar_Kung-Fu_Arcade_-_01@US.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

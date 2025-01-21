@@ -1206,6 +1206,16 @@
 								4
 							],
 							"release": 1984
+						},
+						{
+							"id": 2359,
+							"title": "Jackal",
+							"rom": "jackal.zip",
+							"img": "Jackal_Arcade_-_01@US.jpg",
+							"genre": [
+								1, 6
+							],
+							"release": 1986
 						}
 					]
 				}

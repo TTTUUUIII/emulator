@@ -469,6 +469,10 @@ LN_ARRAY=(
 	~yiear.zip
 	~Yie_Ar_Kung-Fu_Arcade_-_01@US.jpg
 
+	^arcade/konami/Jackal/
+	~jackal.zip
+	~Jackal_Arcade_-_01@US.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

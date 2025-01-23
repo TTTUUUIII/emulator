@@ -899,7 +899,10 @@
 						{
 							"id": 1526,
 							"title": "Twin Cobra",
-							"rom": "Twin-Cobra_Genesis@EN.zip",
+							"rom": [
+								"Kyuukyoku_Tiger@JP.zip",
+								"Twin-Cobra_Genesis@EN.zip"
+							],
 							"img": "Twin_Cobra_-_MDUS_01.jpg",
 							"genre": [
 								2

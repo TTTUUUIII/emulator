@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull > /dev/null
+
 . "$(dirname $(readlink -f $0))/data-mapping.sh"
 
 WEB_ROOT=/var/www/emulator.snowland.ink

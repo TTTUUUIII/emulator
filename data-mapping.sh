@@ -474,6 +474,20 @@ LN_ARRAY=(
 	~fshark.zip
 	~Flying_Shark_Arcade_-_01@JP.jpg
 
+	^arcade/toaplan/Hellfire/
+	~hellfire.zip
+	~Hellfire_Arcade_-_01@US.jpg
+
+	^arcade/toaplan/Zero_Wing/
+	~zerowing.zip
+	~Zero_Wing_Arcade_-_01@US.jpg
+
+	# irem
+	^arcade/irem/R-Type/
+	~rtype.zip
+	~R-Type_Arcade_-_01@US.jpg
+
+
 	# konami
 	^arcade/konami/Yie_Ar_Kung-Fu/
 	~yiear.zip

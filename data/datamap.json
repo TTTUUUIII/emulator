@@ -1207,6 +1207,16 @@
 								1, 7
 							],
 							"release": 1994
+						},
+						{
+							"id": 2378,
+							"title": "Flying Shark",
+							"rom": "fshark.zip",
+							"img": "Flying_Shark_Arcade_-_01@JP.jpg",
+							"genre": [
+								2
+							],
+							"release": 1987
 						}
 					]
 				},

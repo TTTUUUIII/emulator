@@ -470,6 +470,10 @@ LN_ARRAY=(
 	~snowbro2.zip
 	~SnowBros.2_Arcade_-_01@JP.jpg
 
+	^arcade/toaplan/Flying_Shark/
+	~fshark.zip
+	~Flying_Shark_Arcade_-_01@JP.jpg
+
 	# konami
 	^arcade/konami/Yie_Ar_Kung-Fu/
 	~yiear.zip

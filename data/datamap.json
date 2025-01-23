@@ -359,6 +359,19 @@
 								4
 							],
 							"release": 1985
+						},
+						{
+							"id": 2371,
+							"title": "Final Command: Red Fortress",
+							"rom": [
+								"Jackal@US.nes",
+								"Final_Command_-_Akai_Yousai@JP.fds"
+							],
+							"img": "Jackal_NES_-_01@US.jpg",
+							"genre": [
+								1, 6
+							],
+							"release": 1988
 						}
 					]
 				},

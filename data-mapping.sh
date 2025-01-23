@@ -124,6 +124,11 @@ LN_ARRAY=(
 	^nes/konami/Yie_Ar_Kung-Fu/
 	~Yie_Ar_Kung-Fu@JP.nes
 	~Yie_Ar_Kung-Fu_NES_-_01@US.jpg
+	
+	^nes/konami/Jackal/
+	~Jackal@US.nes
+	~Final_Command_-_Akai_Yousai@JP.fds
+	~Jackal_NES_-_01@US.jpg
 
 	# Tecmo
 	^nes/tecmo/Ninja_Gaiden/

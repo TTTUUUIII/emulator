@@ -358,6 +358,7 @@ LN_ARRAY=(
 	^sega-genesis/toaplan/Twin_Cobra/
 	Twin-Cobra_Genesis_EN.zip
 	Twin-Cobra_Genesis@EN.zip
+	~Kyuukyoku_Tiger@JP.zip
 	~Twin_Cobra_-_MDUS_01.jpg
 
 	^sega-genesis/toaplan/Snow_Bros._-_Nick_\&_Tom/

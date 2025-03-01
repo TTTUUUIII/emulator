@@ -36,6 +36,11 @@
 			"id": 7,
 			"title": "Puzzle",
 			"url": "https://snowland.ink/?tag=puzzle"
+		},
+		{
+			"id": 8,
+			"title": "Shooter",
+			"url": "https://snowland.ink/?tag=shooter"
 		}
 	],
 	"data": [
@@ -425,6 +430,18 @@
 								1,7
 							],
 							"release": 1984
+						},
+						{
+							"id": 2420,
+							"title": "Pooyan",
+							"rom": [
+								"Pooyan@JP.nes"
+							],
+							"img": "Pooyan_NES_-_01@US.jpg",
+							"genre": [
+								8
+							],
+							"release": 1985
 						}
 					]
 				},

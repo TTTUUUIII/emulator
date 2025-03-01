@@ -169,6 +169,10 @@ LN_ARRAY=(
 	Lode_Runner@EU.nes
 	~Lode_Runnder_NES_JP_-_01.jpg
 
+	^nes/hudson_soft/Pooyan/
+	~Pooyan@JP.nes
+	~Pooyan_NES_-_01@US.jpg
+
 	# Compile
 	^nes/compile/gun-nac/
 	Gun-Nac_US.nes

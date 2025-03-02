@@ -758,6 +758,22 @@
 					]
 				},
 				{
+					"developer": "@segaMD/SEGA",
+					"games": [
+						{
+							"id": 2435,
+							"title": "Sonic the Hedgehog",
+							"rom": "Sonic_the_Hedgehog@US.nes",
+							"img": "Sonic_NES_-_01@US.png",
+							"genre": [
+								1
+							],
+							"series_id": "@segaMD/4",
+							"release": 1994
+						}
+					]
+				},
+				{
 					"developer": "DotGears",
 					"url": "https://dotgears.com/",
 					"games": [

@@ -906,6 +906,12 @@
 					"title": "Streets of Rage",
 					"url": "https://snowland.ink/?tag=streets-of-rage_series",
 					"poster": "Streets_of_Rage_Series_Poster.jpg"
+				},
+				{
+					"id": 4,
+					"title": "Sonic the Hedgehog",
+					"url": "https://snowland.ink/?tag=sonic_series",
+					"poster": "Sonic_the_Hedgehog_Series_Poster.jpg"
 				}
 			],
 			"data": [
@@ -1097,6 +1103,17 @@
 								3
 							],
 							"series_id": 3,
+							"release": 1991
+						},
+						{
+							"id": 2424,
+							"title": "Sonic the Hedgehog (1991)",
+							"rom": "Sonic_The_Hedgehog@US.zip",
+							"img": "Sonic_-_01@JP.jpg",
+							"genre": [
+								1
+							],
+							"series_id": 4,
 							"release": 1991
 						}
 					]

@@ -434,6 +434,10 @@ LN_ARRAY=(
 	~Bare_Knuckle_-_Ikari_no_Tekken_~_Streets_of_Rage@W.zip
 	~Street_of_Rage_MD_-_01@JP.jpg
 
+	^sega-genesis/sega/Sonic_the_Hedgehog/
+	~Sonic_The_Hedgehog@US.zip
+	~Sonic_-_01@JP.jpg
+
 
 	# Platform: Sega Saturn
 	# Capcom
@@ -510,4 +514,5 @@ LN_ARRAY=(
 	~Contra_-_Konami_Series_Poster.jpg
 	~Castlevania_Series_NES_Poster.jpg
 	~Streets_of_Rage_Series_Poster.jpg
+	~Sonic_the_Hedgehog_Series_Poster.jpg
 )

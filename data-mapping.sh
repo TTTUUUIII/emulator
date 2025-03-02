@@ -307,6 +307,11 @@ LN_ARRAY=(
 	Summer_Carnival_92_Recca_JP_01_large.jpg
 	images/Summer_Carnival_92_Recca_JP_01.jpg
 
+	# SEGA
+	^nes/sega/Sonic_the_Hedgehog/
+	~Sonic_the_Hedgehog@US.nes
+	~Sonic_NES_-_01@US.png
+
 	# DotGears
 	^nes/dotgears/FlappyBird/
 	FlappyBird.nes

@@ -758,6 +758,25 @@
 					]
 				},
 				{
+					"developer": "broderbund",
+					"url": "https://snowland.ink/?tag=broderbund",
+					"games": [
+						{
+							"id": 2444,
+							"title": "Spelunker",
+							"rom": [
+								"Spelunker@JP.nes",
+								"Spelunker@US.nes"
+							],
+							"img": "Spelunker_NES_-_01@US.jpg",
+							"genre": [
+								1
+							],
+							"release": 1985
+						}
+					]
+				},
+				{
 					"developer": "@segaMD/SEGA",
 					"games": [
 						{

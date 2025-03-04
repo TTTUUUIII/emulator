@@ -448,6 +448,10 @@ LN_ARRAY=(
 	~Sonic_The_Hedgehog@US.zip
 	~Sonic_-_01@JP.jpg
 
+	^sega-genesis/sega/Sonic_the_Hedgehog2/
+	~Sonic_The_Hedgehog_2@US.zip
+	~Sonic2_-_01@JP.jpg
+
 
 	# Platform: Sega Saturn
 	# Capcom

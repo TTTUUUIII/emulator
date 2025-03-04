@@ -1150,6 +1150,17 @@
 							],
 							"series_id": 4,
 							"release": 1991
+						},
+						{
+							"id": 2451,
+							"title": "Sonic the Hedgehog 2",
+							"rom": "Sonic_The_Hedgehog_2@US.zip",
+							"img": "Sonic2_-_01@JP.jpg",
+							"genre": [
+								1
+							],
+							"series_id": 4,
+							"release": 1992
 						}
 					]
 				}

@@ -509,6 +509,10 @@ LN_ARRAY=(
 	~rtype.zip
 	~R-Type_Arcade_-_01@US.jpg
 
+	^arcade/irem/R-Type2/
+	~rtype2.zip
+	~rtype_ii_arcade.jpg
+
 
 	# konami
 	^arcade/konami/Yie_Ar_Kung-Fu/
@@ -529,4 +533,5 @@ LN_ARRAY=(
 	~Castlevania_Series_NES_Poster.jpg
 	~Streets_of_Rage_Series_Poster.jpg
 	~Sonic_the_Hedgehog_Series_Poster.jpg
+	~wp9371773-r-type-final-2-wallpapers.png
 )

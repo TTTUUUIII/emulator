@@ -1197,6 +1197,12 @@
 					"title": "Metal Slug",
 					"url": "https://snowland.ink/?tag=metal-slug_series",
 					"poster": "Metal_Slug_Series_Poster.jpg"
+				},
+				{
+					"id": 2,
+					"title": "R-Type",
+					"url": "https://snowland.ink/?tag=r-type_series",
+					"poster": "wp9371773-r-type-final-2-wallpapers.png"
 				}
 			],
 			"data": [
@@ -1357,7 +1363,19 @@
 							"genre": [
 								2
 							],
+							"series_id": 2,
 							"release": 1987
+						},
+						{
+							"id": 2460,
+							"title": "R-Type II",
+							"rom": "rtype2.zip",
+							"img": "rtype_ii_arcade.jpg",
+							"genre": [
+								2
+							],
+							"series_id": 2,
+							"release": 1989
 						}
 					]
 				}

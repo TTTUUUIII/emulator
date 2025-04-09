@@ -452,6 +452,10 @@ LN_ARRAY=(
 	~Sonic_The_Hedgehog_2@US.zip
 	~Sonic2_-_01@JP.jpg
 
+	^sega-genesis/konami/Rocket_Knight_Adventures/
+	~Rocket_Knight_Adventures@US.zip
+	~rocket_knight_adventures_-_01@genesis.jpg
+
 
 	# Platform: Sega Saturn
 	# Capcom

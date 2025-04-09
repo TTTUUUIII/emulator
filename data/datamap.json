@@ -1053,6 +1053,16 @@
 							],
 							"series_id": "@nes/11",
 							"release": 1992
+						},
+						{
+							"id": 2488,
+							"title": "Rocket Knight Adventures",
+							"rom": "Rocket_Knight_Adventures@US.zip",
+							"img": "rocket_knight_adventures_-_01@genesis.jpg",
+							"genre": [
+								1, 8
+							],
+							"release": 1993
 						}
 					]
 				},

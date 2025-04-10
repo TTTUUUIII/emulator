@@ -456,6 +456,10 @@ LN_ARRAY=(
 	~Comix_Zone@US.zip
 	~genesis_comixzone_front@jp.jpg
 
+	^sega-genesis/sega/Shinobi_III/
+	~Shinobi_III_-_Return_of_the_Ninja_Master@US.zip
+	~shinobi3_front@jp.jpg
+
 	^sega-genesis/konami/Rocket_Knight_Adventures/
 	~Rocket_Knight_Adventures@US.zip
 	~rocket_knight_adventures_-_01@genesis.jpg

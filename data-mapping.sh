@@ -468,6 +468,10 @@ LN_ARRAY=(
 	~Revenge_of_Shinobi_The@US.zip
 	~the_recenge_of_shinobi_front@jp.png
 
+	^sega-genesis/sega/Shadow_Dancer/
+	~Shadow_Dancer_-_The_Secret_of_Shinobi@US.zip
+	~shader_dancer_the_secret_of_shinobi@jp.png
+
 
 
 	# Platform: Sega Saturn

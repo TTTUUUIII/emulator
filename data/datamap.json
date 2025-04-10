@@ -947,6 +947,12 @@
 					"title": "Sonic the Hedgehog",
 					"url": "https://snowland.ink/?tag=sonic_series",
 					"poster": "Sonic_the_Hedgehog_Series_Poster.jpg"
+				},
+				{
+					"id": 5,
+					"title": "Shinobi",
+					"url": "https://snowland.ink/?tag=shinobi_series",
+					"poster": "wp-01-Shadow_Dancer-1280x0720.jpg"
 				}
 			],
 			"data": [
@@ -1190,7 +1196,19 @@
 							"genre": [
 								1, 3
 							],
+							"series_id": 5,
 							"release": 1993
+						},
+						{
+							"id": 2557,
+							"title": "The Revenge of Shinobi",
+							"rom": "Revenge_of_Shinobi_The@US.zip",
+							"img": "the_recenge_of_shinobi_front@jp.png",
+							"genre": [
+								1, 3
+							],
+							"series_id": 5,
+							"release": 1989
 						}
 					]
 				}

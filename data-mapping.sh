@@ -464,6 +464,10 @@ LN_ARRAY=(
 	~Rocket_Knight_Adventures@US.zip
 	~rocket_knight_adventures_-_01@genesis.jpg
 
+	^sega-genesis/sega/Revenge_of_Shinobi/
+	~Revenge_of_Shinobi_The@US.zip
+	~the_recenge_of_shinobi_front@jp.png
+
 
 
 	# Platform: Sega Saturn
@@ -547,4 +551,5 @@ LN_ARRAY=(
 	~Streets_of_Rage_Series_Poster.jpg
 	~Sonic_the_Hedgehog_Series_Poster.jpg
 	~wp9371773-r-type-final-2-wallpapers.png
+	~wp-01-Shadow_Dancer-1280x0720.jpg
 )

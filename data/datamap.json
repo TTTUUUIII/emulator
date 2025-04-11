@@ -1236,6 +1236,16 @@
 								1, 6, 8
 							],
 							"release": 1993
+						},
+						{
+							"id": 2580,
+							"title": "Yu Yu Hakusho Makyō Tōitsusen",
+							"rom": "Yuu_Yuu_Hakusho_-_Sunset_Fighters@JP.zip",
+							"img": "yu_yu_hakusho_-_makyo_toitsusen_front@jp.jpg",
+							"genre": [
+								4
+							],
+							"release": 1994
 						}
 					]
 				}

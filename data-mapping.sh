@@ -464,6 +464,10 @@ LN_ARRAY=(
 	~Gunstar_Heroes@US.zip
 	~gunstar_heroes_front@jp.png
 
+	~sega-genesis/treasure/Yu_Yu_Hakusho_Makyo_Toitsusen/
+	~Yuu_Yuu_Hakusho_-_Sunset_Fighters@JP.zip
+	~yu_yu_hakusho_-_makyo_toitsusen_front@jp.jpg
+
 	^sega-genesis/konami/Rocket_Knight_Adventures/
 	~Rocket_Knight_Adventures@US.zip
 	~rocket_knight_adventures_-_01@genesis.jpg

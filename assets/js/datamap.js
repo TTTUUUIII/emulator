@@ -87,6 +87,15 @@ var Datamap = {
         }
         return this.findSeriesById(seriesId, system);
     },
+    findGamesByName: function(kw) {
+        let results = [];
+        kw = kw.toLowerCase();
+        for(let it of this._all_games.values()) {
+            if(it["title"].toLowerCase().includes(kw))
+                results.push(it);
+        }
+        return results;
+    },
     random: function () {
         return this._all_game_ids[Math.floor(Math.random() * this._all_game_ids.length)];
     },

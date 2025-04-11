@@ -57,14 +57,6 @@ body {
     background-color: var(--color_surface);
 }
 
-.launch-box > button:first-child {
-    width: 13%;
-}
-
-.launch-box > button:last-child {
-    width: 30%;
-}
-
 .launch-box > button:hover {
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 }
@@ -105,14 +97,53 @@ body {
     margin: auto;
 }
 
-.region-select > select {
-    min-width: 77px;
-    padding-left: var(--padding_size_s);
+.em-search {
+    position: relative;
 }
 
-.region-select > span {
+.em-search > ul {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 5px;
+    max-width: 100%;
+    list-style: none;
+}
+
+.em-search li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: var(--padding_size_s);
+    background-color: var(--color_background);
+    border-bottom: 1px solid gray;
+    font-size: small;
+}
+
+.em-search li:hover {
+    background-color: var(--color_surface);
+}
+
+.em-input {
+    display: flex;
+    flex-direction: row;
+    height: 27px;
+}
+
+.em-input > select, input {
+    min-width: 77px;
+    height: 100%;
+    padding-inline: var(--padding_size_s);
+    margin: 0px;
+}
+
+.em-input > .em-icon {
     background-color: var(--color_surface);
     padding: var(--padding_size_tiny);
+}
+
+.em-input > .em-button {
+    width: 30%;
 }
 
 .toast-container {

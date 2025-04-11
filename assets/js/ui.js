@@ -20,10 +20,14 @@ var UI = {
         $(".action-search").off("input").on("input", (event) => {
             let element = $(".em-search ul");
             element && element.empty();
-            if(!element || !event.target.value || event.target.value.length < 4) return;
+            if(!element || !event.target.value || event.target.value.length < 3) return;
             let games = Datamap.findGamesByName(event.target.value);
             for(let it of games) {
-                element.append(`<li><a title="${it["title"]} | ${it["release"]} | ${it["system"]} | ${it["developer"]["name"]}" href="/?id=${it["id"]}">${it["title"]}</a></li>`);
+                let li = $(`<li title="${it["id"]} | ${it["title"]} | ${it["system"]} | ${it["developer"]["name"]} | ${it["release"]}">${it["title"]}</li>`);
+                li.off("click").on("click", () => {
+                    this.onReload(it["id"], 1);
+                });
+                element.append(li);
             }
         });
         $(".action-random").off("click").on("click", () => {

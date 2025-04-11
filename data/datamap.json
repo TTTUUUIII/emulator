@@ -1222,6 +1222,22 @@
 							"release": 1990
 						}
 					]
+				},
+				{
+					"developer": "Treasure",
+					"url": "https://snowland.ink/?tag=treasure",
+					"games": [
+						{
+							"id": 2573,
+							"title": "Gunstar Heroes",
+							"rom": "Gunstar_Heroes@US.zip",
+							"img": "gunstar_heroes_front@jp.png",
+							"genre": [
+								1, 6, 8
+							],
+							"release": 1993
+						}
+					]
 				}
 			]
 		},

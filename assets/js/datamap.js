@@ -69,6 +69,19 @@ var Datamap = {
         }
         return game;
     },
+    findGamesByName: function(kw) {
+        let results = [];
+        kw = kw.toLowerCase();
+        for(let it of this._all_games.values()) {
+            if(it["title"].toLowerCase().includes(kw)) {
+                if(it.developer && it.developer.name.startsWith("@")) {
+                    it.developer = this._all_developers.get(it.developer.name.substring(1));
+                }
+                results.push(it);
+            }
+        }
+        return results;
+    },
     findGenreById: function (id) {
         return this._all_genres.get(parseInt(id));
     },
@@ -86,15 +99,6 @@ var Datamap = {
             [system, seriesId] = seriesId.substring("1").split("/");
         }
         return this.findSeriesById(seriesId, system);
-    },
-    findGamesByName: function(kw) {
-        let results = [];
-        kw = kw.toLowerCase();
-        for(let it of this._all_games.values()) {
-            if(it["title"].toLowerCase().includes(kw))
-                results.push(it);
-        }
-        return results;
     },
     random: function () {
         return this._all_game_ids[Math.floor(Math.random() * this._all_game_ids.length)];

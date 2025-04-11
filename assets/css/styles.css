@@ -99,6 +99,7 @@ body {
 
 .em-search {
     position: relative;
+    padding-inline: var(--padding_size_s);
 }
 
 .em-search > ul {
@@ -106,7 +107,7 @@ body {
     z-index: 1;
     top: 30px;
     left: 5px;
-    max-width: 100%;
+    width: calc(100% - 10px);
     list-style: none;
 }
 

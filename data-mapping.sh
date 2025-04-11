@@ -121,6 +121,10 @@ LN_ARRAY=(
 	~Teenage_Mutant_Hero_Turtles@EU.nes
 	~TMNT_NES_NA_-_01.jpg
 
+	^nes/konami/Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters/
+	~Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters@US.nes
+	~tmnt_tournamen_fighter_nes_front@us.jpg
+
 	^nes/konami/Yie_Ar_Kung-Fu/
 	~Yie_Ar_Kung-Fu@JP.nes
 	~Yie_Ar_Kung-Fu_NES_-_01@US.jpg

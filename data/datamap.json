@@ -356,6 +356,17 @@
 							"release": 1989
 						},
 						{
+							"id": 2587,
+							"title": "Teenage Mutant Ninja Turtles: Tournament Fighters",
+							"rom": "Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters@US.nes",
+							"img": "tmnt_tournamen_fighter_nes_front@us.jpg",
+							"genre": [
+								4
+							],
+							"series_id": 11,
+							"release": 1994
+						},
+						{
 							"id": 2339,
 							"title": "Yie Ar Kung-Fu",
 							"rom": "Yie_Ar_Kung-Fu@JP.nes",

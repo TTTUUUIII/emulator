@@ -267,8 +267,7 @@ LN_ARRAY=(
 	^nes/nintendo/F-1_Race/
 	F1_Race_JP.nes
 	F-1_Race@JP.nes
-	F-1_Race_Cover_Large.jpg
-	images/F-1_Race_Cover.jpg
+	~F1_Race_NES_-_01@US.png
 
 	^nes/nintendo/Excitebike/
 	Excitebike_JU.nes
@@ -294,9 +293,9 @@ LN_ARRAY=(
 	~Double_Dragon_II_The_Revenge_NES_-_01.jpg
 
 	^nes/technos/Double_Dragon_III/
-	Double_Dragon_III_-_The_Sacred_Stones_US_.nes
+	Double_Dragon_III_-_The_Sacred_Stones_US.nes
 	Double_Dragon_III_-_The_Sacred_Stones@US.nes
-	Double_Dragon_III_-_The_Sacred_Stones_EU_.nes
+	Double_Dragon_III_-_The_Sacred_Stones_EU.nes
 	Double_Dragon_III_-_The_Sacred_Stones@EU.nes
 	~Double_Dragon_III_-_The_Rosetta_Stone_NES_01.jpg
 

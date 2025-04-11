@@ -31,24 +31,31 @@
                     </div>
                 </div>
                 <div class="mt-sm p-m radius-sm hover-shadow background-widget">
-                    <div class="launch-box h-stack">
-                        <button class="action-random" title="A random id.">🎲</button>
+                    <div class="launch-box em-input">
+                        <button class="action-random em-icon" title="A random id.">🎲</button>
                         <input autocomplete="off" placeholder="ID" type="number" class="game-id" />
-                        <button class="action-launch" title="Launch now!">🚀</i></button>
+                        <button class="action-launch em-button" title="Launch now!">🚀</i></button>
                     </div>
                 </div>
             </div>
             <div class="game-container v-stack">
                 <div class="screen">
                     <div class="h-stack">
-                        <div title="Change region" class="region-select mr-s hidden">
-                            <span class="icon">🌏️</span>
+                        <div title="Change region" class="region-select em-input mr-s hidden">
+                            <span class="em-icon">🌏️</span>
                             <select></select>
                         </div>
-                        <div class="launch-box hidden">
-                            <button class="action-random" title="A random id.">🎲</button>
+                        <div class="launch-box em-input hidden">
+                            <button class="action-random em-icon" title="A random id.">🎲</button>
                             <input autocomplete="off" placeholder="ID" type="number" class="game-id" />
-                            <button class="action-launch" title="Launch now!">🚀</i></button>
+                            <button class="action-launch em-button" title="Launch now!">🚀</i></button>
+                        </div>
+                        <div class="em-search v-stack">
+                            <div title="Search all games" class="em-input ml-s">
+                                <span class="em-icon">🔍️</span>
+                                <input style="position: relative;" class="action-search" placeholder="Search..." type="search" />
+                            </div>
+                            <ul></ul>
                         </div>
                     </div>
                     <div id="game" class="radius-m mt-sm"></div>

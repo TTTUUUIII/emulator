@@ -343,6 +343,11 @@ LN_ARRAY=(
 	Teenage_Mutant_Ninja_Turtles_IV_-_Turtles_in_Time@US.zip
 	~Teenage_Mutant_Ninja_Turtles_IV_Turtles_in_Time_SNES_NA_-_01.jpg
 
+	^snes/konami/Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters/
+	~Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters@US.zip
+	~Teenage_Mutant_Ninja_Turtles_-_Mutant_Warriors@JP.zip
+	~tmnt_fighter_snes_front@us.jpg
+
 	# Capcom
 	^snes/capcom/Super_Street_Fighter_II_The_New_Challengers/
 	Super_Street_Fighter_II_US.zip

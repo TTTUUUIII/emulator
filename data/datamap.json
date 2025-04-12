@@ -861,6 +861,20 @@
 							],
 							"series_id": "@nes/11",
 							"release": 1992
+						},
+						{
+							"id": 2591,
+							"title": "Teenage Mutant Ninja Turtles: Tournament Fighters",
+							"rom": [
+								"Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters@US.zip",
+								"Teenage_Mutant_Ninja_Turtles_-_Mutant_Warriors@JP.zip"
+							],
+							"img": "tmnt_fighter_snes_front@us.jpg",
+							"genre": [
+								4
+							],
+							"series_id": "@nes/11",
+							"release": 1993
 						}
 					]
 				},

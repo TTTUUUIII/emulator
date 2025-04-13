@@ -420,6 +420,11 @@ LN_ARRAY=(
 	Teenage_Mutant_Ninja_Turtles_-_The_Hyperstone_Heist@US.zip
 	~Teenage_Mutant_Ninja_Turtles_The_Hyperstone_Heist_MD_NA_-_01.jpg
 
+	# data east
+	^sega-genesis/data-east/Mega_Turrican/
+	~Mega_Turrican@US.zip
+	~mega_turrucan_md_front@us.jpg
+
 	# Technosoft
 	^sega-genesis/technosoft/Thunder_Force_III/
 	Thunder_Force_III_JU.zip

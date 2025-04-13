@@ -121,7 +121,7 @@ var UI = {
         if (game["developer"]) {
             $("#game-details").append(
                 $(
-                    `<div class="card-item"><label>Developer</label><a href="${game["developer"]["url"] ?? "#"
+                    `<div class="card-item"><label>Publisher</label><a href="${game["developer"]["url"] ?? "#"
                     }" target="_blank">${upper(
                         game["developer"]["name"]
                     )}</a></div>`

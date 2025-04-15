@@ -165,7 +165,7 @@
 								1
 							],
 							"series_id": 1,
-							"release": 1987
+							"release": 1988
 						},
 						{
 							"id": 1203,
@@ -180,7 +180,7 @@
 								1
 							],
 							"series_id": 1,
-							"release": 1988
+							"release": 1990
 						},
 						{
 							"id": 1170,
@@ -1480,6 +1480,17 @@
 								1, 6
 							],
 							"release": 1986
+						},
+						{
+							"id": 2612,
+							"title": "Super Contra",
+							"rom": "scontra.zip",
+							"img": "super_contra_arcade_front@jp.jpg",
+							"genre": [
+								1, 6
+							],
+							"series_id": "@nes/1",
+							"release": 1988
 						}
 					]
 				},

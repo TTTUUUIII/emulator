@@ -565,6 +565,10 @@ LN_ARRAY=(
 	~jackal.zip
 	~Jackal_Arcade_-_01@US.jpg
 
+	^arcade/konami/Super_Contra/
+	~scontra.zip
+	~super_contra_arcade_front@jp.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

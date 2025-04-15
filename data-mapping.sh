@@ -348,6 +348,10 @@ LN_ARRAY=(
 	~Teenage_Mutant_Ninja_Turtles_-_Mutant_Warriors@JP.zip
 	~tmnt_fighter_snes_front@us.jpg
 
+	^snes/konami/Contra_III_The_Alien_Wars/
+	~Contra_III_-_The_Alien_Wars@US.zip
+	~contra_iii_the_alien_wars_sens_front@us.jpg
+
 	# Capcom
 	^snes/capcom/Super_Street_Fighter_II_The_New_Challengers/
 	Super_Street_Fighter_II_US.zip

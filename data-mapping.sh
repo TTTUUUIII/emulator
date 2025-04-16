@@ -573,6 +573,10 @@ LN_ARRAY=(
 	~scontra.zip
 	~super_contra_arcade_front@jp.jpg
 
+	^arcade/konami/Contra/
+	~contra.zip
+	~contra_arcade_front@us.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

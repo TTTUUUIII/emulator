@@ -1502,6 +1502,17 @@
 							],
 							"series_id": "@nes/1",
 							"release": 1988
+						},
+						{
+							"id": 2630,
+							"title": "Contra",
+							"rom": "contra.zip",
+							"img": "contra_arcade_front@us.jpg",
+							"genre": [
+								1, 6
+							],
+							"series_id": "@nes/1",
+							"release": 1987
 						}
 					]
 				},

@@ -118,9 +118,15 @@ var Emulator = {
         return `data/${rom}`;
     },
     chooseBios: () => {
-        if(EJS_gameUrl.endsWith("fds")) {
-            return "data/bios/disksys.rom";
+        switch(EJS_core) {
+            case "nes":
+                if(EJS_gameUrl.endsWith("fds"))
+                    return "data/bios/disksys.rom";
+                break;
+            case "segaCD":
+                return "data/bios/bios_CD_U.bin";
+            default:
+                return "";
         }
-        return ""
     }
 };

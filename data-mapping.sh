@@ -577,6 +577,11 @@ LN_ARRAY=(
 	~contra.zip
 	~contra_arcade_front@us.jpg
 
+	# capcom
+	~arcade/capcom/Final_Fight/
+	~ffight.zip
+	~final_fight_arcade_front@us.jpg
+
 	# Series Poster
 	^images/
 	~FlappyBird_NES_Poster.png

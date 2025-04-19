@@ -1346,6 +1346,11 @@
 					"title": "R-Type",
 					"url": "https://snowland.ink/?tag=r-type_series",
 					"poster": "wp9371773-r-type-final-2-wallpapers.png"
+				},
+				{
+					"id": 3,
+					"title": "Final Fight",
+					"url": "https://snowland.ink/?tag=final-fight_series"
 				}
 			],
 			"data": [
@@ -1540,6 +1545,22 @@
 								2
 							],
 							"series_id": 2,
+							"release": 1989
+						}
+					]
+				},
+				{
+					"developer": "@nes/capcom",
+					"games": [
+						{
+							"id": 2640,
+							"title": "Final Fight",
+							"rom": "ffight.zip",
+							"img": "final_fight_arcade_front@us.jpg",
+							"genre": [
+								3
+							],
+							"series_id": 3,
 							"release": 1989
 						}
 					]

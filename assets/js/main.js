@@ -20,7 +20,6 @@ UI.onRegionChanged = (region) => {
     reload(id, auto, region);
 }
 UI.onShortcutKey = (sk) => {
-    if(!EJS_emulator || EJS_emulator.isNetplay) {return false};
     let ctrl = undefined;
     switch(sk) {
         case SK_RESET:

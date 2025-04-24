@@ -373,6 +373,14 @@ LN_ARRAY=(
 	Street_Fighter_Alpha_2_-_SNES@US.zip
 	~Street-Fighter-Alpha_2_SNES_NA_-_01.webp
 
+	^snes/capcom/Final_Fight_II/
+	~Final_Fight_2@US.zip
+	~snes_finalfight2_front@us.jpg
+
+	^snes/capcom/Final_Fight_III/
+	~Final_Fight_3@US.zip
+	~snes_finalfight3_front@us.jpg
+
 	# technosoft
 	^snes/technosoft/Thunder_Spirits/
 	Thunder_Spirits_US.zip

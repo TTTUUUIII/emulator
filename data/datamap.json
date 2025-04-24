@@ -935,6 +935,28 @@
 							],
 							"series_id": "@segaMD/2",
 							"release": 1996
+						},
+						{
+							"id": 2647,
+							"title": "Final Fight 2",
+							"rom": "Final_Fight_2@US.zip",
+							"img": "snes_finalfight2_front@us.jpg",
+							"genre": [
+								3
+							],
+							"series_id": "@arcade/3",
+							"release": 1993
+						},
+						{
+							"id": 2649,
+							"title": "Final Fight 3",
+							"rom": "Final_Fight_3@US.zip",
+							"img": "snes_finalfight3_front@us.jpg",
+							"genre": [
+								3
+							],
+							"series_id": "@arcade/3",
+							"release": 1995
 						}
 					]
 				},

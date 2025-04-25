@@ -53,7 +53,7 @@ var UI = {
             } else if (event.altKey) {
                 sk = event.shiftKey ? SK_LOAD_STATE_FROM_DISK : SK_QUICK_LOAD_STATE;
             }
-            if (sk != -1 && this.onShortcutKey(sk)) {
+            if (sk != -1 && this.onShortcutKey(sk) && sk != SK_TOGGLE_PLAY_PAUSE) {
                 event.preventDefault();
             }
         })
